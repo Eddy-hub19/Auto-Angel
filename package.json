@@ -2,7 +2,7 @@
   "name": "Auto-Angel",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/Auto-Angel",
+  "homepage": "https://github.com/Eddy-hub19/Auto-Angel",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /Auto-Angel/"
