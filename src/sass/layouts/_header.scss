@@ -1,0 +1,202 @@
+.header {
+  @include mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 24px;
+    background: $primary;
+    border-bottom: 2px solid #e8e8e8;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 48px 100px;
+  }
+}
+
+.logo {
+  @include mobile {
+    width: 34px;
+    height: 15px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: #e8e8e8;
+  }
+  @include desktop {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 3.5;
+    color: #e8e8e8;
+  }
+}
+
+.nav {
+  @include mobile {
+    display: none;
+  }
+
+  @include desktop {
+    margin-left: 48px;
+
+    &__link {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+      color: #e8e8e8;
+      &:not(:last-child) {
+        margin-right: 23px;
+      }
+    }
+
+    .current {
+      text-decoration-line: underline;
+    }
+  }
+}
+
+.header-langs {
+  @include mobile {
+    display: flex;
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+    &__link {
+      color: $white;
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+      // color: #a7a7a7; - active
+      color: #e8e8e8;
+      margin-right: 10px;
+    }
+
+    .icon-ua,
+    .icon-en {
+      width: 18px;
+      height: 17px;
+      border-radius: 40px;
+    }
+  }
+  @include desktop {
+    display: flex;
+    margin-left: 48px;
+    position: relative;
+    &__item {
+      display: flex;
+      align-items: center;
+      margin: 0 5px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 20px;
+        background: #85ff1e;
+        border: 1px solid #fff;
+        position: absolute;
+        left: 60px;
+        display: block;
+      }
+    }
+    &__link {
+      color: $white;
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+      // color: #a7a7a7; - active
+      color: #e8e8e8;
+      margin-right: 10px;
+      text-transform: uppercase;
+    }
+
+    .icon-ua,
+    .icon-en {
+      width: 18px;
+      height: 17px;
+      border-radius: 40px;
+    }
+  }
+}
+
+.header-info {
+  @include mobile {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.toggle-theme {
+  width: 48px;
+  height: 28px;
+  background: $tertiary;
+  border-radius: 11px;
+  position: relative;
+  margin-left: auto;
+  @include desktop {
+    margin-top: 5px;
+    margin-left: 46px;
+  }
+  &:hover {
+    background: rgb(223, 192, 36);
+  }
+  &__circle {
+    width: 16px;
+    height: 16px;
+    left: calc(50% - 16px / 2 + 11.56px);
+    top: calc(50% - 16px / 2);
+    background: $primary;
+    border-radius: 40px;
+    position: absolute;
+  }
+}
+
+.social-media {
+  @include desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $white;
+    margin-left: 40px;
+  }
+}
+
+// btns
+
+.other-btn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  color: #e8e8e8;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  gap: 8px;
+  width: auto;
+  height: 43px;
+  border: 1px solid #e8e8e8;
+  border-radius: 7px;
+  background: transparent;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
