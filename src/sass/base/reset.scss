@@ -6,6 +6,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -26,8 +27,18 @@ button {
 a {
   text-decoration: none;
   color: $white;
+  cursor: pointer;
+}
+
+p {
+  color: $white;
 }
 
 .no-scroll {
   overflow-y: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

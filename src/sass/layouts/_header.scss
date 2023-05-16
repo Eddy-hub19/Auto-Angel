@@ -140,31 +140,6 @@
   }
 }
 
-.toggle-theme {
-  width: 48px;
-  height: 28px;
-  background: $tertiary;
-  border-radius: 11px;
-  position: relative;
-  margin-left: auto;
-  @include desktop {
-    margin-top: 5px;
-    margin-left: 46px;
-  }
-  &:hover {
-    background: rgb(223, 192, 36);
-  }
-  &__circle {
-    width: 16px;
-    height: 16px;
-    left: calc(50% - 16px / 2 + 11.56px);
-    top: calc(50% - 16px / 2);
-    background: $primary;
-    border-radius: 40px;
-    position: absolute;
-  }
-}
-
 .social-media {
   @include desktop {
     display: flex;
@@ -172,6 +147,13 @@
     align-items: center;
     fill: $white;
     margin-left: 40px;
+  }
+  .header-info__item {
+    transition: all 0.6ms ease-in;
+    &:hover {
+      fill: $accent;
+      color: $accent;
+    }
   }
 }
 

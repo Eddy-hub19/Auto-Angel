@@ -1,3 +1,8 @@
+.--padding {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -13,8 +18,8 @@
     border-bottom: 2px solid #e8e8e8;
     position: relative;
     padding: 0;
-    padding-top: 108px;
-    padding-bottom: 108px;
+    padding-top: $padding;
+    padding-bottom: $padding;
 
     &::after {
       content: "";
@@ -166,5 +171,113 @@
     fill: white;
     margin-left: auto;
     margin-top: 59px;
+  }
+}
+
+// abouts-us
+
+.about-us {
+  display: flex;
+  padding-top: $padding;
+  padding-bottom: $padding;
+  .title {
+    @include desktop {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.1;
+      display: flex;
+      align-items: center;
+      color: #e8e8e8;
+      margin-bottom: 32px;
+    }
+  }
+  &__wrap {
+    position: relative;
+    padding-right: 106px;
+  }
+}
+
+.about-us__desc {
+  @include desktop {
+    width: 529px;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #e8e8e8;
+    margin-bottom: 32px;
+  }
+}
+
+.nav-btn {
+  position: absolute;
+  top: 96%;
+  left: 74%;
+  z-index: 999;
+}
+
+.our-mission {
+  @include desktop {
+    padding-top: $padding;
+    padding-bottom: $padding;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &__wrap {
+    padding-left: 106px;
+  }
+}
+
+.our-activity {
+  @include desktop {
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+  &__wrap {
+    padding-right: 106px;
+  }
+}
+
+.result {
+  @include desktop {
+    background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
+    width: 100%;
+    height: auto;
+    padding-top: $padding;
+    padding-bottom: $padding;
+
+    .result-title {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.1;
+      color: $primary;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.result-list {
+  @include desktop {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.result-item {
+  display: flex;
+  flex-direction: column;
+  &__info {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 1.1;
+    color: $primary;
   }
 }

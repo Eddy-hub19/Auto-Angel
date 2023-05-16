@@ -1,0 +1,95 @@
+$darkbg: #E8E8E8;
+$whiteclr: $primary;
+$lightbg: #E8E8E8; 
+$lightt: $primary;
+
+$bgColor--night: $tertiary;
+$toggleBtn-bgColor--night: $bgColor--night;
+$bgColor--day: $primary;
+$toggleBtn-bgColor--day: $bgColor--day;
+
+body {
+  transition: all 0.3s ease-in-out;
+  color: $whiteclr;
+}
+.light {
+  background: #E8E8E8;
+  color: $lightt;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $primary;
+  }
+
+  a {
+    color: $primary;
+  }
+  p {
+    color: $primary;
+  }
+  button {
+    color: $primary;
+    border-color: $primary;
+  }
+  span {
+    color: $primary;
+  }
+
+  .menu.active {
+    background: $primary;
+    .menu-link {
+      color: $white;
+    }
+  }
+}
+.tdnn {
+  position: relative;
+  width: 48px;
+  height: 28px;
+  border-radius: 11px;
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+  top: 0;
+  right: 10px;
+  transition: all 500ms ease-in-out;
+  background: $bgColor--night;
+}
+.day {
+  background: $primary;
+  color: $lightt;
+}
+.moon {
+  width: 16px;
+  height: 16px;
+  left: calc(50% - 16px / 2 + 11.56px);
+  top: calc(50% - 16px / 2);
+  border-radius: 40px;
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  transition: all 400ms ease-in-out;
+  transform: rotate(-75deg);
+  background: $bgColor--night;
+  background: $primary;
+  width: 16px;
+}
+.sun {
+  width: 16px;
+  height: 16px;
+  border-radius: 40px;
+  position: absolute;
+  transform: rotate(0deg);
+  background: $white;
+  left: calc(0% + 3.56px);
+  top: calc(50% - 16px / 2);
+}
+
+.toggle-theme {
+  @include desktop {
+    margin-top: 5px;
+    margin-left: 46px;
+  }
+}

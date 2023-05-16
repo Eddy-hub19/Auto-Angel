@@ -9,10 +9,14 @@
   }
 }
 @mixin desktop {
-  @media (min-width: 1241px) and (max-width: 1440px) {
+  @media (min-width: 1241px) and (max-width: 2560px) {
       @content;
   }
 }
+
+
+// Не забути поміняти назад на 1440px
+
 // @mixin desktop {
 //   @media (min-width: 1441px) and (max-width: 2560px) {
 //       @content;
