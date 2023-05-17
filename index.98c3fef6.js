@@ -1,0 +1,2 @@
+var button=document.querySelector(".up"),displayButton=function(){window.addEventListener("scroll",(function(){console.log(window.scrollY),window.scrollY>100?button.style.display="block":button.style.display="none"}))},scrollToTop=function(){button.addEventListener("click",(function(){window.scroll({top:0,left:0,behavior:"smooth"}),console.log(event)}))};displayButton(),scrollToTop();
+//# sourceMappingURL=index.98c3fef6.js.map
