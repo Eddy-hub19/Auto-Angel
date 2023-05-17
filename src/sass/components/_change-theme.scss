@@ -1,6 +1,6 @@
-$darkbg: #E8E8E8;
+$darkbg: $background;
 $whiteclr: $primary;
-$lightbg: #E8E8E8; 
+$lightbg: $background; 
 $lightt: $primary;
 
 $bgColor--night: $tertiary;
@@ -13,7 +13,7 @@ body {
   color: $whiteclr;
 }
 .light {
-  background: #E8E8E8;
+  background: $background;
   color: $lightt;
   h1,
   h2,

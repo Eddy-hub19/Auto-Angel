@@ -1,21 +1,17 @@
-.--padding {
-  padding-top: $padding;
-  padding-bottom: $padding;
-}
-
 .hero {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0;
+  align-items: center;
+  padding: 0 20px;
   padding-top: 56px;
   padding-bottom: 56px;
   @include desktop {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    border-top: 2px solid #e8e8e8;
-    border-bottom: 2px solid #e8e8e8;
+    border-top: 2px solid $background;
+    border-bottom: 2px solid $background;
     position: relative;
     padding: 0;
     padding-top: $padding;
@@ -44,7 +40,7 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 1.2;
-  color: #e8e8e8;
+  color: $background;
   width: 359px;
   margin-bottom: 16px;
   @include desktop {
@@ -56,7 +52,7 @@
     width: 749px;
     display: flex;
     align-items: center;
-    color: #e8e8e8;
+    color: $background;
   }
 }
 
@@ -107,6 +103,7 @@
 }
 
 .hero-wrap2 {
+  margin-top: 16px;
   @include desktop {
     // padding: 108px 100px;
     display: flex;
@@ -121,7 +118,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    color: #e8e8e8;
+    color: $background;
     margin-bottom: 32px;
   }
   @include desktop {
@@ -130,7 +127,7 @@
     font-weight: 300;
     font-size: 20px;
     line-height: 1.5;
-    color: #e8e8e8;
+    color: $background;
     width: 310px;
   }
 }
@@ -142,24 +139,32 @@
   align-items: center;
 }
 
+// for hidden btn
+.--hidden-mobile {
+  display: none;
+  visibility: hidden;
+  @include desktop {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.--hidden-desktop {
+  @include desktop {
+    display: none;
+    visibility: hidden;
+  }
+}
+
 .secondary {
   padding: 14px 56px;
   gap: 8px;
   width: 350px;
   height: 47px;
-  background: #e8e8e8;
-  border: 1px solid #e8e8e8;
+  background: $background;
+  border: 1px solid $background;
   border-radius: 7px;
   color: black;
-}
-
-.icon {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
 }
 
 .arrow-down {
@@ -174,13 +179,56 @@
   }
 }
 
-// abouts-us
+// about-us
 
 .about-us {
-  display: flex;
-  padding-top: $padding;
-  padding-bottom: $padding;
-  .title {
+  display: block;
+  position: relative;
+
+  @include desktop {
+    display: flex;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    &__wrap {
+      position: relative;
+      padding-right: 106px;
+    }
+  }
+  &__desc {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    color: $background;
+    @include desktop {
+      width: 529px;
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.57;
+      color: $background;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__wrap {
+    @include mobile {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__title {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    color: $background;
+    margin-bottom: 16px;
     @include desktop {
       font-family: "Unbounded";
       font-style: normal;
@@ -189,37 +237,99 @@
       line-height: 1.1;
       display: flex;
       align-items: center;
-      color: #e8e8e8;
+      color: $background;
       margin-bottom: 32px;
     }
   }
-  &__wrap {
+
+  &__subtitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $background;
+    margin-top: 36px;
+    margin-bottom: 56px;
+  }
+
+  &__container {
     position: relative;
-    padding-right: 106px;
+  }
+
+  &__nav-btn {
+    position: absolute;
+    top: 20px;
+    right: 15%;
+
+    @include desktop {
+      left: -150px;
+      right: 830px;
+      top: -40px;
+      z-index: 999;
+    }
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0%;
+    bottom: -56px;
+    width: 100%;
+    border: 2px solid $background;
+    @include desktop {
+      bottom: 10px;
+    }
   }
 }
 
-.about-us__desc {
-  @include desktop {
-    width: 529px;
+.prev,
+.next {
+  width: 24px;
+  height: 24px;
+}
+
+// out-mission
+
+.our-mission {
+  position: relative;
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+
+  &__title {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    color: $background;
+    margin-bottom: 16px;
+    @include desktop {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.1;
+      display: flex;
+      align-items: center;
+      color: $background;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__desc {
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
-    line-height: 1.57;
-    color: #e8e8e8;
+    line-height: 1.5;
+    color: $background;
     margin-bottom: 32px;
+    @include desktop {
+      width: 529px;
+    }
   }
-}
 
-.nav-btn {
-  position: absolute;
-  top: 96%;
-  left: 74%;
-  z-index: 999;
-}
-
-.our-mission {
   @include desktop {
     padding-top: $padding;
     padding-bottom: $padding;
@@ -227,57 +337,166 @@
     flex-direction: row-reverse;
   }
   &__wrap {
-    padding-left: 106px;
+    @include desktop {
+      // padding-left: 106px;
+      padding: 176px 106px;
+    }
   }
 }
 
+// out-activity
+
 .our-activity {
+  position: relative;
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+
+  @include desktop {
+    display: flex;
+  }
+
+  &__wrap {
+    @include desktop {
+      padding: 149px 106px 149px 0;
+    }
+  }
+
+  &__title {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    color: $background;
+    margin-bottom: 16px;
+    @include desktop {
+      margin-bottom: 24px;
+      font-size: 24px;
+    }
+  }
+
+  &__desc {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $background;
+    margin-bottom: 32px;
+    @include desktop {
+      width: 529px;
+    }
+  }
+
   @include desktop {
     padding-top: $padding;
     padding-bottom: $padding;
   }
   &__wrap {
-    padding-right: 106px;
+    @include desktop {
+      padding-right: 106px;
+    }
+  }
+
+  &__nav-btn {
+    position: absolute;
+    top: 20%;
+    left: 20%;
   }
 }
 
 .result {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+  background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
   @include desktop {
-    background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
-    width: 100%;
-    height: auto;
     padding-top: $padding;
     padding-bottom: $padding;
+    // width: 100%;
+    height: auto;
+    background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
 
     .result-title {
-      font-family: "Unbounded";
-      font-style: normal;
-      font-weight: 400;
-      font-size: 40px;
-      line-height: 1.1;
-      color: $primary;
-      margin-bottom: 40px;
+      margin-bottom: 38px;
+      @include desktop {
+        font-family: "Unbounded";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 1.1;
+        color: $primary;
+        margin-bottom: 40px;
+      }
     }
   }
 }
 
 .result-list {
-  @include desktop {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  display: flex;
 }
 
 .result-item {
-  display: flex;
   flex-direction: column;
+  align-items: center;
   &__info {
+    @include desktop {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 1.1;
+      color: $primary;
+    }
+  }
+
+  &__title {
+    @include desktop {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.5;
+      display: flex;
+      align-items: center;
+      color: $primary;
+    }
+  }
+}
+
+// donate
+
+.donate {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+  @include desktop {
+    display: flex;
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+}
+
+.donate-wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  width: 394px;
+  padding: 108px 0px;
+}
+
+.dontate-list {
+  &__title {
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;
-    font-size: 80px;
+    font-size: 40px;
     line-height: 1.1;
-    color: $primary;
+    color: $background;
   }
+}
+
+.contacts-wrap {
+  padding: 184px 140px;
 }

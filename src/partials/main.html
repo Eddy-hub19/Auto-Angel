@@ -1,6 +1,7 @@
 <!-- #about">
 #our-mission
 #our-activity
+#donate
 #contacts">
 #bank-details
 #gratitude">
@@ -13,11 +14,12 @@
       <h2 class="title hero__title">Благодійний фонд
         Авто Ангел</h2>
       <span class="toast">Нездоланні - коли об'єднані</span>
-      <button class="btn secondary">Зробити пожертву</button>
+      <button class="btn secondary --hidden-mobile">Зробити пожертву</button>
     </div>
     <div class="hero-wrap2">
       <h3 class="hero__subtitle">Допомагаємо тим, хто бореться за нашу свободу. Автомобілі
         для ЗСУ і не тільки.</h3>
+      <button class="btn secondary --hidden-desktop">Зробити пожертву</button>
       <svg class="arrow-down" width="20px" height="20px">
         <use href="./images/icons.svg#icon-down">arrow-down</use>
       </svg>
@@ -27,7 +29,7 @@
   <section class="about-us container">
     <div class="about-us__wrap">
       <!-- slider -->
-      <h2 class="title">Про нас</h2>
+      <h2 class="about-us__title">Про нас</h2>
       <p class="about-us__desc">БО БФ Авто Ангел Львів є не комерційною, не урядовою, не політичною благодійною
         організацією. Офіційно Авто Ангел
         засновано в листопаді 2022 року. До того часу вся волонтерська діяльність відбувалась виключно на власній
@@ -42,14 +44,7 @@
         і не тільки. Ми цінуємо будь-яку допомогу, адже вся наша діяльність націлена лише на одне - якнайшвидше
         звільнення
         всієї України від російських окупантів.</p>
-      <div class="nav-btn">
-        <svg class="swiper-button-prev" width="30px" height="30px" style="color: red">
-          <use href="./images/icons.svg#icon-right"></use>
-        </svg>
-        <svg class="swiper-button-next" width="30px" height="30px">
-          <use href="./images/icons.svg#icon-left"></use>
-        </svg>
-      </div>
+
     </div>
     <div class="wrap-slider">
       <!-- Slider main container -->
@@ -58,17 +53,22 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide" lazy="true">
-            <img src="./images/1.jpeg" alt="#">
+            <img src="./images/about-us.jpeg" alt="#">
           </div>
           <div class="swiper-slide partial-slide" lazy="true">
-            <img src="./images/2.jpeg" alt="#">
+            <img src="./images/about-us2.jpeg" alt="#">
           </div>
-          <div class="swiper-slide" lazy="true">
-            <img src="./images/1.jpeg" alt="#">
-          </div>
-          <div class="swiper-slide partial-slide" lazy="true">
-            <img src="./images/2.jpeg" alt="#">
-          </div>
+        </div>
+      </div>
+      <div class="about-us__container">
+        <p class="about-us__subtitle">Name Name, директор Фонду</p>
+        <div class="about-us__nav-btn">
+          <svg class="swiper-button-prev prev" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-right"></use>
+          </svg>
+          <svg class="swiper-button-next next" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-left"></use>
+          </svg>
         </div>
       </div>
     </div>
@@ -76,13 +76,12 @@
 
   <section class="our-mission container">
     <div class="our-mission__wrap">
-      <h2 class="title">Про нас</h2>
-      <p class="our-mission__desc">БО БФ Авто Ангел Львів є не комерційною, не урядовою, не політичною благодійною
-        організацією. Офіційно Авто Ангел
-        засновано в листопаді 2022 року. До того часу вся волонтерська діяльність відбувалась виключно на власній
-        ініціативі керівництва компаній TK_Standart та Oasis Habitats.
+      <h2 class="our-mission__title">Наша місія</h2>
+      <p class="our-mission__desc">Найкращий результат досягається тоді, коли люди знають що вони роблять. У своїй
+        волонтерській діяльності ми в БФ Авто Ангел Львів добре навчилися вирішувати короткі адресні задачі. Звідси і
+        наша місія - максимально швидко забезпечувати протреби бойових підрозділів усім необхідним.
       </p>
-      <!-- <div class="nav-btn">
+      <!-- <div class="our-mission__nav-btn">
         <svg class="swiper-button-prev" width="30px" height="30px" style="color: red">
           <use href="./images/icons.svg#icon-right"></use>
         </svg>
@@ -93,21 +92,13 @@
     </div>
     <div class="wrap-slider">
       <!-- Slider main container -->
-      <div class="swiper" space-between="40" slides-per-view="auto" pagination="true" pagination-clickable="true">
+      <div class="swiper" space-between="40" slides-per-view="auto" pagination="true" pagination-clickable="true"
+        lazy="true">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide" lazy="true">
-            <img src="./images/1.jpeg" alt="#">
-          </div>
-          <div class="swiper-slide partial-slide" lazy="true">
-            <img src="./images/2.jpeg" alt="#">
-          </div>
-          <div class="swiper-slide" lazy="true">
-            <img src="./images/1.jpeg" alt="#">
-          </div>
-          <div class="swiper-slide partial-slide" lazy="true">
-            <img src="./images/2.jpeg" alt="#">
+            <img src="./images/our-mission.jpeg" alt="#">
           </div>
         </div>
       </div>
@@ -116,11 +107,10 @@
 
   <section class="our-activity container">
     <div class="our-activity__wrap">
-      <h2 class="title">Про нас</h2>
-      <p class="our-activity__desc">БО БФ Авто Ангел Львів є не комерційною, не урядовою, не політичною благодійною
-        організацією. Офіційно Авто Ангел
-        засновано в листопаді 2022 року. До того часу вся волонтерська діяльність відбувалась виключно на власній
-        ініціативі керівництва компаній TK_Standart та Oasis Habitats.
+      <h2 class="our-activity__title">Автомобілі для ЗСУ</h2>
+      <p class="our-activity__desc">Ми спілкуємося з бійцями щоб зрозуміти їхні потреби, оголошуємо збір коштів, купуємо
+        авто в різних країнах, приганяємо його в Україну, ремонтуємо, обладнуємо відповідно до потреб конкретного
+        підрозділу і відганяємо максимально близько до позицій.
       </p>
       <!-- <div class="our-activity__nav-btn">
         <svg class="swiper-button-prev" width="30px" height="30px" style="color: red">
@@ -138,16 +128,7 @@
         <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide" lazy="true">
-            <img src="./images/1.jpeg" alt="#">
-          </div>
-          <div class="swiper-slide partial-slide" lazy="true">
-            <img src="./images/2.jpeg" alt="#">
-          </div>
-          <div class="swiper-slide" lazy="true">
-            <img src="./images/1.jpeg" alt="#">
-          </div>
-          <div class="swiper-slide partial-slide" lazy="true">
-            <img src="./images/2.jpeg" alt="#">
+            <img src="./images/our-activity.jpeg" alt="#">
           </div>
         </div>
       </div>
@@ -156,19 +137,81 @@
 
   <section class="result container">
     <h3 class="result-title">Результати нашої роботи</h3>
-    <ul class="result-list" style="display: flex; justify-content: center;">
-      <li class="result-item">
-        <p class="result-item__desc">Авто</pс>
-          <span class="result-item__info">80 +</span>
+    <ul class="result-list">
+      <li class="result-list__item">
+        <h5 class="result-item__title">Авто</h5>
+        <span class="result-item__info">80 +</span>
       </li>
-      <li class="result-item">
-        <p class="result-item__desc">Рації</p>
+      <li class="result-list__item">
+        <h5 class="result-item__title">Рації</h5>
         <span class="result-item__info">00шт +</span>
       </li>
-      <li class="result-item">
-        <p class="result-item__desc">Зібрано</p>
+      <li class="result-list__item">
+        <h5 class="result-item__title">Зібрано</h5>
         <span class="result-item__info">0000грн +</span>
       </li>
+    </ul>
+  </section>
+
+  <section class="donate container">
+    <ul class="dontate-list">
+      <h2 class="dontate-list__title">Швидкі кнопки для пожертв</h2>
+      <div class="donate-wrap">
+        <li class="dontate-list__item">
+          <a class="donate-list__link" href="#">
+            <img src="./images/donate1.jpeg" alt="#" />
+          </a>
+        </li>
+        <li class="dontate-list__item">
+          <a class="donate-list__link" href="#">
+            <img src="./images/donate2.jpeg" alt="#" />
+          </a>
+        </li>
+        <li class="dontate-list__item">
+          <a class="donate-list__link" href="#">
+            <img src="./images/donate3.jpeg" alt="#" />
+          </a>
+        </li>
+        <li class="dontate-list__item">
+          <a class="donate-list__link" href="#">
+            <img src="./images/donate4.jpeg" alt="#" />
+          </a>
+        </li>
+      </div>
+    </ul>
+    <ul class="contacts">
+      <h2>Контакти організації</h2>
+      <div class="contacts-wrap">
+        <li>
+          <span>Повна назва:</span>
+          <p>Благодійна організація «Благодійний фонд «Авто Ангел Львів»</p>
+        </li>
+        <li>
+          <span>Скорочена назва:</span>
+          <p>БО «БФ «Авто Ангел Львів»</p>
+        </li>
+        <li>
+          <span>ЄДРПОУ:</span>
+          <p>44878259</p>
+        </li>
+        <li>
+          <span>Адреса реєстрації:</span>
+          <p>вул. Наукова 29/4, Львів
+            79060, Україна</p>
+        </li>
+        <li>
+          <span>Директор:</span>
+          <p>ОГІНОК Андрій Володимирович</p>
+        </li>
+        <li>
+          <span>№ телефону:</span>
+          <p>+38 0676750107 (усі месенджери)</p>
+        </li>
+        <li>
+          <span>E-пошта:</span>
+          <p>autoangel.lviv@gmail.com</p>
+        </li>
+      </div>
     </ul>
   </section>
 </main>

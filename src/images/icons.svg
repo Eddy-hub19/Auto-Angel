@@ -2,8 +2,9 @@
   version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <symbol id="icon-up" viewBox="0 0 31 32">
-      <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.56"
-        d="M21.76 16l-6.4-6.4-6.4 6.4M15.36 23.68v0zM15.36 30.080c7.776 0 14.080-6.304 14.080-14.080s-6.304-14.080-14.080-14.080-14.080 6.304-14.080 14.080 6.304 14.080 14.080 14.080z"></path>
+      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
+        stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.56"
+        d="M21.76 16l-6.4-6.4-6.4 6.4M15.36 23.68v0zM15.36 30.080c7.776 0 14.080-6.304 14.080-14.080s-6.304-14.080-14.080-14.080c-7.776 0-14.080 6.304-14.080 14.080s6.304 14.080 14.080 14.080z"></path>
     </symbol>
     <symbol id="icon-down" viewBox="0 0 32 32">
       <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter"
@@ -45,7 +46,8 @@
         d="M16 9.333l-6.667 6.667 6.667 6.667M24 16v0zM30.667 16c0-8.1-6.567-14.667-14.667-14.667s-14.667 6.567-14.667 14.667 6.567 14.667 14.667 14.667 14.667-6.567 14.667-14.667z"></path>
     </symbol>
     <symbol id="icon-right" viewBox="0 0 32 32">
-      <path fill="#262626" stroke="white" style="stroke: var(--color2, white)" stroke-linejoin="miter"
+      <path fill="#262626" stroke="white" style="stroke: var(--color2, white)"
+        stroke-linejoin="miter"
         stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.6667"
         d="M16 22.667l6.667-6.667-6.667-6.667M8 16v0zM1.333 16c0 8.1 6.567 14.667 14.667 14.667s14.667-6.567 14.667-14.667-6.567-14.667-14.667-14.667-14.667 6.567-14.667 14.667z"></path>
     </symbol>
