@@ -1,6 +1,6 @@
 $darkbg: $background;
 $whiteclr: $primary;
-$lightbg: $background; 
+$lightbg: $background;
 $lightt: $primary;
 
 $bgColor--night: $tertiary;
@@ -13,28 +13,31 @@ body {
   color: $whiteclr;
 }
 .light {
-  background: $background;
+  background: $background !important;
   color: $lightt;
+
+  .header {
+    background: $background;
+  }
+
   h1,
   h2,
   h3,
   h4,
-  h5 {
+  h5,
+  a,
+  p,
+  span {
     color: $primary;
   }
 
-  a {
-    color: $primary;
+  .menu-btn span{
+    background-color: $primary;
   }
-  p {
-    color: $primary;
-  }
+
   button {
     color: $primary;
     border-color: $primary;
-  }
-  span {
-    color: $primary;
   }
 
   .menu.active {
@@ -42,6 +45,18 @@ body {
     .menu-link {
       color: $white;
     }
+  }
+
+  .hero {
+    border-top: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    &:after {
+      background: $primary;
+    }
+  }
+
+  .arrow-down {
+    fill: $primary !important;
   }
 }
 .tdnn {
@@ -54,7 +69,7 @@ body {
   cursor: pointer;
   top: 0;
   right: 10px;
-  transition: all 500ms ease-in-out;
+  // transition: all 500ms ease-in-out;
   background: $bgColor--night;
 }
 .day {

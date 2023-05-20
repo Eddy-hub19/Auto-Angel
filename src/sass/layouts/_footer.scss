@@ -2,11 +2,17 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-top: 2px solid $background;
+}
+
+.wrap-left {
+  padding: 100px 182px;
 }
 
 .wrap-right {
   padding-top: 132px;
   padding-bottom: 132px;
+  display: flex;
 }
 
 .up {

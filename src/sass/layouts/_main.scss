@@ -22,16 +22,15 @@
       position: absolute;
       top: 0;
       right: 36%;
-      width: 3px;
+      width: 2px;
       height: 100%;
-      background: white;
+      background: $background;
     }
   }
 }
 
 .hero-wrap1 {
   position: relative;
-  // padding: 108px 0 108px 100px;
 }
 
 .hero__title {
@@ -105,7 +104,6 @@
 .hero-wrap2 {
   margin-top: 16px;
   @include desktop {
-    // padding: 108px 100px;
     display: flex;
     flex-direction: column;
   }
@@ -189,6 +187,7 @@
     display: flex;
     padding-top: $padding;
     padding-bottom: $padding;
+    border-bottom: 2px solid $background;
     &__wrap {
       position: relative;
       padding-right: 106px;
@@ -250,7 +249,6 @@
     line-height: 1.2;
     color: $background;
     margin-top: 36px;
-    margin-bottom: 56px;
   }
 
   &__container {
@@ -269,18 +267,6 @@
       z-index: 999;
     }
   }
-
-  &:after {
-    content: "";
-    position: absolute;
-    left: 0%;
-    bottom: -56px;
-    width: 100%;
-    border: 2px solid $background;
-    @include desktop {
-      bottom: 10px;
-    }
-  }
 }
 
 .prev,
@@ -295,6 +281,7 @@
   position: relative;
   padding-top: $padding-mobile;
   padding-bottom: $padding-mobile;
+  border-bottom: 2px solid $background;
 
   &__title {
     font-family: "Unbounded";
@@ -330,17 +317,20 @@
     }
   }
 
+  &__wrap {
+    @include desktop {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0 106px;
+    }
+  }
+
   @include desktop {
     padding-top: $padding;
     padding-bottom: $padding;
     display: flex;
     flex-direction: row-reverse;
-  }
-  &__wrap {
-    @include desktop {
-      // padding-left: 106px;
-      padding: 176px 106px;
-    }
   }
 }
 
@@ -408,6 +398,7 @@
 .result {
   padding-top: $padding-mobile;
   padding-bottom: $padding-mobile;
+  overflow-x: auto;
   background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
   @include desktop {
     padding-top: $padding;
@@ -415,6 +406,7 @@
     // width: 100%;
     height: auto;
     background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
+    overflow-x: auto;
 
     .result-title {
       margin-bottom: 38px;
@@ -470,10 +462,11 @@
 .donate {
   padding-top: $padding-mobile;
   padding-bottom: $padding-mobile;
+  border-bottom: 2px solid $background;
   @include desktop {
     display: flex;
     padding-top: $padding;
-    padding-bottom: $padding;
+    // padding-bottom: $padding;
   }
 }
 
@@ -487,6 +480,7 @@
 }
 
 .dontate-list {
+  border-right: 2px solid white;
   &__title {
     font-family: "Unbounded";
     font-style: normal;
@@ -497,6 +491,60 @@
   }
 }
 
-.contacts-wrap {
-  padding: 184px 140px;
+// .contacts-wrap {
+//   padding: 184px 140px;
+// }
+
+// contacts
+
+.contacts {
+  padding: 0px 100px 141px;
+  &__title {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    color: $background;
+  }
+
+  .contacts-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    &__wrap {
+      // display: flex;
+      // flex-direction: column;
+      // height: 100%;
+      // justify-content: space-evenly;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 24px;
+      width: 514px;
+      margin-top: 32px;
+    }
+    &__text {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: $background;
+      width: 100%;
+    }
+
+    &__desc {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.2;
+      color: $background;
+    }
+  }
 }
