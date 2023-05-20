@@ -1,0 +1,54 @@
+.our-friends {
+  padding-top: $padding;
+  padding-bottom: $padding;
+}
+
+.our-friends-list {
+  display: block;
+  margin: 0 auto;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: block;
+    margin: 0 auto;
+    @include tablet {
+      width: calc(100% / 2);
+    }
+    @include desktop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(100% / 3);
+      padding: 108px 115px;
+      border: 2px solid $background;
+    }
+  }
+
+  &__title {
+    width: 262px;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 1.1;
+    color: $background;
+  }
+
+  &__subtitle {
+    width: 291px;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $background;
+    margin-bottom: 32px;
+  }
+}

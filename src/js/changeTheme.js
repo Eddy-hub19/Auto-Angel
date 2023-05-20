@@ -8,3 +8,6 @@ function changeTheme() {
   moon.classList.toggle("sun")
   tdnn.classList.toggle("day")
 }
+
+// const light = document.querySelector('.light')
+// light.style.background = "#262626"

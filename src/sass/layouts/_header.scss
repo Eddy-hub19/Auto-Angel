@@ -139,6 +139,10 @@
 }
 
 .social-media {
+  display: flex;
+  margin-top: 30px;
+  width: 11px;
+  height: 20px;
   @include desktop {
     display: flex;
     justify-content: center;
@@ -153,30 +157,4 @@
       color: $accent;
     }
   }
-}
-
-// btns
-
-.other-btn {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  color: $background;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 32px;
-  gap: 8px;
-  width: auto;
-  height: 43px;
-  border: 1px solid $background;
-  border-radius: 7px;
-  background: transparent;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
 }

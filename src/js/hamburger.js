@@ -17,9 +17,6 @@ closeButton.addEventListener('click', () => {
   }
 });
 
-const light = document.querySelector('.light')
-light.document.style.background = "#262626"
-
 menu.addEventListener('click', () => {
   if (menu.classList.contains('active')) {
     // hamburger.classList.remove('white');

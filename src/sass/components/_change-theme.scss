@@ -31,7 +31,7 @@ body {
     color: $primary;
   }
 
-  .menu-btn span{
+  .menu-btn span {
     background-color: $primary;
   }
 
@@ -40,9 +40,12 @@ body {
     border-color: $primary;
   }
 
+  border-color: $primary;
+
   .menu.active {
     background: $primary;
-    .menu-link {
+    .menu-link,
+    .mobile-title {
       color: $white;
     }
   }
@@ -67,7 +70,7 @@ body {
   position: relative;
   margin-left: auto;
   cursor: pointer;
-  top: 0;
+  top: -25;
   right: 10px;
   // transition: all 500ms ease-in-out;
   background: $bgColor--night;
@@ -100,11 +103,4 @@ body {
   background: $white;
   left: calc(0% + 3.56px);
   top: calc(50% - 16px / 2);
-}
-
-.toggle-theme {
-  @include desktop {
-    margin-top: 5px;
-    margin-left: 46px;
-  }
 }
