@@ -1,9 +1,13 @@
 <header>
   <div class="header container">
-    <h2 class="logo">LOGO</h2>
+    <a class="logo" href="/">
+      <svg class="icon-logo" width="68" height="86">
+        <use href="./images/icons.svg#icon-logo"></use>
+      </svg>
+    </a>
     <nav class="nav">
-      <a class="nav__link current" href="#">Головна</a>
-      <a class="nav__link" href="#">Публічна оферта</a>
+      <a class="nav__link current" href="/">Головна</a>
+      <a class="nav__link" href="./public-offer.html">Публічна оферта</a>
     </nav>
     <ul class="header-langs">
       <li class="header-langs__item">
@@ -24,18 +28,18 @@
       <li class="header-info__item">
         <button class="btn other">Зробити пожертву</button>
       </li>
-      <div class="social-media">
-        <li class="header-info__item">
+      <ul class="social-media">
+        <li class="social-media__item">
           <svg width="24" height="24" class="insta">
             <use href="./images/icons.svg#icon-insta"></use>
           </svg>
         </li>
-        <li class="header-info__item">
+        <li class="social-media__item">
           <svg width="24" height="24">
             <use href="./images/icons.svg#icon-facebook"></use>
           </svg>
         </li>
-      </div>
+      </ul>
       <button class="btn toggle-theme tdnn" onclick=changeTheme()>
         <div class="moon"></div>
         <!-- <span style="color: white; font-size: 17px; margin-left: 30px;">off</span> -->

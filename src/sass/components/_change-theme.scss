@@ -63,17 +63,15 @@ body {
   }
 }
 .tdnn {
-  position: relative;
+  border-radius: 11px;
+  cursor: pointer;
   width: 48px;
   height: 28px;
-  border-radius: 11px;
   position: relative;
-  margin-left: auto;
-  cursor: pointer;
-  top: -25;
-  right: 10px;
-  // transition: all 500ms ease-in-out;
-  background: $bgColor--night;
+  @include mobile {
+    top: -30px;
+    margin-left: auto;
+  }
 }
 .day {
   background: $primary;

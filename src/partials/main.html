@@ -11,7 +11,7 @@
 -->
 
 <main class="main">
-  <section class="hero container">
+  <section id="hero" class="hero container">
     <div class="hero-wrap1">
       <h2 class="title hero__title">Благодійний фонд
         Авто Ангел</h2>
@@ -29,7 +29,7 @@
     </div>
   </section>
 
-  <section class="about-us container">
+  <section id="about-us" class="about-us container">
     <div class="about-us__wrap">
       <!-- slider -->
       <h2 class="about-us__title">Про нас</h2>
@@ -78,7 +78,7 @@
     </div>
   </section>
 
-  <section class="our-mission container">
+  <section id="our-mission" class="our-mission container">
     <div class="our-mission__wrap">
       <h2 class="our-mission__title">Наша місія</h2>
       <p class="our-mission__desc">Найкращий результат досягається тоді, коли люди знають що вони роблять. У своїй
@@ -109,7 +109,7 @@
     </div>
   </section>
 
-  <section class="our-activity container">
+  <section id="our-activity" class="our-activity container">
     <div class="our-activity__wrap">
       <h2 class="our-activity__title">Автомобілі для ЗСУ</h2>
       <p class="our-activity__desc">Ми спілкуємося з бійцями щоб зрозуміти їхні потреби, оголошуємо збір коштів, купуємо
@@ -139,7 +139,7 @@
     </div>
   </section>
 
-  <section class="result container">
+  <section id="result" class="result container">
     <h3 class="result-title">Результати нашої роботи</h3>
     <ul class="result-list">
       <li class="result-list__item">
@@ -162,23 +162,23 @@
       <h2 class="dontate-list__title">Швидкі кнопки для пожертв</h2>
       <div class="donate-wrap">
         <li class="dontate-list__item">
-          <a class="donate-list__link" href="#">
-            <img src="./images/donate1.jpeg" alt="#" />
+          <a href="#" class="donate-list__link">
+            <img src="./images/donate1.jpeg" alt="privat24" />
           </a>
         </li>
         <li class="dontate-list__item">
-          <a class="donate-list__link" href="#">
-            <img src="./images/donate2.jpeg" alt="#" />
+          <a href="#" class="donate-list__link">
+            <img src="./images/donate2.jpeg" alt="monobank" />
           </a>
         </li>
         <li class="dontate-list__item">
-          <a class="donate-list__link" href="#">
-            <img src="./images/donate3.jpeg" alt="#" />
+          <a href="#" class="donate-list__link">
+            <img src="./images/donate3.jpeg" alt="paypal" />
           </a>
         </li>
         <li class="dontate-list__item">
-          <a class="donate-list__link" href="#">
-            <img src="./images/donate4.jpeg" alt="#" />
+          <a href="#" class="donate-list__link">
+            <img src="./images/donate4.jpg" alt="patreon" />
           </a>
         </li>
       </div>
@@ -220,7 +220,7 @@
   </section>
 
   <!-- bank-details -->
-  <div class="bank-details container">
+  <div id="bank" class="bank-details container">
     <div class="bank-details-info">
       <h2 class="bank-details__title">Для платежів по Україні </h2>
       <div class="bank-details__accordion">
@@ -346,8 +346,8 @@
   </div>
 
   <!-- gratitude -->
-  <section class="gratitude container">
-    <ul class="gratitude-list">
+  <section id="gratitude" class="gratitude">
+    <ul class="gratitude-list container">
       <li class="gratitude-list__item">
         <h2 class="gratitude-list__item__title">Подяка</h2>
       </li>
@@ -364,53 +364,72 @@
       </li>
     </ul>
   </section>
-  
+
   <!-- write-us -->
   <!-- <section class="write-us">
     <h2>Напишіть нам</h2>
   </section> -->
 
   <!-- our-friends -->
-  <section class="our-friends container">
-    <ul class="our-friends-list">
-      <li class="our-friends-list__item">
-        <h2 class="our-friends-list__title">Наші друзі</h2>
-      </li>
-      <li class="our-friends-list__item">
-        <img src="./images/our-friends/our-friends1.jpg" alt="Цивіліцація | Європа">
-      </li>
-      <li class="our-friends-list__item">
-        <img src="./images/our-friends/our-friends4.jpg" alt="Фонт підтримки">
-      </li>
-      <li class="our-friends-list__item">
-        <img src="./images/our-friends/our-friends2.jpg" alt="Хто як не ми">
-      </li>
-      <li class="our-friends-list__item">
-        <img src="./images/our-friends/our-friends3.jpg" alt="oOasis Habitats">
-      </li>
-      <li class="our-friends-list__item">
-        <img src="./images/supportukraine.png" alt="#">
-      </li>
-      <li class="our-friends-list__item">
-        <img src="./images/our-friends/our-friends6.jpg" alt="TK_Standart">
-      </li>
-      <li class="our-friends-list__item">
-        <img src="./images/our-friends/our-friends5.jpg" alt="ORC auction">
-      </li>
+  <section id="our-friends" class="our-friends container">
+    <div class="wrap-slider">
+      <!-- Slider main container -->
+      <div class="swiper" space-between="40" slides-per-view="auto" pagination="true" pagination-clickable="true"
+        autoplay="true">
+        <!-- Additional required wrapper -->
+        <ul class="swiper-wrapper our-friends-list">
+          <li class="swiper-slide our-friends-list__item">
+            <h2 class="our-friends-list__title">Наші друзі</h2>
+          </li>
+          <li class="swiper-slide our-friends-list__item">
+            <img src="./images/our-friends/our-friends1.jpg" alt="Цивіліцація | Європа">
+          </li>
+          <li class="swiper-slide our-friends-list__item">
+            <img src="./images/our-friends/our-friends4.jpg" alt="Фонт підтримки">
+          </li>
+          <li class="swiper-slide our-friends-list__item">
+            <img src="./images/our-friends/our-friends2.jpg" alt="Хто як не ми">
+          </li>
+          <li class="swiper-slide our-friends-list__item">
+            <img src="./images/our-friends/our-friends3.jpg" alt="oOasis Habitats">
+          </li>
+          <li class="swiper-slide our-friends-list__item">
+            <img src="./images/supportukraine.png" alt="#">
+          </li>
 
-      <li class="our-friends-list__item" style="display: flex; flex-direction: column;">
-        <h5 class="our-friends-list__subtitle">Давайте наближати ПЕРЕМОГУ разом.</h5>
-        <button class="btn secondary">Зробити пожертву</button>
-      </li>
-    </ul>
+          <li class="swiper-slide our-friends-list__item">
+            <img src="./images/our-friends/our-friends6.jpg" alt="TK_Standart">
+          </li>
+          <li class="swiper-slide our-friends-list__item">
+            <img src="./images/our-friends/our-friends5.jpg" alt="ORC auction">
+          </li>
+          <li class="swiper-slide our-friends-list__item" style="display: flex; flex-direction: column;">
+            <h5 class="our-friends-list__subtitle">Давайте наближати ПЕРЕМОГУ разом.</h5>
+            <button class="btn secondary">Зробити пожертву</button>
+          </li>
+        </ul>
+      </div>
+      <div class="about-us__container">
+        <div class="about-us__nav-btn" style="display: none;">
+          <svg class="swiper-button-prev prev" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-right"></use>
+          </svg>
+          <svg class="swiper-button-next next" width="30px" height="30px">
+            <use href="./images/icons.svg#icon-left"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- popular-questions -->
-  <section class="popular-questions container">
+  <section id="popular-questions" class="popular-questions container">
     <h2 class="popular-questions__title">Популярні питання</h2>
     <button class="accordion">Де я можу побачити звіти про витрачені кошти?</button>
     <div class="panel">
-      <p>Ми намагаємось будти на 100% прозорими у всіх аспектах. Фінансова звітність для нас — це одне з найважливіших
+      <p class="panel__desc">Ми намагаємось будти на 100% прозорими у всіх аспектах. Фінансова звітність для нас — це
+        одне з найважливіших
         питань прозорості...</p>
     </div>
 
@@ -420,7 +439,6 @@
         одне з найважливіших питань прозорості...</p>
     </div>
 
-    </div>
   </section>
 
 </main>

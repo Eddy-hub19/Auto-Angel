@@ -16,12 +16,12 @@ for (i = 0; i < acc.length; i++) {
 // for 2 accordion
 
 document.addEventListener('DOMContentLoaded', function() {
-  let accordionToggles = document.querySelectorAll('.accordion-toggle');
+  let accordionToggles = document.querySelectorAll('.accordion-header');
   
   accordionToggles.forEach(function(toggle) {
     toggle.addEventListener('click', function() {
       let accordionItem = this.parentNode;
-      
+      // debugger
       accordionItem.classList.toggle('active');
       
       let accordionContent = accordionItem.querySelector('.accordion-content');

@@ -1,6 +1,9 @@
 .footer {
   display: block;
+  position: relative;
   @include desktop {
+    padding-top: 70px;
+    padding-bottom: 66px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -8,34 +11,71 @@
   }
 }
 
+.logo-footer {
+  margin-right: 142px;
+}
+
+.icon-logo-footer {
+  width: 108px;
+  height: 139px;
+}
+
+// left
+
 .wrap-left {
-  padding: 132px 53px;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .support {
   display: flex;
   flex-direction: column;
-  color: white;
+  color: $white;
+  &__title {
+    margin-bottom: 16px;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $background;
+  }
 }
 
 .wrap-right {
   @include desktop {
-    padding-top: 132px;
-    padding-bottom: 132px;
     display: flex;
     margin-left: 103px;
-    margin-bottom: 40px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 47%;
+      background: $background;
+      width: 2px;
+      height: 100%;
+      display: block;
+    }
   }
 }
 
+// right
+
 .wrap-right-list {
-  align-items: center;
-  margin-right: 68px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.wrap-right-list:nth-last-child(2) {
+  margin-left: 58px;
 }
 
 .wrap-right-item {
-  display: flex;
-  align-items: flex-start;
   &__link {
     font-family: "Unbounded";
     font-style: normal;
@@ -43,30 +83,56 @@
     font-size: 14px;
     line-height: 1.2;
     color: $background;
+    &:hover, &:focus {
+      color: $accent;
+    }
   }
 }
 
-.wrap-right2-item {
-  &__link {
-    font-family: "Unbounded";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-    color: $background;
+// up
+
+.wrap-up {
+  position: relative;
+
+  .up {
+    display: none;
+    position: absolute;
+    fill: $white;
+    width: auto;
+    bottom: 100px;
+    right: 50%;
+    cursor: pointer;
+    z-index: 99;
+    border: none;
+    background: transparent;
+    .up-text {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1;
+      color: $background;
+      margin-right: 8px;
+    }
   }
 }
 
-.up {
-  display: none;
-  cursor: pointer;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: none;
-  background: transparent;
+.up,
+.up-text {
+  &:hover {
+    fill: $accent;
+    color: $accent !important;
+  }
+}
+
+.--pos {
+  margin-top: 40px;
+}
+
+.copyright {
+  margin-top: 40px;
+}
+
+.social-media {
+  margin-left: 68px;
 }

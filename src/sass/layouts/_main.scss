@@ -334,7 +334,7 @@
     .contacts-item {
       display: flex;
       justify-content: space-around;
-      align-items: center;
+      align-items: baseline;
       width: 100%;
 
       &__wrap {
@@ -466,6 +466,7 @@
 }
 
 .accordion-content {
+  display: none;
   color: $white;
   @include desktop {
     padding: 10px;

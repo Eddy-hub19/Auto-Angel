@@ -6,16 +6,15 @@
 }
 
 .primary {
-  /* primary */
   background: $primary;
-
   border: 1px solid $primary;
   border-radius: 7px;
-  color: $white;
+  color: $background;
   padding: 14px 72px;
-  &:hover {
-    background: #d14836;
-    border: 1px solid #d14836;
+  &:hover,
+  &:focus {
+    background: $accent;
+    border: 1px solid $accent;
     border-radius: 7px;
   }
 }
@@ -30,10 +29,11 @@
   border-radius: 7px;
   color: $primary;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: $white;
-    background: #d14836;
-    border: 1px solid #d14836;
+    background: $accent;
+    border: 1px solid $accent;
     border-radius: 7px;
   }
 }
@@ -46,7 +46,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  color: $primary;
+  color: $background;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -55,10 +55,11 @@
   gap: 8px;
   width: auto;
   height: 43px;
-  border: 1px solid $primary;
+  border: 1px solid $background;
   border-radius: 7px;
   background: transparent;
-  &:hover {
+  &:hover,
+  &:focus {
     background: $accent;
     border-radius: 7px;
     color: $background;
