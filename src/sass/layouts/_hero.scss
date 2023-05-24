@@ -1,17 +1,38 @@
 .hero {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 20px;
-  padding-top: 56px;
-  padding-bottom: 56px;
-  
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    padding-top: $padding-mobile;
+    padding-bottom: $padding-mobile;
+  }
+
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    border-bottom: 2px solid $background;
+    position: relative;
+    padding: 0;
+    padding-top: $padding;
+    padding-bottom: $padding;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 36%;
+      width: 2px;
+      height: 100%;
+      background: $background;
+    }
+  }
   @include desktop {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    border-top: 2px solid $background;
     border-bottom: 2px solid $background;
     position: relative;
     padding: 0;
@@ -81,7 +102,7 @@
 
   @include desktop {
     position: absolute;
-    top: 46%;
+    top: 45%;
     left: 63%;
     display: flex;
     flex-direction: row;

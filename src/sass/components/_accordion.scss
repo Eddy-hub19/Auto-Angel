@@ -2,6 +2,9 @@
   padding-top: $padding;
   padding-bottom: $padding;
   &__title {
+    @include mobile {
+      margin-bottom: 24px;
+    }
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;
@@ -15,23 +18,27 @@
 .accordion {
   background-color: transparent;
   cursor: pointer;
-  padding: 18px;
-  width: 100%;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
   border: none;
   text-align: left;
   outline: none;
-  transition: 0.4s;
-  padding: 40px 40px;
+  color: $background;
   border-width: 1px 0px;
   border-style: solid;
-  border-color: #505050;
-  font-family: "Unbounded";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1.5;
-
-  color: #e8e8e8;
+  border-color: $subtitle;
+  transition: 0.4s;
+  padding: 24px 0;
+  width: 100%;
+  @include desktop {
+    padding: 40px 40px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+  }
 
   &.active::after {
     content: "\2212" !important;
@@ -47,6 +54,7 @@
     font-weight: bold;
     float: right;
     margin-left: 5px;
+    transform: translate(50%, -50%);
   }
 }
 

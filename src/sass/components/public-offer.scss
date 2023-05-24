@@ -1,0 +1,42 @@
+.public-offer {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 1.5;
+
+  color: $background;
+
+  ul li {
+    list-style-type: auto;
+
+    &::marker {
+      font-size: 1.3em;
+      color: $background;
+    }
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__desc {
+    margin-bottom: 16px;
+  }
+
+  .public-offer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.public-offer-item {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &__desc {
+    margin-top: 40px;
+  }
+}

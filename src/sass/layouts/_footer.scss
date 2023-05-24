@@ -12,7 +12,10 @@
 }
 
 .logo-footer {
-  margin-right: 142px;
+  margin-bottom: 40px;
+  @include desktop {
+    margin-right: 142px;
+  }
 }
 
 .icon-logo-footer {
@@ -25,7 +28,14 @@
 .wrap-left {
   &__list {
     display: flex;
-    align-items: center;
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @include desktop {
+      display: flex;
+    }
   }
 }
 
@@ -45,6 +55,9 @@
 }
 
 .wrap-right {
+  margin-top: 56px;
+  margin-bottom: 112px;
+  display: flex;
   @include desktop {
     display: flex;
     margin-left: 103px;
@@ -65,6 +78,9 @@
 // right
 
 .wrap-right-list {
+  @include mobile {
+    width: 100%;
+  }
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -83,7 +99,8 @@
     font-size: 14px;
     line-height: 1.2;
     color: $background;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       color: $accent;
     }
   }
@@ -95,16 +112,21 @@
   position: relative;
 
   .up {
-    display: none;
-    position: absolute;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
     fill: $white;
     width: auto;
-    bottom: 100px;
-    right: 50%;
-    cursor: pointer;
     z-index: 99;
     border: none;
     background: transparent;
+    @include desktop {
+      display: none;
+      position: absolute;
+      bottom: 100px;
+      right: 50%;
+      cursor: pointer;
+    }
     .up-text {
       font-family: "Unbounded";
       font-style: normal;
@@ -130,9 +152,15 @@
 }
 
 .copyright {
-  margin-top: 40px;
+  display: none;
+  @include desktop {
+    margin-top: 40px;
+  }
 }
 
 .social-media {
-  margin-left: 68px;
+  display: none;
+  @include desktop {
+    margin-left: 68px;
+  }
 }

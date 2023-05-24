@@ -2,17 +2,18 @@
   width: 100%;
   height: auto;
 }
+.swiper3 {
+  overflow: hidden;
+}
 
-// .partial-slide {
-//   width: 100%; /* Ширина кусочка второго слайда */
-//   height: auto;
-//   margin-left: -90px;
-// }
+.wrap-slider {
+  overflow: hidden;
+}
 
 swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: $white;
   display: flex;
   justify-content: center;
   align-items: center;

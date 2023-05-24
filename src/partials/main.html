@@ -1,16 +1,17 @@
-<!-- #about">
+<!-- 
+#hero
+#about
 #our-mission
 #our-activity
+#result
 #donate
-#contacts-item">
 #bank-details
-#gratitude">
-#сontact-us
-#our-friends 
+#gratitude"
 #write-us
--->
+#our-friends-->
 
 <main class="main">
+
   <section id="hero" class="hero container">
     <div class="hero-wrap1">
       <h2 class="title hero__title">Благодійний фонд
@@ -47,12 +48,18 @@
         і не тільки. Ми цінуємо будь-яку допомогу, адже вся наша діяльність націлена лише на одне - якнайшвидше
         звільнення
         всієї України від російських окупантів.</p>
-
+      <div class="about-us__nav-btn">
+        <svg class="swiper-button-prev prev" width="30" height="30">
+          <use href="./images/icons.svg#icon-left"></use>
+        </svg>
+        <svg class="swiper-button-next next" width="30" height="30">
+          <use href="./images/icons.svg#icon-right"></use>
+        </svg>
+      </div>
     </div>
     <div class="wrap-slider">
       <!-- Slider main container -->
-      <div class="swiper" space-between="40" slides-per-view="auto" pagination="true" pagination-clickable="true"
-        autoplay="true">
+      <div class="swiper" space-between="20" slides-per-view="auto" pagination="true" pagination-clickable="true">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -66,14 +73,6 @@
       </div>
       <div class="about-us__container">
         <p class="about-us__subtitle">Name Name, директор Фонду</p>
-        <div class="about-us__nav-btn">
-          <svg class="swiper-button-prev prev" width="30px" height="30px">
-            <use href="./images/icons.svg#icon-right"></use>
-          </svg>
-          <svg class="swiper-button-next next" width="30px" height="30px">
-            <use href="./images/icons.svg#icon-left"></use>
-          </svg>
-        </div>
       </div>
     </div>
   </section>
@@ -85,14 +84,14 @@
         волонтерській діяльності ми в БФ Авто Ангел Львів добре навчилися вирішувати короткі адресні задачі. Звідси і
         наша місія - максимально швидко забезпечувати протреби бойових підрозділів усім необхідним.
       </p>
-      <!-- <div class="our-mission__nav-btn">
-        <svg class="swiper-button-prev" width="30px" height="30px" style="color: red">
-          <use href="./images/icons.svg#icon-right"></use>
-        </svg>
-        <svg class="swiper-button-next" width="30px" height="30px">
+      <div class="our-mission__nav-btn">
+        <svg class="swiper-button-prev" width="30" height="30">
           <use href="./images/icons.svg#icon-left"></use>
         </svg>
-      </div> -->
+        <svg class="swiper-button-next" width="30" height="30">
+          <use href="./images/icons.svg#icon-right"></use>
+        </svg>
+      </div>
     </div>
     <div class="wrap-slider">
       <!-- Slider main container -->
@@ -101,6 +100,12 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
+          <div class="swiper-slide" lazy="true">
+            <img src="./images/our-mission.jpeg" alt="#">
+          </div>
+          <div class="swiper-slide" lazy="true">
+            <img src="./images/our-mission.jpeg" alt="#">
+          </div>
           <div class="swiper-slide" lazy="true">
             <img src="./images/our-mission.jpeg" alt="#">
           </div>
@@ -219,133 +224,141 @@
     </ul>
   </section>
 
-  <!-- bank-details -->
-  <div id="bank" class="bank-details container">
-    <div class="bank-details-info">
-      <h2 class="bank-details__title">Для платежів по Україні </h2>
-      <div class="bank-details__accordion">
-        <div class="accordion-item">
-          <div class="accordion-toggle">&#8964;</div>
-          <div class="accordion-header">UAH</div>
-          <div class="accordion-content">Найменування отримувача:
-            IBAN:
-            Скопійовано
-            БО БФ АВТО АНГЕЛ ЛЬВІВ
-            UA803052990000026000011034648
-            Код одержувача:
-            Номерн картки:
-            44878259
-            4246001003466368
-            Банк:
-            Призначення платежу:
-            АТ КБ Приватбанк
-            Благодійний внесок для допомоги ЗСУ</div>
-        </div>
-      </div>
+  <div class="organization-details container">
+    <div class="organization-details__wrap">
+      <h2 class="organization-details__title">Реквізити організації</h2>
+      <span class="organization-details__span">Дивитись документи</span>
     </div>
-    <div class="bank-details-info">
-      <h2 class="bank-details__title">Для іноземних платежів</h2>
-      <div class="bank-details__accordion">
-        <div class="accordion-item">
-          <div class="accordion-toggle">&#8964;</div>
-          <div class="accordion-header">EUR</div>
-          <div class="accordion-content">Company Name:
-            Correspondent bank:
-            CO Auto Angel Lviv CF
-            Commerzbank AG, Frankfurt am Main, Germany
-            IBAN:
-            SWIFT Code of the correspondent bank:
-            UA803052990000026000011034648
-            COBADEFF
-            Name of the bank:
-            Account in the correspondent bank:
-            JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
-            400886700401
-            Reason of payment:
-            Bank SWIFT Code:
-            Charitable contribution to help the AFU
-            PBANUA2X
-            or private transfer to Wise account
-            Account holder:
-            IBAN:
-            Andrii Ohinok
-            BE27 9671 6561 8873
-            BIC:
-            Bank’s address:
-            TRWIBEB1XXX
-            Avenue Louise 54, Room S52, Brussels 1050,
-            Belgium</div>
-        </div>
-      </div>
-    </div>
-    <div class="bank-details-info">
-      <div class="bank-details__accordion">
-        <div class="accordion-item">
-          <div class="accordion-toggle">&#8964;</div>
-          <div class="accordion-header">USD</div>
-          <div class="accordion-content">
-            Company Name:
-            Correspondent bank:
-            CO Auto Angel Lviv CF
-            JP Morgan Chase Bank, New York
-            IBAN:
-            SWIFT Code of the correspondent bank:
-            UA233052990000026003001037588
-            CHASUS33
-            Name of the bank:
-            Account in the correspondent bank:
-            JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
-            001-1-000080
-            Reason of payment:
-            Bank SWIFT Code:
-            Charitable contribution to help the AFU
-            PBANUA2X
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="bank-details-info">
-      <div class="bank-details__accordion">
-        <div class="accordion-item">
-          <div class="accordion-toggle">&#8964;</div>
-          <div class="accordion-header">GBP</div>
-          <div class="accordion-content">
-            Company Name:
-            SWIFT Code of the correspondent bank:
-            CO Auto Angel Lviv CF
-            CHASGB2L
-            IBAN:
-            Account in the correspondent bank:
-            UA363052990000026003001030370
-            24549501
-            Name of the bank:
-            Sort code:
-            JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
-            609242
-            Reason of payment:
-            Bank SWIFT Code:
-            Charitable contribution to help the AFU
-            PBANUA2X
-            Correspondent bank:
-            J P Morgan Chase Bank, Bournemouth, UK
-            or private transfer to Wise account
-            Account holder:
-            IBAN:
-            Andrii Ohinok
-            GB03 TRWI 2314 7047 2542 79
-            Sort code:
-            Bank’s address:
-            23-14-70
-            56 Shoreditch High Street, London E1 6JJ, United Kingdom
-            Account number:
-            47254279
-          </div>
-        </div>
-      </div>
-    </div>
+    <p class="organization-details__desc">Тут ви можете знайти інструкції щодо банківського переказу. Клікніть на
+      рядок, щоб скопіювати його.</p>
   </div>
+  <section id="bank" class="bank-details">
+    <div class="bank-details__wrap container">
+      <div class="bank-details-info">
+        <h2 class="bank-details__title">Для платежів по Україні</h2>
+        <div class="bank-details__accordion">
+          <div class="accordion-item">
+            <div class="accordion-toggle">&#8964;</div>
+            <div class="accordion-header">UAH</div>
+            <div class="accordion-content">Найменування отримувача:
+              IBAN:
+              Скопійовано
+              БО БФ АВТО АНГЕЛ ЛЬВІВ
+              UA803052990000026000011034648
+              Код одержувача:
+              Номерн картки:
+              44878259
+              4246001003466368
+              Банк:
+              Призначення платежу:
+              АТ КБ Приватбанк
+              Благодійний внесок для допомоги ЗСУ</div>
+          </div>
+        </div>
+      </div>
+      <div class="bank-details-info">
+        <h2 class="bank-details__title">Для іноземних платежів</h2>
+        <div class="bank-details__accordion">
+          <div class="accordion-item">
+            <div class="accordion-toggle">&#8964;</div>
+            <div class="accordion-header">EUR</div>
+            <div class="accordion-content">Company Name:
+              Correspondent bank:
+              CO Auto Angel Lviv CF
+              Commerzbank AG, Frankfurt am Main, Germany
+              IBAN:
+              SWIFT Code of the correspondent bank:
+              UA803052990000026000011034648
+              COBADEFF
+              Name of the bank:
+              Account in the correspondent bank:
+              JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
+              400886700401
+              Reason of payment:
+              Bank SWIFT Code:
+              Charitable contribution to help the AFU
+              PBANUA2X
+              or private transfer to Wise account
+              Account holder:
+              IBAN:
+              Andrii Ohinok
+              BE27 9671 6561 8873
+              BIC:
+              Bank’s address:
+              TRWIBEB1XXX
+              Avenue Louise 54, Room S52, Brussels 1050,
+              Belgium</div>
+          </div>
+        </div>
+      </div>
+      <div class="bank-details-info">
+        <div class="bank-details__accordion">
+          <div class="accordion-item">
+            <div class="accordion-toggle">&#8964;</div>
+            <div class="accordion-header">USD</div>
+            <div class="accordion-content">
+              Company Name:
+              Correspondent bank:
+              CO Auto Angel Lviv CF
+              JP Morgan Chase Bank, New York
+              IBAN:
+              SWIFT Code of the correspondent bank:
+              UA233052990000026003001037588
+              CHASUS33
+              Name of the bank:
+              Account in the correspondent bank:
+              JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
+              001-1-000080
+              Reason of payment:
+              Bank SWIFT Code:
+              Charitable contribution to help the AFU
+              PBANUA2X
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bank-details-info">
+        <div class="bank-details__accordion">
+          <div class="accordion-item">
+            <div class="accordion-toggle">&#8964;</div>
+            <div class="accordion-header">GBP</div>
+            <div class="accordion-content">
+              Company Name:
+              SWIFT Code of the correspondent bank:
+              CO Auto Angel Lviv CF
+              CHASGB2L
+              IBAN:
+              Account in the correspondent bank:
+              UA363052990000026003001030370
+              24549501
+              Name of the bank:
+              Sort code:
+              JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
+              609242
+              Reason of payment:
+              Bank SWIFT Code:
+              Charitable contribution to help the AFU
+              PBANUA2X
+              Correspondent bank:
+              J P Morgan Chase Bank, Bournemouth, UK
+              or private transfer to Wise account
+              Account holder:
+              IBAN:
+              Andrii Ohinok
+              GB03 TRWI 2314 7047 2542 79
+              Sort code:
+              Bank’s address:
+              23-14-70
+              56 Shoreditch High Street, London E1 6JJ, United Kingdom
+              Account number:
+              47254279
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- gratitude -->
   <section id="gratitude" class="gratitude">
     <ul class="gratitude-list container">
       <li class="gratitude-list__item">
@@ -366,17 +379,67 @@
   </section>
 
   <!-- write-us -->
-  <!-- <section class="write-us">
-    <h2>Напишіть нам</h2>
-  </section> -->
+  <section class="write-us">
+    <h2 class="write-us__title">Напишіть нам</h2>
+    <form action="form" class="form">
+      <div class="form-wrap">
+        <div class="form-wrap-name">
+          <label class="form-wrap-name__label-name" for="name">Ім’я*</label>
+          <input class="form-wrap-name__field-name" id="name" type="text" name="name" placeholder="Як до вас звертатись">
+        </div>
+        <div class="form-wrap-number">
+          <label for="GET-name">Номер телефону*</label>
+          <input class="form-wrap-number__field-number" id="GET-name" type="text" name="name" placeholder="+380">
+        </div>
+      </div>
+      <div>
+        <label for="GET-name">Тема*</label>
+        <select id="GET-name" type="text" name="name" placeholder="Бажаєте долучитись як волонтер">
+          <option value="">Isdfsdfsdf</option>
+          <option value="">Isdfsdfsdf</option>
+          <option value="">Isdfsdfsdf</option>
+          <option value="">Isdfsdfsdf</option>
+        </select>
+      </div>
+      <div>
+        <label for="GET-name">Ваше повідомлення*</label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Тут напишіть ваше звернення"></textarea>
+      </div>
+
+      <div>
+        <fieldset>
+          <legend>Оберіть бажаний месенджер*</legend>
+
+          <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked>
+            <label for="huey">Telegram</label>
+          </div>
+
+          <div>
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Viber</label>
+          </div>
+
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Name</label>
+          </div>
+          <div>
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Name</label>
+          </div>
+        </fieldset>
+
+      </div>
+
+      <button type="submit" class="btn other">Відправити повідомлення</button>
+    </form>
+  </section>
 
   <!-- our-friends -->
-  <section id="our-friends" class="our-friends container">
+  <!-- <section id="our-friends" class="our-friends container">
     <div class="wrap-slider">
-      <!-- Slider main container -->
-      <div class="swiper" space-between="40" slides-per-view="auto" pagination="true" pagination-clickable="true"
-        autoplay="true">
-        <!-- Additional required wrapper -->
+      <div class="swiper3" space-between="20" slides-per-view="auto" pagination="true" pagination-clickable="true">
         <ul class="swiper-wrapper our-friends-list">
           <li class="swiper-slide our-friends-list__item">
             <h2 class="our-friends-list__title">Наші друзі</h2>
@@ -396,7 +459,6 @@
           <li class="swiper-slide our-friends-list__item">
             <img src="./images/supportukraine.png" alt="#">
           </li>
-
           <li class="swiper-slide our-friends-list__item">
             <img src="./images/our-friends/our-friends6.jpg" alt="TK_Standart">
           </li>
@@ -421,7 +483,7 @@
       </div>
     </div>
 
-  </section>
+  </section> -->
 
   <!-- popular-questions -->
   <section id="popular-questions" class="popular-questions container">
@@ -440,5 +502,19 @@
     </div>
 
   </section>
+
+
+  <!-- <h1>Clipboard.js Demo</h1> -->
+  <!-- Target -->
+  <!-- <div id="foo" value="Cool beans!">
+    sdfsdfsdf
+  </div> -->
+
+  <!-- Trigger -->
+  <!-- <button class="btn" data-clipboard-target="#foo">
+    Copy
+  </button>
+  <p>&nbsp;<span class="copied">Copied!</span></p>
+  </div> -->
 
 </main>

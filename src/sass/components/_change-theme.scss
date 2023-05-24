@@ -9,12 +9,11 @@ $bgColor--day: $primary;
 $toggleBtn-bgColor--day: $bgColor--day;
 
 body {
-  transition: all 0.3s ease-in-out;
   color: $whiteclr;
 }
 .light {
   background: $background !important;
-  color: $lightt;
+  color: $lightt !important;
 
   .header {
     background: $background;

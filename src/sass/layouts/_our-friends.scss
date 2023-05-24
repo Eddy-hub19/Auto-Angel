@@ -26,14 +26,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: calc(100% / 3);
+      width: calc(100% / 2);
+      height: 300px !important;
       padding: 108px 115px;
       border: 2px solid $background;
     }
   }
 
   &__title {
-    width: 262px;
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;

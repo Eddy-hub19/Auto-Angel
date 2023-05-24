@@ -40,6 +40,9 @@
       font-size: 14px;
       line-height: 1.21;
       color: $background;
+      &:hover {
+        color: $accent;
+      }
       &:not(:last-child) {
         margin-right: 23px;
       }
