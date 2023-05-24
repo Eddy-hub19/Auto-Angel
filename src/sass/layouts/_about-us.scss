@@ -1,0 +1,102 @@
+// about-us
+
+.about-us {
+  display: block;
+  position: relative;
+
+  @include desktop {
+    display: flex;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    border-bottom: 2px solid $background;
+    &__wrap {
+      position: relative;
+      padding-right: 106px;
+    }
+  }
+  &__desc {
+    @include mobile {
+      margin-bottom: 16px;
+    }
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 160%;
+    color: $background;
+    @include desktop {
+      width: 529px;
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.57;
+      color: $background;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__wrap {
+    @include mobile {
+      margin-bottom: 36px;
+    }
+  }
+
+  &__title {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    color: $background;
+    margin-bottom: 16px;
+    @include desktop {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.1;
+      display: flex;
+      align-items: center;
+      color: $background;
+      margin-bottom: 32px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $background;
+    margin-top: 36px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__nav-btn {
+    position: absolute;
+    top: 20px;
+    right: 15%;
+
+    @include desktop {
+      width: 14%;
+      z-index: 999;
+      top: 80%;
+      left: 68%;
+      right: 460px;
+      bottom: 0;
+    }
+  }
+}
+
+.prev,
+.next {
+  width: 24px;
+  height: 24px;
+}

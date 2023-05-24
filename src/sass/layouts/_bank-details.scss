@@ -1,0 +1,138 @@
+// band-details
+
+.organization-details {
+  padding-top: 56px;
+  padding-bottom: 40px;
+  @include desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 108px;
+    padding-bottom: 56px;
+  }
+
+  &__wrap {
+    @include desktop {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__title {
+    @include mobile {
+      margin-bottom: 16px;
+    }
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    color: $background;
+  }
+
+  &__span {
+    @include mobile {
+    }
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    color: $background;
+    margin-left: auto;
+  }
+
+  &__desc {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $background;
+    margin-top: 16px;
+
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+}
+
+.bank-details {
+  padding-top: $padding;
+  padding-bottom: $padding;
+  background: $background2;
+
+  &__title {
+    color: $primary;
+    margin-bottom: 32px;
+  }
+}
+
+.accordion-item {
+  border-bottom: 1px solid $background;
+}
+
+.accordion-toggle {
+  margin-bottom: 10px;
+  font-weight: bold;
+  float: right;
+  color: $primary;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all 200ms ease;
+}
+
+.accordion-item.active {
+  .accordion-toggle {
+    transform: rotate(180deg);
+    transition: all 200ms ease;
+  }
+}
+
+.accordion-header {
+  color: $accent;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  color: $primary;
+  word-wrap: break-word;
+  margin-bottom: 56px;
+  @include desktop {
+    padding: 10px;
+    display: none;
+    color: $primary;
+    width: 500px;
+  }
+}
+
+.content-item {
+  &__wrap {
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__desc {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $subtitle;
+    margin-top: 24px;
+  }
+
+  &__info {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $primary;
+    margin-top: 10px;
+  }
+}

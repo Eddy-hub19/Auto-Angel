@@ -3,16 +3,26 @@
 @import "./base/common";
 @import "./base/reset";
 @import "./utils/reviews";
+
 @import "./layouts/container";
 @import "./layouts/header";
 @import "./layouts/hero";
 @import "./layouts/main";
-@import "./layouts/footer";
+@import "./layouts/about-us";
+@import "./layouts/our-acttivity";
+@import "./layouts/our-mission";
+@import "./layouts/result";
+@import "./layouts/contacts";
+@import "./layouts/donate";
+@import "./layouts/bank-details";
+@import "./layouts/gratitude";
+@import "./layouts/write-us";
 @import "./layouts/our-friends";
+@import "./layouts/footer";
+
 @import "./components/slides";
 @import "./components/hamburger";
 @import "./components/change-theme";
 @import "./components/accordion";
 @import "./components/clipboard";
 @import "./components/public-offer";
-

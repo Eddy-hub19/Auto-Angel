@@ -7,6 +7,7 @@
   <title>Page title</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js"></script> -->
   <link rel="stylesheet" href="./sass/index.scss" />
 
   <script type="module" src="./index.js"></script>
@@ -18,17 +19,21 @@
   <include src="./partials/main.html"></include>
   <include src="./partials/footer.html"></include>
 
+  <!-- <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+    data-action='submit'>Submit</button> -->
+
   <script src="./js/hamburger.js"></script>
   <script src="./js/changeTheme.js"></script>
   <script src="./js/scrollToTop.js"></script>
   <script src="./js/accordion.js"></script>
   <script src="./js/clipboard.js"></script>
+  <script src="./js/select.js"></script>
 
-  
-  <!-- <script src="../src/clipboard.js-master/dist/clipboard.min.js"></script>
-  <script src="../src/jquery-3.7.0.min.js"></script> -->
 
-  <!-- <script>
+  <script src="../src/js/clipboard.js-master/dist/clipboard.min.js"></script>
+  <script src="../src/js/jquery-3.7.0.min.js"></script>
+
+  <script>
     var clip = new ClipboardJS('.btn');
 
     clip.on('success', function (e) {
@@ -36,6 +41,12 @@
       $('.copied').fadeOut(1000);
     });
 
+  </script>
+
+  <!-- <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
   </script> -->
 </body>
 

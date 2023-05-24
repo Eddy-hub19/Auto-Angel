@@ -49,12 +49,15 @@
   }
 
   &:after {
+    @include mobile {
+      transform: translate(-23%, -50%);
+      font-size: 28px;
+    }
     content: "\002B";
     color: $background;
     font-weight: bold;
     float: right;
     margin-left: 5px;
-    transform: translate(50%, -50%);
   }
 }
 

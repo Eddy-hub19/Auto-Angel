@@ -1,0 +1,59 @@
+// gratitude
+
+.gratitude {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+  background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
+  position: relative;
+  @include desktop {
+    padding-top: $padding;
+    padding-bottom: $padding;
+    background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
+    position: relative;
+  }
+}
+
+.gratitude-list {
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    @include desktop {
+      width: 529px;
+    }
+
+    &__title {
+      @include mobile {
+        margin-bottom: 16px;
+      }
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 1.1;
+      color: $primary;
+    }
+  }
+
+  &__desc {
+    /* body2 */
+
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.5;
+    color: $primary;
+    margin-bottom: 32px;
+
+    @include desktop {
+      font-family: "Inter";
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 46px;
+    }
+  }
+}

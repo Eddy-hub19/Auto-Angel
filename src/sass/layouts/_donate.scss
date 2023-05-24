@@ -1,0 +1,54 @@
+// donate
+
+.donate {
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
+  border-bottom: 2px solid $background;
+  @include desktop {
+    display: flex;
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+}
+
+.donate-wrap {
+  @include mobile {
+    margin-bottom: 56px;
+  }
+  width: 324px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 9px;
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+    width: 394px;
+    padding: 32px 0;
+  }
+}
+
+.dontate-list {
+  @include mobile {
+    border-bottom: 2px solid $white;
+    margin-bottom: 56px;
+  }
+
+  @include desktop {
+    border-right: 2px solid $white;
+  }
+  &__title {
+    @include mobile {
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    color: $background;
+  }
+}

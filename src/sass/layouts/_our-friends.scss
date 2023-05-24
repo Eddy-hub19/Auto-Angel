@@ -4,8 +4,9 @@
 }
 
 .our-friends-list {
-  display: block;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 300px;
   @include tablet {
     display: flex;
     flex-wrap: wrap;
@@ -16,9 +17,10 @@
   }
 
   &__item {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
     @include tablet {
       width: calc(100% / 2);
     }

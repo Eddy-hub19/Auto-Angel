@@ -48,14 +48,14 @@
         і не тільки. Ми цінуємо будь-яку допомогу, адже вся наша діяльність націлена лише на одне - якнайшвидше
         звільнення
         всієї України від російських окупантів.</p>
-      <div class="about-us__nav-btn">
+      <!-- <div class="about-us__nav-btn">
         <svg class="swiper-button-prev prev" width="30" height="30">
           <use href="./images/icons.svg#icon-left"></use>
         </svg>
         <svg class="swiper-button-next next" width="30" height="30">
           <use href="./images/icons.svg#icon-right"></use>
         </svg>
-      </div>
+      </div> -->
     </div>
     <div class="wrap-slider">
       <!-- Slider main container -->
@@ -84,14 +84,14 @@
         волонтерській діяльності ми в БФ Авто Ангел Львів добре навчилися вирішувати короткі адресні задачі. Звідси і
         наша місія - максимально швидко забезпечувати протреби бойових підрозділів усім необхідним.
       </p>
-      <div class="our-mission__nav-btn">
+      <!-- <div class="our-mission__nav-btn">
         <svg class="swiper-button-prev" width="30" height="30">
           <use href="./images/icons.svg#icon-left"></use>
         </svg>
         <svg class="swiper-button-next" width="30" height="30">
           <use href="./images/icons.svg#icon-right"></use>
         </svg>
-      </div>
+      </div> -->
     </div>
     <div class="wrap-slider">
       <!-- Slider main container -->
@@ -224,14 +224,15 @@
     </ul>
   </section>
 
-  <div class="organization-details container">
+  <section class="organization-details container">
     <div class="organization-details__wrap">
       <h2 class="organization-details__title">Реквізити організації</h2>
       <span class="organization-details__span">Дивитись документи</span>
     </div>
     <p class="organization-details__desc">Тут ви можете знайти інструкції щодо банківського переказу. Клікніть на
       рядок, щоб скопіювати його.</p>
-  </div>
+  </section>
+
   <section id="bank" class="bank-details">
     <div class="bank-details__wrap container">
       <div class="bank-details-info">
@@ -404,34 +405,47 @@
   </section>
 
   <!-- write-us -->
-  <section class="write-us">
+  <section class="write-us container">
     <h2 class="write-us__title">Напишіть нам</h2>
     <form action="form" class="form">
       <div class="form-wrap">
         <div class="form-wrap-name">
           <label class="form-wrap-name__label-name" for="name">Ім’я*</label>
-          <input class="form-wrap-name__field-name" id="name" type="text" name="name"
-            placeholder="Як до вас звертатись">
+          <input class="form-wrap-name__field-name" id="name" type="text" name="name" placeholder="Як до вас звертатись"
+            required>
         </div>
         <div class="form-wrap-number">
           <label for="GET-name">Номер телефону*</label>
-          <input class="form-wrap-number__field-number" id="GET-name" type="text" name="name" placeholder="+380">
+          <input class="form-wrap-number__field-number" id="GET-name" type="text" name="name" placeholder="+380"
+            required>
         </div>
       </div>
       <div>
         <label for="GET-name">Тема*</label>
-        <select id="GET-name" type="text" name="name" placeholder="Бажаєте долучитись як волонтер">
-          <option value="">Isdfsdfsdf</option>
-          <option value="">Isdfsdfsdf</option>
-          <option value="">Isdfsdfsdf</option>
-          <option value="">Isdfsdfsdf</option>
-        </select>
+        <div class="cont_select_center">
+          <div class="select_mate" data-mate-select="active">
+            <select name="" onchange="" onclick="return false;" id="" placeholder="Бажаєте долучитись як волонтер">
+              <option value="">Бажаєте долучитись як волонтер</option>
+              <option value="1">w52345123412</option>
+              <option value="2">Dropdown item</option>
+              <option value="3">Dropdown item</option>
+            </select>
+            <p class="selecionado_opcion" onclick="open_select(this)"></p><span onclick="open_select(this)"
+              class="icon_select_mate"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+                <path d="M0-.75h24v24H0z" fill="none" />
+              </svg></span>
+            <div class="cont_list_select_mate">
+              <ul class="cont_select_int"> </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div>
         <label for="GET-name">Ваше повідомлення*</label>
         <textarea name="" id="" cols="30" rows="10" placeholder="Тут напишіть ваше звернення"></textarea>
       </div>
-
       <div>
         <fieldset>
           <legend>Оберіть бажаний месенджер*</legend>
@@ -458,12 +472,13 @@
 
       </div>
 
-      <button type="submit" class="btn other">Відправити повідомлення</button>
+      <button type="submit" class="btn other submit">Відправити повідомлення</button>
     </form>
+
   </section>
 
   <!-- our-friends -->
-  <!-- <section id="our-friends" class="our-friends container">
+  <section id="our-friends" class="our-friends container">
     <div class="wrap-slider">
       <div class="swiper3" space-between="20" slides-per-view="auto" pagination="true" pagination-clickable="true">
         <ul class="swiper-wrapper our-friends-list">
@@ -497,19 +512,9 @@
           </li>
         </ul>
       </div>
-      <div class="about-us__container">
-        <div class="about-us__nav-btn" style="display: none;">
-          <svg class="swiper-button-prev prev" width="30px" height="30px">
-            <use href="./images/icons.svg#icon-right"></use>
-          </svg>
-          <svg class="swiper-button-next next" width="30px" height="30px">
-            <use href="./images/icons.svg#icon-left"></use>
-          </svg>
-        </div>
-      </div>
     </div>
 
-  </section> -->
+  </section>
 
   <!-- popular-questions -->
   <section id="popular-questions" class="popular-questions container">
