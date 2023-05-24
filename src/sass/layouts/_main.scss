@@ -531,6 +531,34 @@
   }
 }
 
+.content-item {
+  &__wrap {
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  &__desc {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    color: $subtitle;
+    margin-top: 24px;
+  }
+
+  &__info {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $primary;
+    margin-top: 10px;
+  }
+}
+
 .line {
   @include mobile {
     display: none;
