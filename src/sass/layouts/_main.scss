@@ -300,7 +300,11 @@
 }
 
 .donate-wrap {
+  width: 324px;
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 9px;
   @include desktop {
     display: flex;
     align-items: flex-start;
@@ -312,7 +316,7 @@
 }
 
 .dontate-list {
-  border-right: 2px solid white;
+  border-right: 2px solid $white;
   &__title {
     font-family: "Unbounded";
     font-style: normal;
@@ -523,6 +527,7 @@
 .accordion-content {
   display: none;
   color: $primary;
+  word-wrap: break-word;
   @include desktop {
     padding: 10px;
     display: none;
