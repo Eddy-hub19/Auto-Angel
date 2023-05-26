@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function() {
       accordionItem.classList.toggle('active');
       
       let accordionContent = accordionItem.querySelector('.accordion-content');
-      if (accordionContent.style.display === 'block') {
+      if (accordionContent.style.display === 'flex') {
         accordionContent.style.display = 'none';
       } else {
-        accordionContent.style.display = 'block';
+        accordionContent.style.display = 'flex';
       }
     });
   });

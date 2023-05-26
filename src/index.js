@@ -37,28 +37,6 @@ const swiper3 = new Swiper('.swiper3', {
   autoHeight: true,
   slidesPerView: 3,
 
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 20,
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 30,
-  //   },
-  //   // when window width is >= 640px
-  //   640: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 40,
-  //   },
-  //   900: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 40,
-  //   },
-  // },
-
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
@@ -72,11 +50,9 @@ const swiper3 = new Swiper('.swiper3', {
   breakpoints: {
     375: {
       slidesPerView: 1,
-      // spaceBetween: 10,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 1,
     },
     1440: {
       slidesPerView: 3,

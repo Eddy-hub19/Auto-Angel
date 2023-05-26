@@ -67,6 +67,10 @@
     color: $primary;
     margin-bottom: 32px;
   }
+
+  // &__accordion {
+  //   padding-right: 60px;
+  // }
 }
 
 .accordion-item {
@@ -94,28 +98,38 @@
   color: $accent;
   padding: 10px;
   cursor: pointer;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $accent;
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
 }
 
 .accordion-content {
+  flex-direction: column;
   display: none;
   color: $primary;
   word-wrap: break-word;
   margin-bottom: 56px;
   @include desktop {
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
     display: none;
     color: $primary;
-    width: 500px;
   }
 }
 
 .content-item {
-  &__wrap {
-    @include desktop {
-      display: flex;
-    }
-  }
-
+  position: relative;
   &__desc {
     font-family: "Unbounded";
     font-style: normal;
@@ -134,5 +148,19 @@
     line-height: 1.5;
     color: $primary;
     margin-top: 10px;
+    &:hover {
+      color: $accent;
+      cursor: pointer;
+    }
+  }
+}
+
+.--max-width {
+  max-width: 660px;
+}
+
+.content {
+  @include desktop {
+    padding-right: 60px;
   }
 }

@@ -29,6 +29,9 @@
   @include mobile {
     display: none;
   }
+  @include tablet {
+    display: none;
+  }
 
   @include desktop {
     margin-left: 48px;
@@ -58,6 +61,31 @@
   margin-left: auto;
   margin-right: 30px;
   @include mobile {
+    display: flex;
+    &__item {
+      display: flex;
+      align-items: center;
+    }
+    &__link {
+      color: $white;
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.21;
+      // color: #a7a7a7; - active
+      color: $background;
+      margin-right: 10px;
+    }
+    .icon-ua,
+    .icon-en {
+      width: 18px;
+      height: 17px;
+      border-radius: 40px;
+      margin-right: 10px;
+    }
+  }
+  @include tablet {
     display: flex;
     &__item {
       display: flex;
@@ -125,6 +153,9 @@
 
 .header-info {
   @include mobile {
+    display: none;
+  }
+  @include tablet {
     display: none;
   }
   @include desktop {

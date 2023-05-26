@@ -1,10 +1,45 @@
-.copied {
+.wrap-copy {
+  padding-top: 300px;
+  padding-bottom: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(139, 189, 189);
   color: white;
-  background: black;
-  padding: 20px 25px;
+}
+
+.text-copy {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2em;
+  color: $background;
+  cursor: pointer;
+  &:active {
+    color: rgb(213, 206, 206);
+  }
+}
+
+.copied {
+  position: absolute;
+  top: 34px;
+  right: -130px;
+  padding: 6px 10px;
+  width: auto;
+  background: $subtitle;
+  border-radius: 10px;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+  color: $background;
   display: none;
 }
 
-.details {
-  font-size: 0.5em;
+.btn-copy {
+  width: auto;
+  padding: 10px 25px;
+  background: transparent;
 }

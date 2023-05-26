@@ -5,6 +5,15 @@
   padding-bottom: $padding-mobile;
   background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
   position: relative;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: $padding;
+    padding-bottom: $padding;
+    background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
+    position: relative;
+  }
   @include desktop {
     padding-top: $padding;
     padding-bottom: $padding;
@@ -19,13 +28,27 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__item {
     @include desktop {
+      width: 529px;
+    }
+    @include tablet {
       width: 529px;
     }
 
     &__title {
       @include mobile {
+        margin-bottom: 16px;
+      }
+      @include tablet {
         margin-bottom: 16px;
       }
       font-family: "Unbounded";

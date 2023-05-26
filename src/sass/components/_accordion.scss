@@ -62,7 +62,7 @@
 }
 
 .panel {
-  padding: 0 24px;
+  padding: 16px 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -73,14 +73,20 @@
   line-height: 1.5;
   color: $background;
 
+  @include desktop {
+    padding: 0 24px;
+  }
+
   &__desc {
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 1.6;
-    padding: 24px 16px;
-
+    padding: 16px 0;
     color: $background;
+    @include desktop {
+      padding: 24px 16px;
+    }
   }
 }

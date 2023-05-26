@@ -233,8 +233,9 @@
       рядок, щоб скопіювати його.</p>
   </section>
 
-  <section id="bank" class="bank-details">
-    <div class="bank-details__wrap container">
+  <section id="bank" class="bank-details container">
+
+    <div class="bank-details__wrap">
       <div class="bank-details-info">
         <h2 class="bank-details__title">Для платежів по Україні</h2>
         <div class="bank-details__accordion">
@@ -242,147 +243,272 @@
             <div class="accordion-toggle">&#8964;</div>
             <div class="accordion-header">UAH</div>
             <ul class="accordion-content">
-              <li class="content-item">
-                <div class="content-item__wrap">
+              <ul class="content">
+                <li class="content-item">
                   <p class="content-item__desc">Найменування отримувача:</p>
-                  <h5 class="content-item__info">БО БФ АВТО АНГЕЛ ЛЬВІВ</h5>
-                </div>
-              </li>
-              <li class="content-item">
-                <div class="content-item__wrap">
-                  <p class="content-item__desc">Код одержувача:</p>
-                  <h5 class="content-item__info">44878259</h5>
-                </div>
-              </li>
-              <li class="content-item">
-                <div class="content-item__wrap">
-                  <p class="content-item__desc">Банк:</p>
-                  <h5 class="content-item__info">АТ КБ Приватбанк</h5>
-                </div>
-              </li>
-              <li class="content-item">
-                <div class="content-item__wrap">
-                  <p class="content-item__desc">IBAN:</p>
-                  <h5 class="content-item__info">UA803052990000026000011034648</h5>
-                </div>
-              </li>
-              <li class="content-item">
-                <div class="content-item__wrap">
-                  <p class="content-item__desc">Номер картки:</p>
-                  <h5 class="content-item__info">4246001003466368 </h5>
-                </div>
-              </li>
-              <li class="content-item">
-                <div class="content-item__wrap">
-                  <p class="content-item__desc">Призначення платежу:</p>
-                  <h5 class="content-item__info">Благодійний внесок для допомоги ЗСУ</h5>
-                </div>
-              </li>
+                  <div style="display: flex; align-items: baseline;">
+                    <h5 class="content-item__info">БО БФ АВТО АНГЕЛ ЛЬВІВ</h5>
+                    <span class="content-item__icon-copy">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </span>
+                    <span class="copied">&nbsp; Скопійовано!</span>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Код одержувача:</p>
+                    <h5 class="content-item__info">44878259</h5>
+                    <span class="copied">&nbsp; Скопійовано!</span>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Банк:</p>
+                    <h5 class="content-item__info">АТ КБ Приватбанк</h5>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">IBAN:</p>
+                    <h5 class="content-item__info">UA803052990000026000011034648</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Номер картки:</p>
+                    <h5 class="content-item__info">4246001003466368 </h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Призначення платежу:</p>
+                    <h5 class="content-item__info">Благодійний внесок для допомоги ЗСУ</h5>
+                  </div>
+                </li>
+              </ul>
             </ul>
           </div>
         </div>
       </div>
+
       <div class="bank-details-info">
         <h2 class="bank-details__title">Для іноземних платежів</h2>
         <div class="bank-details__accordion">
           <div class="accordion-item">
             <div class="accordion-toggle">&#8964;</div>
             <div class="accordion-header">EUR</div>
-            <div class="accordion-content">Company Name:
-              Correspondent bank:
-              CO Auto Angel Lviv CF
-              Commerzbank AG, Frankfurt am Main, Germany
-              IBAN:
-              SWIFT Code of the correspondent bank:
-              UA803052990000026000011034648
-              COBADEFF
-              Name of the bank:
-              Account in the correspondent bank:
-              JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
-              400886700401
-              Reason of payment:
-              Bank SWIFT Code:
-              Charitable contribution to help the AFU
-              PBANUA2X
-              or private transfer to Wise account
-              Account holder:
-              IBAN:
-              Andrii Ohinok
-              BE27 9671 6561 8873
-              BIC:
-              Bank’s address:
-              TRWIBEB1XXX
-              Avenue Louise 54, Room S52, Brussels 1050,
-              Belgium</div>
+            <div class="accordion-content">
+              <ul class="content">
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Company Name:</p>
+                    <h5 class="content-item__info">CO Auto Angel Lviv CF</h5>
+                    <span style="width: 10px; height: 10px;" class="content-item__icon-copy">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">IBAN::</p>
+                    <h5 class="content-item__info">UA803052990000026000011034648</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap --max-width">
+                    <p class="content-item__desc">Name of the bank:</p>
+                    <h5 class="content-item__info">JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001,
+                      UKRAINE</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Bank SWIFT Code:</p>
+                    <h5 class="content-item__info">PBANUA2X</h5>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Correspondent bank:</p>
+                    <h5 class="content-item__info">Commerzbank AG, Frankfurt am Main, Germany</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">SWIFT Code of the correspondent bank:</p>
+                    <h5 class="content-item__info">COBADEFF</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Account in the correspondent bank:</p>
+                    <h5 class="content-item__info">400886700401</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Reason of payment:</p>
+                    <h5 class="content-item__info">Charitable contribution to help the AFU</h5>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="bank-details-info">
         <div class="bank-details__accordion">
           <div class="accordion-item">
             <div class="accordion-toggle">&#8964;</div>
             <div class="accordion-header">USD</div>
             <div class="accordion-content">
-              Company Name:
-              Correspondent bank:
-              CO Auto Angel Lviv CF
-              JP Morgan Chase Bank, New York
-              IBAN:
-              SWIFT Code of the correspondent bank:
-              UA233052990000026003001037588
-              CHASUS33
-              Name of the bank:
-              Account in the correspondent bank:
-              JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
-              001-1-000080
-              Reason of payment:
-              Bank SWIFT Code:
-              Charitable contribution to help the AFU
-              PBANUA2X
+              <ul class="content">
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Company Name:</p>
+                    <h5 class="content-item__info">CO Auto Angel Lviv CF</h5>
+                    <span style="width: 10px; height: 10px;" class="content-item__icon-copy">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">IBAN:</p>
+                    <h5 class="content-item__info">UA233052990000026003001037588</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap --max-width">
+                    <p class="content-item__desc">Name of the bank:</p>
+                    <h5 class="content-item__info">JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Bank SWIFT Code:</p>
+                    <h5 class="content-item__info">PBANUA2X</h5>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Correspondent bank:</p>
+                    <h5 class="content-item__info">JP Morgan Chase Bank, New York</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">SWIFT Code of the correspondent bank:</p>
+                    <h5 class="content-item__info">CHASUS33</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Account in the correspondent bank:</p>
+                    <h5 class="content-item__info">001-1-000080</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Reason of payment:</p>
+                    <h5 class="content-item__info">Charitable contribution to help the AFU</h5>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+
       <div class="bank-details-info">
         <div class="bank-details__accordion">
           <div class="accordion-item">
             <div class="accordion-toggle">&#8964;</div>
             <div class="accordion-header">GBP</div>
             <div class="accordion-content">
-              Company Name:
-              SWIFT Code of the correspondent bank:
-              CO Auto Angel Lviv CF
-              CHASGB2L
-              IBAN:
-              Account in the correspondent bank:
-              UA363052990000026003001030370
-              24549501
-              Name of the bank:
-              Sort code:
-              JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
-              609242
-              Reason of payment:
-              Bank SWIFT Code:
-              Charitable contribution to help the AFU
-              PBANUA2X
-              Correspondent bank:
-              J P Morgan Chase Bank, Bournemouth, UK
-              or private transfer to Wise account
-              Account holder:
-              IBAN:
-              Andrii Ohinok
-              GB03 TRWI 2314 7047 2542 79
-              Sort code:
-              Bank’s address:
-              23-14-70
-              56 Shoreditch High Street, London E1 6JJ, United Kingdom
-              Account number:
-              47254279
+              <ul class="content">
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Company Name:</p>
+                    <h5 class="content-item__info">CO Auto Angel Lviv CF</h5>
+                    <span style="width: 10px; height: 10px;" class="content-item__icon-copy">
+                      <svg width="16" height="16">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">IBAN:</p>
+                    <h5 class="content-item__info">UA363052990000026003001030370</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap --max-width">
+                    <p class="content-item__desc">Name of the bank:</p>
+                    <h5 class="content-item__info">JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Bank SWIFT Code:</p>
+                    <h5 class="content-item__info">PBANUA2X</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Correspondent bank:</p>
+                    <h5 class="content-item__info">J P Morgan Chase Bank, Bournemouth, UK</h5>
+                  </div>
+                </li>
+              </ul>
+              <ul class="content">
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">SWIFT Code of the correspondent bank:</p>
+                    <h5 class="content-item__info">CHASGB2L</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Account in the correspondent bank:</p>
+                    <h5 class="content-item__info">24549501</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Sort code:</p>
+                    <h5 class="content-item__info">609242</h5>
+                  </div>
+                </li>
+                <li class="content-item">
+                  <div class="content-item__wrap">
+                    <p class="content-item__desc">Reason of payment:</p>
+                    <h5 class="content-item__info">Charitable contribution to help the AFU</h5>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </section>
 
   <section id="gratitude" class="gratitude">
@@ -420,7 +546,7 @@
             required>
         </div>
       </div>
-      <div>
+      <div class="form-wrap-select">
         <label for="GET-name">Тема*</label>
         <div class="cont_select_center">
           <div class="select_mate" data-mate-select="active">
@@ -442,34 +568,37 @@
           </div>
         </div>
       </div>
-      <div>
-        <label for="GET-name">Ваше повідомлення*</label>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Тут напишіть ваше звернення"></textarea>
+      <div class="form-wrap-textarea">
+        <label for="msg">Ваше повідомлення*</label>
+        <textarea name="textarea" id="textarea" cols="30" rows="10"
+          placeholder="Тут напишіть ваше звернення"></textarea>
       </div>
-      <div>
-        <fieldset>
-          <legend>Оберіть бажаний месенджер*</legend>
-
-          <div>
-            <input type="radio" id="huey" name="drone" value="huey" checked>
-            <label for="huey">Telegram</label>
+      <div class="choose-messenger">
+        <legend>Оберіть бажаний месенджер*</legend>
+        <label>
+          <input type="radio" id="1" name="drone" value="1">
+          <div class="choose-messenger__label">
+            <label for="1">Telegram</label>
           </div>
-
-          <div>
-            <input type="radio" id="dewey" name="drone" value="dewey">
-            <label for="dewey">Viber</label>
+        </label>
+        <label>
+          <input type="radio" id="2" name="drone" value="2">
+          <div class="choose-messenger__label">
+            <label for="2">Viber</label>
           </div>
-
-          <div>
-            <input type="radio" id="louie" name="drone" value="louie">
-            <label for="louie">Name</label>
+        </label>
+        <label>
+          <input type="radio" id="3" name="drone" value="3">
+          <div class="choose-messenger__label">
+            <label for="3">Name</label>
           </div>
-          <div>
-            <input type="radio" id="louie" name="drone" value="louie">
-            <label for="louie">Name</label>
+        </label>
+        <label>
+          <input type="radio" id="4" name="drone" value="4">
+          <div class="choose-messenger__label">
+            <label for="4">Name</label>
           </div>
-        </fieldset>
-
+        </label>
       </div>
 
       <button type="submit" class="btn other submit">Відправити повідомлення</button>
@@ -534,18 +663,12 @@
 
   </section>
 
-
-  <h1>Clipboard.js Demo</h1>
-  <!-- Target -->
-  <div id="foo" value="Cool beans!">
-    sdfsdfsdf
-  </div>
-
-  <!-- Trigger -->
-  <button class="btn" data-clipboard-target="#foo">
-    Copy
-  </button>
-  <p>&nbsp;<span class="copied">Copied!</span></p>
-  </div>
-
+  <!-- <div class="wrap-copy">
+    <div id="foo" class="text-copy" style="margin-bottom: 20px;">
+      UA803052990000026000011034648
+    </div>
+    <div id="foo" class="text-copy">
+      3412412479234712649762893912894
+    </div>
+  </div> -->
 </main>
