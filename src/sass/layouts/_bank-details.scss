@@ -112,6 +112,10 @@
   }
 }
 
+.accordion-content:first-of-type{
+  display: flex;
+}
+
 .accordion-content {
   flex-direction: column;
   display: none;
