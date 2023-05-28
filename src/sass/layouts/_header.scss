@@ -25,6 +25,10 @@
   }
 }
 
+.icon-logo-light {
+  display: none;
+}
+
 .nav {
   @include mobile {
     display: none;

@@ -23,8 +23,6 @@
 
 .copied {
   position: absolute;
-  top: 34px;
-  right: -130px;
   padding: 6px 10px;
   width: auto;
   background: $subtitle;
@@ -36,6 +34,11 @@
   line-height: 1;
   color: $background;
   display: none;
+
+  @include desktop {
+    top: 34px;
+    right: -130px;
+  }
 }
 
 .btn-copy {

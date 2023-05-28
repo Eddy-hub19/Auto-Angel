@@ -141,6 +141,12 @@
   @include desktop {
     display: flex;
     flex-direction: column;
+
+    .arrow-down-link {
+      padding: 0;
+      margin-left: auto;
+      margin-top: 50px;
+    }
   }
 }
 
@@ -199,9 +205,9 @@
     display: none;
   }
   @include desktop {
-    display: flex;
+    // display: flex;
     fill: white;
-    margin-left: auto;
-    margin-top: 59px;
+    // margin-left: auto;
+    // margin-top: 59px;
   }
 }

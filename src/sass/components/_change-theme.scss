@@ -19,6 +19,14 @@ body {
     background: $background;
   }
 
+  .icon-logo {
+    display: none;
+  }
+
+  .icon-logo-light {
+    display: block;
+  }
+
   h1,
   h2,
   h3,

@@ -68,9 +68,9 @@
     margin-bottom: 32px;
   }
 
-  // &__accordion {
-  //   padding-right: 60px;
-  // }
+  &__accordion {
+    padding-right: 60px;
+  }
 }
 
 .accordion-item {
@@ -112,7 +112,7 @@
   }
 }
 
-.accordion-content:first-of-type{
+.accordion-content:first-of-type {
   display: flex;
 }
 
@@ -144,6 +144,11 @@
     margin-top: 24px;
   }
 
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
   &__info {
     font-family: "Unbounded";
     font-style: normal;
@@ -155,6 +160,15 @@
     &:hover {
       color: $accent;
       cursor: pointer;
+    }
+  }
+
+  &__icon-copy {
+    margin-left: 10px;
+    transform: rotate(20px);
+    cursor: pointer;
+    &:hover {
+      color: $accent;
     }
   }
 }
