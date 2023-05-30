@@ -182,6 +182,8 @@
 }
 
 .logo-footer {
-  width: 108px;
-  height: 139px;
+  @include desktop {
+    width: 108px;
+    height: 139px;
+  }
 }
