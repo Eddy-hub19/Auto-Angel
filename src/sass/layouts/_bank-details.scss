@@ -30,8 +30,6 @@
   }
 
   &__span {
-    @include mobile {
-    }
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;
@@ -59,17 +57,31 @@
 }
 
 .bank-details {
-  padding-top: $padding;
-  padding-bottom: $padding;
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
   background: $background2;
 
+  @include desktop {
+    padding-top: $padding;
+    padding-bottom: $padding;
+  }
+
   &__title {
-    color: $primary;
+    margin-top: 56px;
     margin-bottom: 32px;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $primary;
   }
 
   &__accordion {
-    padding-right: 60px;
+    margin-top: 60px;
+    @include desktop {
+      padding-right: 60px;
+    }
   }
 }
 
@@ -78,13 +90,17 @@
 }
 
 .accordion-toggle {
-  margin-bottom: 10px;
+  margin-top: -21px;
+  font-size: 41px;
   font-weight: bold;
   float: right;
   color: $primary;
   cursor: pointer;
-  font-size: 25px;
   transition: all 200ms ease;
+  @include desktop {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
 }
 
 .accordion-item.active {
@@ -95,7 +111,6 @@
 }
 
 .accordion-header {
-  color: $accent;
   padding: 10px;
   cursor: pointer;
   font-family: "Unbounded";
@@ -112,9 +127,9 @@
   }
 }
 
-.accordion-content:first-of-type {
-  display: flex;
-}
+// .accordion-content:first-of-type {
+//   display: flex;
+// }
 
 .accordion-content {
   flex-direction: column;
@@ -165,7 +180,6 @@
 
   &__icon-copy {
     margin-left: 10px;
-    transform: rotate(20px);
     cursor: pointer;
     &:hover {
       color: $accent;

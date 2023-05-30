@@ -51,8 +51,15 @@
 
   &__nav-btn {
     position: absolute;
-    bottom: 20%;
-    left: 52%;
+    bottom: 30px;
+    left: 73%;
+    right: 10px;
+
+    @include desktop {
+      top: 80%;
+      left: 49%;
+      right: 45%;
+    }
   }
 
   @include desktop {

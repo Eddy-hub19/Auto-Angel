@@ -3,7 +3,7 @@
 .our-activity {
   position: relative;
   padding-top: $padding-mobile;
-  padding-bottom: $padding-mobile;
+  padding-bottom: 112px;
 
   @include desktop {
     display: flex;
@@ -11,6 +11,7 @@
 
   &__wrap {
     @include desktop {
+      display: flex;
       padding: 149px 106px 149px 0;
     }
   }
@@ -54,7 +55,14 @@
 
   &__nav-btn {
     position: absolute;
-    top: 20%;
-    left: 20%;
+    @include mobile {
+      bottom: -20px;
+      right: 40px;
+    }
+
+    @include desktop {
+      bottom: 20%;
+      left: 33%;
+    }
   }
 }

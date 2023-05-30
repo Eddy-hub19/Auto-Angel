@@ -1,16 +1,42 @@
-const section = document.querySelector('.content');
+const section = document.querySelector('.bank-details');
+let timeoutId;
+
 section.onclick = event => {
   const elem = event.target;
   if (elem.classList.contains('content-item__info')) {
-    console.log(elem);
     navigator.clipboard.writeText(elem.innerHTML).then(() => {
-      document.querySelector('.copied').style.display = 'inline-block';
+      const copiedMessage = document.createElement('span');
+      copiedMessage.classList.add('copied');
+      copiedMessage.textContent = 'Скопійовано';
+      elem.parentNode.appendChild(copiedMessage);
 
-      let timer = setTimeout(() => {
-        document.querySelector('.copied').style.display = 'none';
+      clearInterval(timeoutId);
+
+      timeoutId = setTimeout(() => {
+        copiedMessage.style.display = 'none';
       }, 800);
+    });
+  }
+};
 
-      // clearInterval(timer);
+const contacts = document.querySelector('.contacts-item');
+
+let timeoutId2;
+
+contacts.onclick = event => {
+  const elem = event.target;
+  if (elem.classList.contains('.copy-text')) {
+    navigator.clipboard.writeText(elem.innerHTML).then(() => {
+      const copiedMessage = document.createElement('span');
+      copiedMessage.classList.add('copied');
+      copiedMessage.textContent = 'Скопійовано';
+      elem.parentNode.appendChild(copiedMessage);
+
+      clearInterval(timeoutId2);
+
+      timeoutId2 = setTimeout(() => {
+        copiedMessage.style.display = 'none';
+      }, 800);
     });
   }
 };

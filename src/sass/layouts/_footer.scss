@@ -3,7 +3,7 @@
   position: relative;
   @include desktop {
     padding-top: 70px;
-    padding-bottom: 66px;
+    padding-bottom: 11px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -55,18 +55,21 @@
 }
 
 .wrap-right {
-  margin-top: 56px;
-  margin-bottom: 112px;
   display: flex;
+
+  @include mobile {
+    margin-top: 56px;
+    margin-bottom: 112px;
+  }
+
   @include desktop {
-    display: flex;
     margin-left: 103px;
 
     &:after {
       content: "";
       position: absolute;
       top: 0;
-      left: 47%;
+      left: 50%;
       background: $background;
       width: 2px;
       height: 100%;
@@ -117,14 +120,14 @@
     right: 30px;
     fill: $white;
     width: auto;
-    z-index: 99;
+    z-index: 999;
     border: none;
     background: transparent;
     @include desktop {
       display: none;
       position: absolute;
-      bottom: 10px;
-      right: 50%;
+      bottom: 23%;
+      right: 0;
       cursor: pointer;
     }
     .up-text {
@@ -160,8 +163,25 @@
 }
 
 .social-media {
-  display: none;
-  @include desktop {
-    margin-left: 68px;
+  @include mobile {
+    position: absolute;
+    bottom: 16px;
+    left: 66%;
+    fill: white;
   }
+
+  &__footer-item {
+    margin-left: 24px;
+  }
+}
+
+.insta {
+  &:hover {
+    color: red;
+  }
+}
+
+.logo-footer {
+  width: 108px;
+  height: 139px;
 }

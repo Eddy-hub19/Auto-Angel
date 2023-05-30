@@ -33,9 +33,62 @@ body {
   h4,
   h5,
   a,
-  p,
+  p {
+    color: $primary;
+  }
+
   span {
     color: $primary;
+  }
+
+  .wrap-right:after {
+    background: $primary;
+  }
+
+  .donate:after {
+    background: $primary;
+  }
+
+  .accordion:after {
+    color: $primary;
+  }
+
+  .primary {
+    color: $background;
+  }
+
+  .icon-logo-footer {
+    display: none;
+  }
+
+  .contacts-item__text {
+    color: $primary;
+  }
+
+  .contacts-item__desc {
+    color: $primary;
+  }
+
+  .footer{
+    border-top: 2px solid $primary;
+  }
+
+  #write-us {
+    color: $primary;
+  }
+
+  .write-us .form-wrap .form-wrap-name__label-name {
+    color: $primary;
+  }
+
+  .choose-messenger [type="radio"]:checked + .choose-messenger__label:before,
+  .choose-messenger [type="radio"]:not(:checked) + .choose-messenger__label:before {
+    border: 2px solid $primary;
+  }
+
+  .choose-messenger [type="radio"]:checked + .choose-messenger__label:after,
+  .choose-messenger [type="radio"]:not(:checked) + .choose-messenger__label:after {
+    background: $primary;
   }
 
   .menu-btn span {
@@ -57,6 +110,15 @@ body {
     }
   }
 
+  .header-langs__item:after {
+    border: 1px solid $primary;
+  }
+
+  .social-media {
+    color: $primary;
+    fill: $primary;
+  }
+
   .hero {
     border-top: 2px solid $primary;
     border-bottom: 2px solid $primary;
@@ -66,7 +128,11 @@ body {
   }
 
   .arrow-down {
-    fill: $primary !important;
+    fill: $primary;
+    &:hover {
+      fill: $accent !important;
+      color: $accent;
+    }
   }
 }
 .tdnn {
@@ -84,6 +150,7 @@ body {
   background: $primary;
   color: $lightt;
 }
+
 .moon {
   width: 16px;
   height: 16px;

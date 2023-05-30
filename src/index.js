@@ -47,6 +47,12 @@ const swiper3 = new Swiper('.swiper3', {
     forceToAxis: true,
   },
 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
   breakpoints: {
     375: {
       slidesPerView: 1,

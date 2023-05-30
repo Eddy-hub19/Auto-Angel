@@ -33,11 +33,12 @@
   font-size: 12px;
   line-height: 1;
   color: $background;
-  display: none;
+  // display: none;
 
   @include desktop {
-    top: 34px;
-    right: -130px;
+    top: -40%;
+    right: 50%;
+    // display: none;
   }
 }
 
