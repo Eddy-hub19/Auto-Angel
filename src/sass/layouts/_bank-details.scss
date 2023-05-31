@@ -90,6 +90,9 @@
 }
 
 .accordion-toggle {
+  @include mobile {
+    margin-top: 0;
+  }
   margin-top: -21px;
   font-size: 41px;
   font-weight: bold;
@@ -165,6 +168,9 @@
   }
 
   &__info {
+    @include mobile {
+      max-width: 260px;
+    }
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 300;
@@ -172,6 +178,7 @@
     line-height: 1.5;
     color: $primary;
     margin-top: 10px;
+
     &:hover {
       color: $accent;
       cursor: pointer;
