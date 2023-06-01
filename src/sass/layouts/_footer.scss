@@ -1,7 +1,7 @@
 .footer {
   display: block;
   position: relative;
-  @include desktop {
+  @include laptop {
     padding-top: 70px;
     padding-bottom: 11px;
     display: flex;
@@ -13,7 +13,7 @@
 
 .logo-footer {
   margin-bottom: 40px;
-  @include desktop {
+  @include laptop {
     margin-right: 142px;
   }
 }
@@ -33,7 +33,7 @@
       text-align: center;
     }
 
-    @include desktop {
+    @include laptop {
       display: flex;
     }
   }
@@ -62,7 +62,7 @@
     margin-bottom: 112px;
   }
 
-  @include desktop {
+  @include laptop {
     margin-left: 103px;
 
     &:after {
@@ -123,7 +123,7 @@
     z-index: 999;
     border: none;
     background: transparent;
-    @include desktop {
+    @include laptop {
       display: none;
       position: absolute;
       bottom: 23%;
@@ -156,7 +156,7 @@
 
 .copyright {
   display: none;
-  @include desktop {
+  @include laptop {
     margin-top: 40px;
     display: block;
   }
@@ -172,6 +172,9 @@
 
   &__footer-item {
     margin-left: 24px;
+    &:hover {
+      fill: $accent;
+    }
   }
 }
 
@@ -182,7 +185,7 @@
 }
 
 .logo-footer {
-  @include desktop {
+  @include laptop {
     width: 108px;
     height: 139px;
   }

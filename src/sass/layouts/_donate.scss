@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
   }
-  @include desktop {
+  @include laptop {
     display: flex;
     padding-top: $padding;
     padding-bottom: $padding;
@@ -43,7 +43,7 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 9px;
-  @include desktop {
+  @include laptop {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -86,7 +86,7 @@
 // contacts
 
 .contacts {
-  @include desktop {
+  @include laptop {
     padding: 0px 106px 0px;
   }
 
@@ -134,11 +134,20 @@
       font-size: 14px;
       line-height: 1.2;
       color: $background;
-      text-align: end;
+      width: 100%;
       cursor: pointer;
+      position: relative;
       &:hover {
         color: $accent;
       }
+    }
+
+    &__icon {
+      // position: absolute;
+      left: 42%;
+      top: 35px;
+      width: 19px;
+      height: 19px;
     }
   }
 }

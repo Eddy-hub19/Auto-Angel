@@ -14,7 +14,7 @@
     padding-bottom: $padding-mobile;
   }
 
-  @include desktop {
+  @include laptop {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -54,13 +54,13 @@
     font-style: normal;
     font-weight: 400;
     font-size: 34px;
-    line-height: 110%;
+    line-height: 1.1;
     width: 420px;
     display: flex;
     align-items: center;
     color: $background;
   }
-  @include desktop {
+  @include laptop {
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;
@@ -70,6 +70,7 @@
     display: flex;
     align-items: center;
     color: $background;
+    margin-bottom: 32px;
   }
 }
 
@@ -114,7 +115,7 @@
     line-height: 1.5;
     color: $primary;
   }
-  @include desktop {
+  @include laptop {
     position: absolute;
     top: 45%;
     left: 63%;
@@ -138,7 +139,7 @@
 
 .hero-wrap2 {
   margin-top: 16px;
-  @include desktop {
+  @include laptop {
     display: flex;
     flex-direction: column;
 
@@ -169,7 +170,7 @@
     color: $background;
     margin-bottom: 32px;
   }
-  @include desktop {
+  @include laptop {
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 300;
@@ -184,14 +185,14 @@
 .--hidden-mobile {
   display: none;
   visibility: hidden;
-  @include desktop {
+  @include laptop {
     display: block;
     visibility: visible;
   }
 }
 
-.--hidden-desktop {
-  @include desktop {
+.--hidden-laptop {
+  @include laptop {
     display: none;
     visibility: hidden;
   }
@@ -204,10 +205,7 @@
   @include tablet {
     display: none;
   }
-  @include desktop {
-    // display: flex;
-    fill: white;
-    // margin-left: auto;
-    // margin-top: 59px;
+  @include laptop {
+    fill: $white;
   }
 }

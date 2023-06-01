@@ -4,26 +4,35 @@
   font-family: "Unbounded";
   font-style: normal;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 1.5;
-
   color: $background;
+  // ul li {
+  //   list-style-type: auto;
 
-  ul li {
-    list-style-type: auto;
-
-    &::marker {
-      font-size: 1.3em;
-      color: $background;
-    }
-  }
+  //   &::marker {
+  //     font-size: 1.3em;
+  //     color: $background;
+  //   }
 
   &__title {
-    margin-bottom: 16px;
+    margin-bottom: 32px;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    color: $background;
   }
 
   &__desc {
     margin-bottom: 16px;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
+    color: $background;
   }
 
   .public-offer-list {

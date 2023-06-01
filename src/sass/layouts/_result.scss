@@ -5,7 +5,7 @@
   padding-bottom: $padding-mobile;
   overflow-x: auto;
   background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
-  @include desktop {
+  @include laptop {
     padding-top: $padding;
     padding-bottom: $padding;
     height: auto;
@@ -20,7 +20,7 @@
     line-height: 1.2;
     color: $primary;
     margin-bottom: 38px;
-    @include desktop {
+    @include laptop {
       font-size: 40px;
       margin-bottom: 40px;
     }
@@ -60,7 +60,7 @@
     font-size: 40px;
     line-height: 1.1;
 
-    @include desktop {
+    @include laptop {
       font-size: 80px;
       color: $primary;
     }

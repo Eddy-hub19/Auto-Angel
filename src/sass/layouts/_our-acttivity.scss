@@ -5,12 +5,12 @@
   padding-top: $padding-mobile;
   padding-bottom: 112px;
 
-  @include desktop {
+  @include laptop {
     display: flex;
   }
 
   &__wrap {
-    @include desktop {
+    @include laptop {
       display: flex;
       padding: 149px 106px 149px 0;
     }
@@ -24,7 +24,7 @@
     line-height: 1.2;
     color: $background;
     margin-bottom: 16px;
-    @include desktop {
+    @include laptop {
       margin-bottom: 24px;
       font-size: 24px;
     }
@@ -38,17 +38,17 @@
     line-height: 1.5;
     color: $background;
     margin-bottom: 32px;
-    @include desktop {
+    @include laptop {
       width: 529px;
     }
   }
 
-  @include desktop {
+  @include laptop {
     padding-top: $padding;
     padding-bottom: $padding;
   }
   &__wrap {
-    @include desktop {
+    @include laptop {
       padding-right: 106px;
     }
   }
@@ -56,13 +56,22 @@
   &__nav-btn {
     position: absolute;
     @include mobile {
-      bottom: -20px;
-      right: 40px;
+      display: flex;
+      bottom: 0px;
+      right: 20px;
+      .swiper-button-prev3 {
+        margin: 0 25px;
+      }
     }
 
-    @include desktop {
-      bottom: 20%;
-      left: 33%;
+    @include laptop {
+      bottom: 18%;
+      left: 30%;
+      display: flex;
+
+      .swiper-button-prev3 {
+        margin: 0 25px;
+      }
     }
   }
 }

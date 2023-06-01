@@ -21,7 +21,7 @@
 
   .form-wrap {
     display: block;
-    @include desktop {
+    @include laptop {
       display: flex;
       align-items: baseline;
       margin-bottom: 16px;
@@ -32,7 +32,7 @@
       @include mobile {
         margin-bottom: 16px;
       }
-      @include desktop {
+      @include laptop {
         margin-right: 31px;
       }
 
@@ -68,6 +68,12 @@
 
       &__label-number {
         margin-bottom: 5px;
+        font-family: "Unbounded";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1;
+        color: #e8e8e8;
       }
 
       &__field-number {
@@ -95,7 +101,8 @@
     width: 100%;
     max-height: 100px;
     margin-top: 16px;
-    @include desktop {
+    resize: none;
+    @include laptop {
       background: $white;
       border: 1px solid $secondary;
       box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.08);
@@ -125,6 +132,17 @@
   color: $secondary;
 }
 
+.form-wrap-select {
+  &__label {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+    color: #e8e8e8;
+  }
+}
+
 .icon_select_mate {
   position: absolute;
   top: 11px;
@@ -135,6 +153,7 @@
 }
 
 .select_mate {
+  margin-top: 6px;
   position: relative;
   float: left;
   width: 100%;

@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   height: 300px;
-  @include desktop {
+  @include laptop {
     display: flex;
     align-items: center;
   }
@@ -17,7 +17,7 @@
     align-items: center;
     justify-content: center;
     height: auto;
-    @include desktop {
+    @include laptop {
       display: flex;
       align-items: center;
       justify-content: center;

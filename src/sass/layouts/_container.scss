@@ -15,7 +15,7 @@
     padding: 0 15px;
   }
 }
-@include desktop {
+@include laptop {
   .container {
     width: 1440px;
     padding: 0 100px;

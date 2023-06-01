@@ -14,7 +14,7 @@
     </nav>
     <ul class="header-langs">
       <li class="header-langs__item">
-        <a class="header-langs__link" href="#">ua</a>
+        <a class="header-langs__link current-link" href="#">ua</a>
         <svg class="icon-ua" width="18px" height="18px">
           <use href="./images/icons.svg#icon-ua"></use>
         </svg>
@@ -43,9 +43,12 @@
           </svg>
         </li>
       </ul>
-      <button class="btn toggle-theme tdnn" onclick=changeTheme()>
+      <!-- <button class="btn tdnn toggle-theme" onclick=changeTheme()>
         <div class="moon"></div>
-        <!-- <span style="color: white; font-size: 17px; margin-left: 30px;">off</span> -->
+      </button> -->
+
+      <button class="btn toggleTheme" onclick=addDarkClassToHTML()>
+        <div class="moon"></div>
       </button>
     </ul>
 
@@ -59,12 +62,10 @@
       <ul class="menu">
         <div class="menu-container">
           <h2 class="mobile-title">Головна</h2>
-          <button class="btn toggle-theme tdnn" onclick=changeTheme()>
+          <button class="btn tdnn" onclick=changeTheme()>
             <div class="moon"></div>
           </button>
-          <!-- <button class="btn themetoggle" onclick=addDarkClassToHTML()>
-            <div class="moon"></div>
-          </button> -->
+
           <li class="menu-item">
             <a class="menu-link" href="#about">Про нас</a>
           </li>

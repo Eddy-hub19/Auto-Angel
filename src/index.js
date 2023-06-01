@@ -1,12 +1,12 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper1', {
   direction: 'horizontal',
   loop: true,
   speed: 800,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next1',
+    prevEl: '.swiper-button-prev1',
   },
 
   mousewheel: {
@@ -20,8 +20,8 @@ const swiper2 = new Swiper('.swiper2', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
   },
 
   mousewheel: {
@@ -35,12 +35,12 @@ const swiper3 = new Swiper('.swiper3', {
   loop: true,
   speed: 1000,
   autoHeight: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next3',
+    prevEl: '.swiper-button-prev3',
   },
 
   mousewheel: {
@@ -55,7 +55,7 @@ const swiper3 = new Swiper('.swiper3', {
       slidesPerView: 1,
     },
     1440: {
-      slidesPerView: 3,
+      slidesPerView: 1,
       spaceBetween: 30,
     },
   },

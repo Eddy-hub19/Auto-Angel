@@ -4,7 +4,7 @@
   display: block;
   position: relative;
 
-  @include desktop {
+  @include laptop {
     display: flex;
     padding-top: $padding;
     padding-bottom: $padding;
@@ -24,7 +24,7 @@
     font-size: 14px;
     line-height: 160%;
     color: $background;
-    @include desktop {
+    @include laptop {
       width: 529px;
       font-family: "Unbounded";
       font-style: normal;
@@ -52,7 +52,7 @@
     align-items: center;
     color: $background;
     margin-bottom: 16px;
-    @include desktop {
+    @include laptop {
       font-family: "Unbounded";
       font-style: normal;
       font-weight: 400;
@@ -82,16 +82,26 @@
   &__nav-btn {
     position: absolute;
     bottom: 0;
-    right: 6%;
-    left: 71%;
+    right: 5%;
+    display: flex;
 
-    @include desktop {
-      width: 14%;
-      z-index: 999;
-      top: 80%;
-      left: 68%;
-      right: 460px;
-      bottom: 0;
+    .swiper-button-prev1 {
+      margin: 0 25px;
+      &:hover {
+        fill: $accent;
+      }
+    }
+
+    @include laptop {
+      display: flex;
+      bottom: 50px;
+
+      .swiper-button-prev1 {
+        margin: 0 25px;
+        &:hover {
+          fill: $accent;
+        }
+      }
     }
   }
 }

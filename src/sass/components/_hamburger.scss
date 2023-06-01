@@ -4,7 +4,7 @@
     display: block;
     position: relative;
   }
-  @include desktop {
+  @include laptop {
     display: none;
   }
 }
@@ -36,7 +36,7 @@
     width: 30px;
     height: 30px;
   }
-  @include desktop {
+  @include laptop {
     display: none;
   }
 }
@@ -143,12 +143,6 @@
 
 .white {
   background: $background;
-}
-
-.toggle-theme {
-  @include desktop {
-    margin-left: 46px;
-  }
 }
 
 .menu-item:nth-child(10) {

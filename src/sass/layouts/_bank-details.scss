@@ -3,7 +3,7 @@
 .organization-details {
   padding-top: 56px;
   padding-bottom: 40px;
-  @include desktop {
+  @include laptop {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,7 +12,7 @@
   }
 
   &__wrap {
-    @include desktop {
+    @include laptop {
       display: flex;
       align-items: center;
     }
@@ -48,7 +48,6 @@
     line-height: 1.5;
     color: $background;
     margin-top: 16px;
-
     flex: none;
     order: 1;
     align-self: stretch;
@@ -61,8 +60,8 @@
   padding-bottom: $padding-mobile;
   background: $background2;
 
-  @include desktop {
-    padding-top: $padding;
+  @include laptop {
+    // padding-top: $padding;
     padding-bottom: $padding;
   }
 
@@ -79,7 +78,7 @@
 
   &__accordion {
     margin-top: 60px;
-    @include desktop {
+    @include laptop {
       padding-right: 60px;
     }
   }
@@ -93,17 +92,11 @@
   @include mobile {
     margin-top: 0;
   }
-  margin-top: -21px;
-  font-size: 41px;
   font-weight: bold;
   float: right;
   color: $primary;
   cursor: pointer;
   transition: all 200ms ease;
-  @include desktop {
-    margin-bottom: 10px;
-    font-size: 25px;
-  }
 }
 
 .accordion-item.active {
@@ -123,7 +116,7 @@
   line-height: 1.2;
   color: $accent;
 
-  @include desktop {
+  @include laptop {
     font-size: 30px;
     line-height: 1.2;
     margin-bottom: 40px;
@@ -140,7 +133,7 @@
   color: $primary;
   word-wrap: break-word;
   margin-bottom: 56px;
-  @include desktop {
+  @include laptop {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -199,7 +192,7 @@
 }
 
 .content {
-  @include desktop {
+  @include laptop {
     padding-right: 60px;
   }
 }

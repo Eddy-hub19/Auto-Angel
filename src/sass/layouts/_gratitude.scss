@@ -14,7 +14,7 @@
     background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
     position: relative;
   }
-  @include desktop {
+  @include laptop {
     padding-top: $padding;
     padding-bottom: $padding;
     background: linear-gradient(272.96deg, #00c3ff 4.43%, #ffff1c 90.93%);
@@ -23,7 +23,7 @@
 }
 
 .gratitude-list {
-  @include desktop {
+  @include laptop {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@
   }
 
   &__item {
-    @include desktop {
+    @include laptop {
       width: 529px;
     }
     @include tablet {
@@ -71,7 +71,7 @@
     color: $primary;
     margin-bottom: 32px;
 
-    @include desktop {
+    @include laptop {
       font-family: "Inter";
       font-weight: 400;
       font-size: 16px;

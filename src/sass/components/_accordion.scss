@@ -33,7 +33,7 @@
   transition: 0.4s;
   padding: 24px 0;
   width: 100%;
-  @include desktop {
+  @include laptop {
     padding: 40px 40px;
     font-weight: 300;
     font-size: 20px;
@@ -73,7 +73,7 @@
   line-height: 1.5;
   color: $background;
 
-  @include desktop {
+  @include laptop {
     padding: 0 24px;
   }
 
@@ -85,7 +85,7 @@
     line-height: 1.6;
     padding: 16px 0;
     color: $background;
-    @include desktop {
+    @include laptop {
       padding: 24px 16px;
     }
   }

@@ -14,7 +14,7 @@
     line-height: 1.2;
     color: $background;
     margin-bottom: 16px;
-    @include desktop {
+    @include laptop {
       font-family: "Unbounded";
       font-style: normal;
       font-weight: 400;
@@ -35,13 +35,13 @@
     line-height: 1.5;
     color: $background;
     margin-bottom: 32px;
-    @include desktop {
+    @include laptop {
       width: 529px;
     }
   }
 
   &__wrap {
-    @include desktop {
+    @include laptop {
       display: flex;
       justify-content: center;
       flex-direction: column;
@@ -51,18 +51,27 @@
 
   &__nav-btn {
     position: absolute;
-    bottom: 30px;
-    left: 73%;
-    right: 10px;
+    @include mobile {
+      display: flex;
+      bottom: 10px;
+      right: 20px;
+    }
 
-    @include desktop {
-      top: 80%;
-      left: 49%;
-      right: 45%;
+    .swiper-button-prev2 {
+      margin: 0 25px;
+    }
+
+    @include laptop {
+      display: flex;
+      bottom: 16%;
+      right: 46%;
+      .swiper-button-prev2 {
+        margin: 0 25px;
+      }
     }
   }
 
-  @include desktop {
+  @include laptop {
     padding-top: $padding;
     padding-bottom: $padding;
     display: flex;

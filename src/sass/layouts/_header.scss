@@ -5,7 +5,7 @@
   padding: 14px 22px;
   background: $primary;
   border-bottom: 2px solid $background;
-  @include desktop {
+  @include laptop {
     display: flex;
     align-items: center;
     padding: 22px 100px 22px 100px;
@@ -20,7 +20,7 @@
       height: 63px;
     }
   }
-  @include desktop {
+  @include laptop {
     color: $background;
   }
 }
@@ -37,7 +37,7 @@
     display: none;
   }
 
-  @include desktop {
+  @include laptop {
     margin-left: 48px;
 
     &__link {
@@ -63,7 +63,6 @@
 
 .header-langs {
   margin-left: auto;
-  margin-right: 30px;
   @include mobile {
     display: flex;
     &__item {
@@ -77,9 +76,12 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 1.21;
-      // color: #a7a7a7; - active
       color: $background;
       margin-right: 10px;
+
+      .current-link {
+        color: $secondary;
+      }
     }
     .icon-ua,
     .icon-en {
@@ -102,7 +104,6 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 1.21;
-      // color: #a7a7a7; - active
       color: $background;
       margin-right: 10px;
     }
@@ -114,23 +115,26 @@
       margin-right: 10px;
     }
   }
-  @include desktop {
+  @include laptop {
     display: flex;
     margin-left: 48px;
     position: relative;
     &__item {
       display: flex;
       align-items: center;
-      margin: 0 5px;
       &::after {
         content: "";
         position: absolute;
         width: 2px;
         height: 20px;
-        border: 1px solid #fff;
+        border: 1px solid $white;
         position: absolute;
-        left: 60px;
+        left: 51px;
         display: block;
+      }
+
+      &:last-child {
+        margin-left: 10px;
       }
     }
     &__link {
@@ -140,9 +144,8 @@
       font-weight: 400;
       font-size: 14px;
       line-height: 1.21;
-      // color: #a7a7a7; - active
       color: $background;
-      margin-right: 10px;
+      margin-right: 5px;
       text-transform: uppercase;
     }
 
@@ -162,10 +165,13 @@
   @include tablet {
     display: none;
   }
-  @include desktop {
+  @include laptop {
     display: flex;
     align-items: center;
     margin-left: auto;
+    &__item {
+      margin-right: 40px;
+    }
   }
 }
 
@@ -173,17 +179,19 @@
   display: flex;
   width: 11px;
   height: 20px;
-  @include desktop {
+  @include laptop {
     width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     fill: $white;
-    margin-left: 40px;
+    height: 100%;
+    // margin-left: 40px;
   }
 
   &__item {
     transition: all 0.6ms ease-in;
+    margin-left: 16px;
     &:hover {
       fill: $accent;
     }
