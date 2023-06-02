@@ -1,2 +1,0 @@
-const hamburger=document.querySelector(".menu-btn"),menu=document.querySelector(".menu");hamburger.addEventListener("click",(()=>{hamburger.classList.toggle("active"),menu.classList.toggle("active")}));const closeButton=document.querySelector(".close-btn");closeButton.addEventListener("click",(()=>{closeButton.classList.contains("white")?(closeButton.classList.remove("white"),hamburger.style.background="transparent"):(closeButton.classList.add("white"),hamburger.style.background="#e8e8e8")}));
-//# sourceMappingURL=public-offer.57b251b8.js.map
