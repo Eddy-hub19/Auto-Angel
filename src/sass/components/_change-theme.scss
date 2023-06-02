@@ -134,6 +134,14 @@ body {
       color: $accent;
     }
   }
+
+  .up {
+    fill: $primary;
+  }
+
+  .wrap-up .up .up-text {
+    color: $primary;
+  }
 }
 
 .toggleTheme {

@@ -12,6 +12,8 @@
 }
 
 .logo-footer {
+  width: 108px;
+  height: 139px;
   margin-bottom: 40px;
   @include laptop {
     margin-right: 142px;
@@ -28,6 +30,7 @@
 .wrap-left {
   &__list {
     display: flex;
+    align-items: center;
     @include mobile {
       flex-direction: column;
       text-align: center;
@@ -185,6 +188,8 @@
 }
 
 .logo-footer {
+  width: 108px;
+  height: 139px;
   @include laptop {
     width: 108px;
     height: 139px;
