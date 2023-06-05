@@ -5,18 +5,37 @@
   padding-top: $padding-mobile;
   padding-bottom: 112px;
 
+  &__container {
+    margin-right: 70px;
+    overflow: hidden;
+
+  }
+
   @include laptop {
     display: flex;
+    padding-top: $padding;
+    padding-bottom: $padding;
   }
 
   &__wrap {
     @include laptop {
       display: flex;
-      padding: 149px 106px 149px 0;
     }
   }
 
   &__title {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.1;
+    display: flex;
+    align-items: center;
+    color: $background;
+    margin-bottom: 32px;
+  }
+
+  &__sub-title {
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;
@@ -43,16 +62,6 @@
     }
   }
 
-  @include laptop {
-    padding-top: $padding;
-    padding-bottom: $padding;
-  }
-  &__wrap {
-    @include laptop {
-      padding-right: 106px;
-    }
-  }
-
   &__nav-btn {
     position: absolute;
     @include mobile {
@@ -65,8 +74,9 @@
     }
 
     @include laptop {
-      bottom: 18%;
-      left: 30%;
+      right: 60%;
+      bottom: 110px;
+      z-index: 9999999;
       display: flex;
 
       .swiper-button-prev3 {

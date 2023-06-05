@@ -33,11 +33,10 @@
   font-size: 12px;
   line-height: 1;
   color: $background;
-  // display: none;
 
   @include laptop {
-    top: -40%;
-    right: 50%;
+    top: 0%;
+    right: 0%;
     // display: none;
   }
 }

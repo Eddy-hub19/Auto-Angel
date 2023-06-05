@@ -1,6 +1,16 @@
 .our-friends {
   padding-top: $padding;
   padding-bottom: $padding;
+
+  &__nav-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    > .prev {
+      margin: 0 25px;
+    }
+  }
 }
 
 .our-friends-list {

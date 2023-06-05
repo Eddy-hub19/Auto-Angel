@@ -60,3 +60,34 @@ const swiper3 = new Swiper('.swiper3', {
     },
   },
 });
+const swiper4 = new Swiper('.swiper4', {
+  centeredSlides: true,
+  direction: 'horizontal',
+  loop: true,
+  speed: 1000,
+  autoHeight: true,
+  slidesPerView: 1,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next4',
+    prevEl: '.swiper-button-prev4',
+  },
+
+  mousewheel: {
+    forceToAxis: true,
+  },
+
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});

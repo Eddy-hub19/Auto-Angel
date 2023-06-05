@@ -95,6 +95,7 @@
     @include laptop {
       display: flex;
       bottom: 50px;
+      left: 64%;
 
       .swiper-button-prev1 {
         margin: 0 25px;

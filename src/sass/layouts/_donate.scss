@@ -143,11 +143,13 @@
     }
 
     &__icon {
-      // position: absolute;
-      left: 42%;
-      top: 35px;
+      display: inline-block;
       width: 19px;
       height: 19px;
+      margin-left: 1px;
+      &:hover{
+        fill: $accent;
+      }
     }
   }
 }

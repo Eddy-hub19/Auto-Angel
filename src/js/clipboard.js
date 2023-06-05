@@ -10,29 +10,28 @@ section.onclick = event => {
       copiedMessage.textContent = 'Скопійовано';
       elem.parentNode.appendChild(copiedMessage);
 
-      clearInterval(timeoutId);
-
       timeoutId = setTimeout(() => {
         copiedMessage.style.display = 'none';
       }, 800);
     });
+    clearTimeout(timeoutId);
   }
 };
 
-const contacts = document.querySelector('.contacts');
+const contacts = document.querySelector(".contacts");
 
 let timeoutId2;
 
 contacts.onclick = event => {
   const elem = event.target;
-  if (elem.classList.contains('.copy-text')) {
+  if (elem.classList.contains('copy-text')) {
     navigator.clipboard.writeText(elem.innerHTML).then(() => {
       const copiedMsg = document.createElement('div');
       copiedMsg.classList.add('copied');
       copiedMsg.textContent = 'Скопійовано';
       elem.parentNode.appendChild(copiedMsg);
 
-      clearInterval(timeoutId2);
+      clearTimeout(timeoutId2);
 
       timeoutId2 = setTimeout(() => {
         copiedMsg.style.display = 'none';

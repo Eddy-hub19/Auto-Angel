@@ -123,10 +123,6 @@
   }
 }
 
-// .accordion-content:first-of-type {
-//   display: flex;
-// }
-
 .accordion-content {
   flex-direction: column;
   display: none;
@@ -179,6 +175,7 @@
   }
 
   &__icon-copy {
+    display: inline-block;
     margin-left: 10px;
     cursor: pointer;
     &:hover {
@@ -191,7 +188,7 @@
   max-width: 660px;
 }
 
-.content {
+.content-list {
   @include laptop {
     padding-right: 60px;
   }
