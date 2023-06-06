@@ -177,14 +177,16 @@
 
   &__footer-item {
     margin-left: 24px;
-    &:hover {
+    &:hover,
+    &:focus {
       fill: $accent;
     }
   }
 }
 
 .insta {
-  &:hover {
+  &:hover,
+  &:focus {
     color: $accent;
   }
 }

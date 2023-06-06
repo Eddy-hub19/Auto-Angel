@@ -137,7 +137,8 @@
       width: 100%;
       cursor: pointer;
       position: relative;
-      &:hover {
+      &:hover,
+      &:focus {
         color: $accent;
       }
     }
@@ -147,7 +148,8 @@
       width: 19px;
       height: 19px;
       margin-left: 1px;
-      &:hover{
+      &:hover,
+      &:focus {
         fill: $accent;
       }
     }

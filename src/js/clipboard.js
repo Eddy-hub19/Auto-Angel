@@ -12,13 +12,16 @@ section.onclick = event => {
 
       timeoutId = setTimeout(() => {
         copiedMessage.style.display = 'none';
-      }, 800);
+        copiedMessage.parentNode.removeChild(copiedMessage);
+      }, 600);
     });
     clearTimeout(timeoutId);
+  } else {
+    copiedMessage.parentNode.removeChild(copiedMessage);
   }
 };
 
-const contacts = document.querySelector(".contacts");
+const contacts = document.querySelector('.contacts');
 
 let timeoutId2;
 
@@ -29,13 +32,12 @@ contacts.onclick = event => {
       const copiedMsg = document.createElement('div');
       copiedMsg.classList.add('copied');
       copiedMsg.textContent = 'Скопійовано';
-      elem.parentNode.appendChild(copiedMsg);
 
       clearTimeout(timeoutId2);
 
       timeoutId2 = setTimeout(() => {
         copiedMsg.style.display = 'none';
-      }, 800);
+      }, 600);
     });
   }
 };

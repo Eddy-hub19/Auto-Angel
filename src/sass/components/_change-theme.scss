@@ -11,6 +11,7 @@ $toggleBtn-bgColor--day: $bgColor--day;
 body {
   color: $whiteclr;
 }
+
 .light {
   background: $background;
   color: $lightt !important;
@@ -129,7 +130,8 @@ body {
 
   .arrow-down {
     fill: $primary !important;
-    &:hover {
+    &:hover,
+    &:focus {
       fill: $accent !important;
       color: $accent;
     }
@@ -160,6 +162,7 @@ body {
     margin-left: 46px;
   }
 }
+
 .day {
   background: $primary;
   color: $lightt;

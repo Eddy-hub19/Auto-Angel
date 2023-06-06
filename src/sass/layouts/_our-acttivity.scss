@@ -4,11 +4,15 @@
   position: relative;
   padding-top: $padding-mobile;
   padding-bottom: 112px;
+  > .content-wrap {
+    @include laptop {
+      display: flex;
+    }
+  }
 
   &__container {
     margin-right: 70px;
     overflow: hidden;
-
   }
 
   @include laptop {
@@ -24,15 +28,22 @@
   }
 
   &__title {
+    display: flex;
+    align-items: center;
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    line-height: 1.1;
-    display: flex;
-    align-items: center;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+
     color: $background;
-    margin-bottom: 32px;
+
+    @include laptop {
+      margin-bottom: 32px;
+      font-size: 40px;
+      line-height: 1.1;
+    }
   }
 
   &__sub-title {
@@ -64,12 +75,24 @@
 
   &__nav-btn {
     position: absolute;
+    z-index: 99999999;
     @include mobile {
       display: flex;
-      bottom: 0px;
+      bottom: 20px;
       right: 20px;
-      .swiper-button-prev3 {
-        margin: 0 25px;
+    }
+
+    .swiper-button-prev3 {
+      margin: 0 25px;
+      &:hover,
+      &:focus {
+        color: $accent;
+      }
+    }
+    .swiper-button-next3 {
+      &:hover,
+      &:focus {
+        color: $accent;
       }
     }
 
@@ -78,10 +101,6 @@
       bottom: 110px;
       z-index: 9999999;
       display: flex;
-
-      .swiper-button-prev3 {
-        margin: 0 25px;
-      }
     }
   }
 }

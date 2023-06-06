@@ -20,6 +20,7 @@
     line-height: 1.2;
     color: $primary;
     margin-bottom: 38px;
+    max-width: 350px;
     @include laptop {
       font-size: 40px;
       margin-bottom: 40px;
@@ -36,6 +37,10 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   display: flex;
+
+  &__item {
+    margin-right: 30px;
+  }
 }
 
 .result-item {
@@ -59,10 +64,10 @@
     font-weight: 400;
     font-size: 40px;
     line-height: 1.1;
+    color: $primary;
 
     @include laptop {
       font-size: 80px;
-      color: $primary;
     }
   }
 }

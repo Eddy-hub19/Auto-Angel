@@ -12,6 +12,8 @@
   }
 
   &__wrap {
+    width: 100%;
+    word-break: break-all;
     @include laptop {
       display: flex;
       align-items: center;
@@ -36,8 +38,15 @@
     font-size: 14px;
     line-height: 1.2;
     text-decoration-line: underline;
-    color: $background;
+    color: $accent;
     margin-left: auto;
+    @include laptop {
+      color: $background;
+      &:hover,
+      &:focus {
+        color: $accent;
+      }
+    }
   }
 
   &__desc {
@@ -157,9 +166,6 @@
   }
 
   &__info {
-    @include mobile {
-      max-width: 260px;
-    }
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 300;
@@ -168,18 +174,22 @@
     color: $primary;
     margin-top: 10px;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: $accent;
       cursor: pointer;
     }
-  }
 
-  &__icon-copy {
-    display: inline-block;
-    margin-left: 10px;
-    cursor: pointer;
-    &:hover {
-      color: $accent;
+    > .content-item__icon {
+      width: 17px;
+      height: 17px;
+      display: inline-block;
+      margin-left: 10px;
+      cursor: pointer;
+      &:hover,
+      &:focus {
+        color: $accent;
+      }
     }
   }
 }
@@ -190,6 +200,7 @@
 
 .content-list {
   @include laptop {
+    width: 60%;
     padding-right: 60px;
   }
 }

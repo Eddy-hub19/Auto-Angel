@@ -82,13 +82,16 @@
   &__nav-btn {
     position: absolute;
     bottom: 0;
-    right: 5%;
+    right: 40px;
     display: flex;
+    z-index: 99999999;
 
     .swiper-button-prev1 {
       margin: 0 25px;
-      &:hover {
-        fill: $accent;
+
+      &:hover,
+      &:focus {
+        color: $accent;
       }
     }
 
@@ -99,10 +102,24 @@
 
       .swiper-button-prev1 {
         margin: 0 25px;
-        &:hover {
+        &:hover,
+        &:focus {
           fill: $accent;
         }
       }
+      .swiper-button-next1 {
+        &:hover,
+        &:focus {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  > .content-wrap {
+    display: block;
+    @include laptop {
+      display: flex;
     }
   }
 }

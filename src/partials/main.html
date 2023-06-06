@@ -13,7 +13,7 @@
 <main class="main">
 
   <section id="hero" class="hero">
-    <div class="content container">
+    <div class="content-wrap container">
       <div class="hero-wrap1">
         <h2 class="title hero__title">Благодійний фонд
           Авто Ангел</h2>
@@ -33,7 +33,7 @@
   </section>
 
   <section id="about-us" class="about-us">
-    <div class="content container" style=" display: flex;">
+    <div class="content-wrap container">
       <div class="about-us__wrap">
         <h2 class="about-us__title">Про нас</h2>
         <p class="about-us__desc">БО БФ Авто Ангел Львів є не комерційною, не урядовою, не політичною благодійною
@@ -51,7 +51,7 @@
           звільнення
           всієї України від російських окупантів.</p>
         <div class="about-us__nav-btn">
-          <svg class="swiper-button-prev1 prev" width="30" height="30">
+          <svg class="swiper-button-prev1 prev" width="30" height="30" style="fill: currentColor">
             <use href="./images/icons.svg#icon-left"></use>
           </svg>
           <svg class="swiper-button-next1 next" width="30" height="30">
@@ -79,7 +79,7 @@
   </section>
 
   <section id="our-mission" class="our-mission">
-    <div class="content container" style=" display: flex;">
+    <div class="content-wrap container">
       <div class="our-mission__wrap">
         <h2 class="our-mission__title">Наша місія</h2>
         <p class="our-mission__desc">Найкращий результат досягається тоді, коли люди знають що вони роблять. У своїй
@@ -116,12 +116,12 @@
 
   <section id="our-activity" class="our-activity container">
     <div class="wrap-slider">
-      <div class="swiper3" space-between="20" slides-per-view="auto" pagination-clickable="true">
+      <div class="swiper3" space-between="20" slides-per-view="auto">
+        <h2 class="our-activity__title">Наша діяльність</h2>
         <div class="swiper-wrapper">
           <div class="swiper-slide" lazy="true">
             <div class="our-activity__wrap">
               <div class="our-activity__container">
-                <h2 class="our-activity__title">Наша діяльність</h2>
                 <h3 class="our-activity__sub-title">Автомобілі для ЗСУ</h3>
                 <p class="our-activity__desc">Ми спілкуємося з бійцями щоб зрозуміти їхні потреби, оголошуємо збір
                   коштів,
@@ -137,7 +137,7 @@
           <div class="swiper-slide" lazy="true">
             <div class="our-activity__wrap">
               <div class="our-activity__container">
-                <h2 class="our-activity__title">Автомобілі для ЗСУ</h2>
+                <h3 class="our-activity__sub-title">Автомобілі для ЗСУ</h3>
                 <p class="our-activity__desc">Ми спілкуємося з бійцями щоб зрозуміти їхні потреби, оголошуємо збір
                   коштів,
                   купуємо
@@ -153,7 +153,7 @@
           <div class="swiper-slide" lazy="true">
             <div class="our-activity__wrap">
               <div class="our-activity__container">
-                <h2 class="our-activity__title">Новий автомобіль</h2>
+                <h3 class="our-activity__sub-title">Новий автомобіль</h3>
                 <p class="our-activity__desc">Ми спілкуємося з бійцями щоб зрозуміти їхні потреби, оголошуємо збір
                   коштів,
                   купуємо
@@ -331,61 +331,67 @@
               </div>UAH
             </div>
             <ul class="accordion-content">
-              <ul class="content">
+              <ul class="content-list">
                 <li class="content-item">
                   <p class="content-item__desc">Найменування отримувача:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">БО БФ АВТО АНГЕЛ ЛЬВІВ</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">БО БФ АВТО АНГЕЛ ЛЬВІВ
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Код одержувача:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">44878259</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">44878259
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Банк:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">АТ КБ Приватбанк</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">АТ КБ Приватбанк
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
               </ul>
-              <ul class="content">
+              <ul class="content-list">
                 <li class="content-item">
                   <p class="content-item__desc">IBAN:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">UA803052990000026000011034648</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">UA803052990000026000011034648
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Номер картки:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">4246001003466368</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">4246001003466368
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Призначення платежу:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">Благодійний внесок для допомоги ЗСУ</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">Благодійний внесок для допомоги ЗСУ
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
               </ul>
@@ -411,19 +417,21 @@
                 <li class="content-item">
                   <p class="content-item__desc">Company Name:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">CO Auto Angel Lviv CF</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">CO Auto Angel Lviv CF
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">IBAN::</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">UA803052990000026000011034648</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">UA803052990000026000011034648
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
@@ -431,20 +439,20 @@
                     <p class="content-item__desc">Name of the bank:</p>
                     <div class="content-item__container">
                       <h5 class="content-item__info">JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001, UKRAINE
-                        <span class="content-item__icon-copy">
-                          <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                        </span>
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
                       </h5>
-
                     </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Bank SWIFT Code:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">PBANUA2X</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">PBANUA2X
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
               </ul>
@@ -452,37 +460,41 @@
                 <li class="content-item">
                   <p class="content-item__desc">Correspondent bank:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">Commerzbank AG, Frankfurt am Main, Germany</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">Commerzbank AG, Frankfurt am Main, Germany
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">SWIFT Code of the correspondent bank:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">COBADEFF</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">COBADEFF
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Account in the correspondent bank:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">400886700401</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">400886700401
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Reason of payment:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">Charitable contribution to help the AFU</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">Charitable contribution to help the AFU
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
               </ul>
@@ -503,80 +515,87 @@
               USD
             </div>
             <div class="accordion-content">
-              <ul class="content">
+              <ul class="content-list">
                 <li class="content-item">
                   <p class="content-item__desc">Company Name:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">CO Auto Angel Lviv CF</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">CO Auto Angel Lviv CF
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">IBAN:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">UA233052990000026003001037588</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">UA233052990000026003001037588
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Name of the bank:</p>
                   <div class="content-item__container">
                     <h5 class="content-item__info">JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001,UKRAINE
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
                     </h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Bank SWIFT Code:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">PBANUA2X</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">PBANUA2X
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
               </ul>
-              <ul class="content">
+              <ul class="content-list">
                 <li class="content-item">
                   <p class="content-item__desc">Correspondent bank:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">JP Morgan Chase Bank, New York</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">JP Morgan Chase Bank, New York
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">SWIFT Code of the correspondent bank:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">CHASUS33</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">CHASUS33
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Account in the correspondent bank:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">001-1-000080</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">001-1-000080
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
                 <li class="content-item">
                   <p class="content-item__desc">Reason of payment:</p>
                   <div class="content-item__container">
-                    <h5 class="content-item__info">Charitable contribution to help the AFU</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
+                    <h5 class="content-item__info">Charitable contribution to help the AFU
+                      <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                        <use href="./images/icons.svg#icon-copy"></use>
+                      </svg>
+                    </h5>
                   </div>
                 </li>
               </ul>
@@ -596,154 +615,171 @@
               </div>
               GBP
             </div>
-            <div class="accordion-content">
-              <!-- <div class="wrap"> -->
-              <ul class="content">
-                <li class="content-item">
-                  <p class="content-item__desc">Company Name:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">CO Auto Angel Lviv CF</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-                <li class="content-item">
-                  <p class="content-item__desc">IBAN:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">UA363052990000026003001030370</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-                <li class="content-item">
-                  <p class="content-item__desc">Name of the bank:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001,
-                      UKRAINE
-                    </h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-                <li class="content-item">
-                  <p class="content-item__desc">Bank SWIFT Code:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">PBANUA2X</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-                <li class="content-item">
-                  <p class="content-item__desc">Correspondent bank:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">J P Morgan Chase Bank, Bournemouth, UK</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-              </ul>
-              <ul class="content">
-                <li class="content-item">
-                  <p class="content-item__desc">SWIFT Code of the correspondent bank:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">CHASGB2L</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-                <li class="content-item">
-                  <p class="content-item__desc">Account in the correspondent bank:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">24549501</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-                <li class="content-item">
-                  <p class="content-item__desc">Sort code:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">609242</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-                <li class="content-item">
-                  <p class="content-item__desc">Reason of payment:</p>
-                  <div class="content-item__container">
-                    <h5 class="content-item__info">Charitable contribution to help the AFU</h5>
-                    <span class="content-item__icon-copy">
-                      <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                    </span>
-                  </div>
-                </li>
-              </ul>
-              <!-- </div> -->
-              <!-- <div class="wrap">
-                <ul class="content">
-                  <h2 class="bank-details__title">or private transfer to Wise account</h2>
+            <div class="accordion-content"
+              style="width: 100%;display: flex; flex-direction: column; justify-content: space-between;">
+              <div class="wrap" style="display: flex;">
+                <ul class="content-list">
                   <li class="content-item">
-                    <p class="content-item__desc">Account holder:</p>
+                    <p class="content-item__desc">Company Name:</p>
                     <div class="content-item__container">
-                      <h5 class="content-item__info">Andrii Ohinok</h5>
-                      <span class="content-item__icon-copy">
-                        <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                      </span>
+                      <h5 class="content-item__info">CO Auto Angel Lviv CF
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="content-item">
+                    <p class="content-item__desc">IBAN:</p>
+                    <div class="content-item__container">
+                      <h5 class="content-item__info">UA363052990000026003001030370
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="content-item">
+                    <p class="content-item__desc">Name of the bank:</p>
+                    <div class="content-item__container">
+                      <h5 class="content-item__info">JSC CB "PRIVATBANK", 1D HRUSHEVSKOHO STR., KYIV, 01001,
+                        UKRAINE
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="content-item">
+                    <p class="content-item__desc">Bank SWIFT Code:</p>
+                    <div class="content-item__container">
+                      <h5 class="content-item__info">PBANUA2X
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="content-item">
+                    <p class="content-item__desc">Correspondent bank:</p>
+                    <div class="content-item__container">
+                      <h5 class="content-item__info">J P Morgan Chase Bank, Bournemouth, UK
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="content-list">
+                  <li class="content-item">
+                    <p class="content-item__desc">SWIFT Code of the correspondent bank:</p>
+                    <div class="content-item__container">
+                      <h5 class="content-item__info">CHASGB2L
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
+                    </div>
+                  </li>
+                  <li class="content-item">
+                    <p class="content-item__desc">Account in the correspondent bank:</p>
+                    <div class="content-item__container">
+                      <h5 class="content-item__info">24549501
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
                     </div>
                   </li>
                   <li class="content-item">
                     <p class="content-item__desc">Sort code:</p>
                     <div class="content-item__container">
-                      <h5 class="content-item__info">23-14-70</h5>
-                      <span class="content-item__icon-copy">
-                        <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                      </span>
+                      <h5 class="content-item__info">609242
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
                     </div>
                   </li>
                   <li class="content-item">
-                    <div class="content-item__wrap">
-                      <p class="content-item__desc">Account number:</p>
-                      <div class="content-item__container">
-                        <h5 class="content-item__info">47254279</h5>
-                        <span class="content-item__icon-copy">
-                          <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                        </span>
-                      </div>
-                  </li>
-                </ul>
-                <ul class="content">
-                  <li class="content-item">
-                    <p class="content-item__desc">IBAN:</p>
+                    <p class="content-item__desc">Reason of payment:</p>
                     <div class="content-item__container">
-                      <h5 class="content-item__info">GB03 TRWI 2314 7047 2542 79</h5>
-                      <span class="content-item__icon-copy">
-                        <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                      </span>
-                    </div>
-                  </li>
-                  <li class="content-item">
-                    <p class="content-item__desc">Bank’s address:</p>
-                    <div class="content-item__container">
-                      <h5 class="content-item__info">56 Shoreditch High Street, London E1 6JJ, United Kingdom</h5>
-                      <span class="content-item__icon-copy">
-                        <img width="17" height="17" src="./images/icon-copy.png" alt="copy">
-                      </span>
+                      <h5 class="content-item__info">Charitable contribution to help the AFU
+                        <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                          <use href="./images/icons.svg#icon-copy"></use>
+                        </svg>
+                      </h5>
                     </div>
                   </li>
                 </ul>
               </div>
-            </div> -->
+              <div class="wrap" style="width:100%">
+                <h2 class="bank-details__title">or private transfer to Wise account</h2>
+                <div style="display: flex; justify-content: space-between;">
+                  <ul class="content-list">
+                    <li class="content-item">
+                      <p class="content-item__desc">Account holder:</p>
+                      <div class="content-item__container">
+                        <h5 class="content-item__info">Andrii Ohinok
+                          <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                            <use href="./images/icons.svg#icon-copy"></use>
+                          </svg>
+                        </h5>
+                      </div>
+                    </li>
+                    <li class="content-item">
+                      <p class="content-item__desc">Sort code:</p>
+                      <div class="content-item__container">
+                        <h5 class="content-item__info">23-14-70
+                          <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                            <use href="./images/icons.svg#icon-copy"></use>
+                          </svg>
+                        </h5>
+                      </div>
+                    </li>
+                    <li class="content-item">
+                      <div class="content-item__wrap">
+                        <p class="content-item__desc">Account number:</p>
+                        <div class="content-item__container">
+                          <h5 class="content-item__info">47254279
+                            <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                              <use href="./images/icons.svg#icon-copy"></use>
+                            </svg>
+                          </h5>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <ul class="content">
+                    <li class="content-item">
+                      <p class="content-item__desc">IBAN:</p>
+                      <div class="content-item__container">
+                        <h5 class="content-item__info">GB03 TRWI 2314 7047 2542 79
+                          <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                            <use href="./images/icons.svg#icon-copy"></use>
+                          </svg>
+                        </h5>
+                      </div>
+                    </li>
+                    <li class="content-item">
+                      <p class="content-item__desc">Bank’s address:</p>
+                      <div class="content-item__container">
+                        <h5 class="content-item__info">56 Shoreditch High Street, London E1 6JJ, United Kingdom
+                          <svg class="content-item__icon" widt="16" height="16" style="fill: currentColor">
+                            <use href="./images/icons.svg#icon-copy"></use>
+                          </svg>
+                        </h5>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
 
   </section>

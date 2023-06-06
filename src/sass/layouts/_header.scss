@@ -46,7 +46,8 @@
       font-size: 14px;
       line-height: 1.21;
       color: $background;
-      &:hover {
+      &:hover,
+      &:focus {
         color: $accent;
       }
       &:not(:last-child) {
@@ -185,13 +186,13 @@
     align-items: center;
     fill: $white;
     height: 100%;
-    // margin-left: 40px;
   }
 
   &__item {
     transition: all 0.6ms ease-in;
     margin-left: 16px;
-    &:hover {
+    &:hover,
+    &:focus {
       fill: $accent;
     }
   }
