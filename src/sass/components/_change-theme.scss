@@ -101,13 +101,32 @@ body {
     border-color: $primary;
   }
 
+  .other-mobile {
+    background: $white;
+    &:hover {
+      background: $accent;
+      color: $white;
+    }
+  }
+
+  .mobile-subtitle {
+    color: $white;
+    &:hover {
+      color: $accent;
+    }
+  }
+
   border-color: $primary;
 
   .menu.active {
     background: $primary;
     .menu-link,
     .mobile-title {
+      cursor: pointer;
       color: $white;
+      &:hover {
+        color: red;
+      }
     }
   }
 

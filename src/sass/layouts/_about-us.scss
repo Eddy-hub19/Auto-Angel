@@ -3,6 +3,8 @@
 .about-us {
   display: block;
   position: relative;
+  padding-top: $padding-mobile;
+  padding-bottom: $padding-mobile;
 
   @include laptop {
     display: flex;

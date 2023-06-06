@@ -5,6 +5,7 @@
   @include mobile {
     padding-top: $padding-mobile;
     padding-bottom: $padding-mobile;
+    width: 100%;
   }
   position: relative;
   @include tablet {
@@ -104,6 +105,7 @@
     justify-content: space-around;
     align-items: baseline;
     width: 100%;
+    position: relative;
 
     &__wrap {
       @include mobile {

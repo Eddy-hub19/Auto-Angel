@@ -1,11 +1,15 @@
 .our-friends {
   padding-top: $padding;
   padding-bottom: $padding;
+  position: relative;
 
   &__nav-btn {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-left: auto;
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
 
     > .prev {
       margin: 0 25px;

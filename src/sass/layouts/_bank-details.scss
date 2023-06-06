@@ -70,8 +70,14 @@
   background: $background2;
 
   @include laptop {
-    // padding-top: $padding;
+    padding-top: $padding;
     padding-bottom: $padding;
+  }
+
+  &__wrap {
+    @include mobile {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -163,6 +169,7 @@
   &__container {
     display: flex;
     align-items: baseline;
+    word-break: break-all;
   }
 
   &__info {
@@ -199,8 +206,35 @@
 }
 
 .content-list {
+  // width: 100%;
   @include laptop {
     width: 60%;
     padding-right: 60px;
   }
+}
+
+.details-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+}
+
+.bank-details-container {
+  display: block;
+  @include laptop {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.wrap {
+  display: block;
+  @include laptop {
+    display: flex;
+  }
+}
+
+.wrap2 {
+  display: block;
 }

@@ -21,13 +21,14 @@ section.onclick = event => {
   }
 };
 
-const contacts = document.querySelector('.contacts');
+const contacts = document.querySelector('.contacts-item');
 
 let timeoutId2;
 
 contacts.onclick = event => {
+  debugger;
   const elem = event.target;
-  if (elem.classList.contains('copy-text')) {
+  if (elem.classList.contains('contacts-item__desc')) {
     navigator.clipboard.writeText(elem.innerHTML).then(() => {
       const copiedMsg = document.createElement('div');
       copiedMsg.classList.add('copied');
