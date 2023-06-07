@@ -1,6 +1,8 @@
 .footer {
   display: block;
   position: relative;
+  padding-top: 56px;
+  padding-bottom: 56px;
   @include laptop {
     padding-top: 70px;
     padding-bottom: 11px;
@@ -10,15 +12,6 @@
     border-top: 2px solid $background;
   }
 }
-
-// .logo-footer {
-//   width: 108px;
-//   height: 139px;
-//   margin-bottom: 40px;
-//   @include laptop {
-//     margin-right: 142px;
-//   }
-// }
 
 .icon-logo-footer {
   width: 108px;
@@ -201,7 +194,7 @@
   width: 108px;
   height: 139px;
   @include mobile {
-    margin-top: 56px;
+    // margin-top: 56px;
   }
   @include laptop {
     width: 108px;

@@ -98,26 +98,38 @@
     font-size: 40px;
     line-height: 1.1;
     color: $background;
+    margin-bottom: 24px;
   }
 
   .contacts-item {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
     width: 100%;
     position: relative;
+    @include laptop {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+
+    @include mobile {
+      display: flex;
+      justify-content: space-evenly;
+    }
 
     &__wrap {
       @include mobile {
-        width: auto;
+        word-break: break-word;
       }
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       align-items: flex-start;
       padding: 0px;
       gap: 24px;
-      width: 514px;
-      margin-top: 32px;
+
+      @include laptop {
+        width: 514px;
+        margin-top: 32px;
+      }
     }
     &__text {
       font-family: "Unbounded";
