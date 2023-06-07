@@ -4,6 +4,9 @@
   position: relative;
 
   &__nav-btn {
+    @include laptop {
+      display: none;
+    }
     display: flex;
     justify-content: center;
     margin-left: auto;
@@ -16,6 +19,8 @@
     }
   }
 }
+
+
 
 .our-friends-list {
   display: flex;

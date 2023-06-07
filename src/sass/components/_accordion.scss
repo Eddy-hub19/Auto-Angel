@@ -47,6 +47,7 @@
   &:hover,
   &:focus {
     background-color: transparent;
+    transition: all 0.6ms ease-in;
   }
 
   &:after {

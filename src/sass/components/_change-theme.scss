@@ -12,6 +12,24 @@ body {
   color: $whiteclr;
 }
 
+// theme
+.toggleTheme {
+  @include mobile {
+    top: -30px;
+    margin-left: auto;
+  }
+
+  border-radius: 11px;
+  cursor: pointer;
+  width: 48px;
+  height: 28px;
+  position: relative;
+
+  @include laptop {
+    margin-left: 46px;
+  }
+}
+
 .light {
   background: $background;
   color: $lightt !important;
@@ -44,6 +62,18 @@ body {
 
   .wrap-right:after {
     background: $primary;
+  }
+
+  .donate,
+  .about-us,
+  .our-mission{
+    border-color: $primary;
+  }
+
+  .our-friends-list {
+    &__item {
+      border-color: $primary;
+    }
   }
 
   .donate:after {
@@ -110,22 +140,19 @@ body {
   }
 
   .mobile-subtitle {
-    color: $white;
-    &:hover {
-      color: $accent;
-    }
+    color: $accent;
   }
 
   border-color: $primary;
 
   .menu.active {
-    background: $primary;
+    background: $background;
     .menu-link,
     .mobile-title {
       cursor: pointer;
-      color: $white;
+      color: $primary;
       &:hover {
-        color: red;
+        color: $accent;
       }
     }
   }
@@ -136,6 +163,14 @@ body {
 
   .social-media {
     color: $primary;
+    fill: $primary;
+  }
+
+  .footer-social-media {
+    fill: $primary;
+  }
+
+  .header-social-media {
     fill: $primary;
   }
 
@@ -163,22 +198,9 @@ body {
   .wrap-up .up .up-text {
     color: $primary;
   }
-}
 
-.toggleTheme {
-  @include mobile {
-    top: -30px;
-    margin-left: auto;
-  }
-
-  border-radius: 11px;
-  cursor: pointer;
-  width: 48px;
-  height: 28px;
-  position: relative;
-
-  @include laptop {
-    margin-left: 46px;
+  .copied {
+    color: $white;
   }
 }
 

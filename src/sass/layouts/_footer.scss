@@ -3,6 +3,7 @@
   position: relative;
   padding-top: 56px;
   padding-bottom: 56px;
+  border-top: 2px solid $background;
   @include laptop {
     padding-top: 70px;
     padding-bottom: 11px;
@@ -10,6 +11,18 @@
     justify-content: center;
     align-items: center;
     border-top: 2px solid $background;
+  }
+}
+
+.logo-footer {
+  width: 108px;
+  height: 139px;
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+  @include laptop {
+    margin-right: 142px;
   }
 }
 
@@ -84,6 +97,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+  position: relative;
 }
 
 .wrap-right-list:nth-last-child(2) {
@@ -148,10 +162,9 @@
   color: $accent !important;
 }
 
-.wrap-up ~ .up ~ .up-text {
-  background: red;
-  color: red;
-  fill: red;
+.up .up-text {
+  color: $accent;
+  fill: $accent;
 }
 
 .--pos {
@@ -166,12 +179,16 @@
   }
 }
 
-.social-media {
+.footer-social-media {
+  width: 11px;
+  height: 20px;
+  display: flex;
+  fill: $white;
   @include mobile {
     position: absolute;
-    bottom: 16px;
+    top: 77%;
     left: 66%;
-    fill: white;
+    fill: $white;
   }
 
   &__footer-item {

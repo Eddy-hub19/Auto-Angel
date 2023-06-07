@@ -40,10 +40,12 @@
   > .content-wrap {
     @include mobile {
       display: flex;
+      align-items: center;
       flex-direction: column;
     }
     @include laptop {
       display: flex;
+      align-items: center;
       justify-content: space-between;
       flex-direction: row;
     }

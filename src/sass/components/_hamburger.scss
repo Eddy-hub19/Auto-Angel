@@ -136,6 +136,7 @@
   font-weight: 300;
   font-size: 20px;
   line-height: 1.5;
+  transition: all 0.6ms ease-in;
 }
 .menu-link:hover,
 .menu-link:focus {
@@ -167,4 +168,19 @@
 
 .mobile-subtitle {
   margin-top: 30px;
+}
+
+.mobile-social-media {
+  margin-top: 34px;
+  display: flex;
+  &__item {
+    width: 20px;
+    height: 20px;
+    transition: all 0.6ms ease-in;
+    &:hover,
+    &:focus {
+      fill: $accent;
+      color: $accent;
+    }
+  }
 }

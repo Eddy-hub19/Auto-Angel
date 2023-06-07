@@ -10,6 +10,7 @@
   border-radius: 7px;
   color: $background;
   padding: 14px 72px;
+  transition: all 0.6ms ease-in;
   &:hover,
   &:focus {
     background: $accent;
@@ -27,6 +28,7 @@
   border: 1px solid $background;
   border-radius: 7px;
   color: $primary;
+  transition: all 0.6ms ease-in;
 
   &:hover,
   &:focus {
