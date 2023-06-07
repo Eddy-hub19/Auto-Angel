@@ -4,6 +4,9 @@
   align-items: center;
   padding: 14px 22px;
   background: $primary;
+  @include tablet {
+    padding: 14px 82px;
+  }
   @include laptop {
     display: flex;
     align-items: center;
