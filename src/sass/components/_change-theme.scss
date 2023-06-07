@@ -66,8 +66,18 @@ body {
 
   .donate,
   .about-us,
-  .our-mission{
+  .our-mission {
     border-color: $primary;
+  }
+
+  .form-wrap-select {
+    &__label {
+      color: $primary;
+    }
+  }
+
+  .form-wrap .form-wrap-number__label-number{
+    color: $primary;
   }
 
   .our-friends-list {
