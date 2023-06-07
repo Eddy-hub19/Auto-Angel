@@ -5,14 +5,14 @@
 
 @include mobile {
   .container {
-    width: 375px;
+    // width: 375px;
     padding: 0 15px;
   }
 }
 @include tablet {
   .container {
     width: 768px;
-    padding: 0 15px;
+    padding: 0 25px;
   }
 }
 @include laptop {
