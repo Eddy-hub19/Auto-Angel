@@ -44,6 +44,7 @@
 
     @include laptop {
       display: flex;
+      margin-right: 106px;
     }
   }
 }
@@ -160,11 +161,6 @@
 .wrap-up .up .up-text:hover {
   fill: $accent;
   color: $accent !important;
-}
-
-.up .up-text {
-  color: $accent;
-  fill: $accent;
 }
 
 .--pos {

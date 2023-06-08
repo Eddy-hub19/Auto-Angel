@@ -127,7 +127,7 @@
       gap: 24px;
 
       @include laptop {
-        width: 514px;
+        min-width: 514px;
         margin-top: 32px;
       }
     }

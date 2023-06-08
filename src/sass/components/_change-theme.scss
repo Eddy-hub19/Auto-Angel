@@ -32,7 +32,7 @@ body {
 
 .light {
   background: $background;
-  color: $lightt !important;
+  color: $lightt;
 
   .header {
     background: $background;
@@ -76,7 +76,7 @@ body {
     }
   }
 
-  .form-wrap .form-wrap-number__label-number{
+  .form-wrap .form-wrap-number__label-number {
     color: $primary;
   }
 
@@ -216,7 +216,7 @@ body {
 
 .day {
   background: $primary;
-  color: $lightt;
+  // color: $lightt;
 }
 
 .moon {
@@ -232,7 +232,6 @@ body {
   display: block;
   border-radius: 50%;
   transform: rotate(-75deg);
-  // background: $bgColor--night;
   background: $primary;
   width: 16px;
   @include laptop {

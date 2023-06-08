@@ -9,6 +9,22 @@
   padding-top: $padding;
   padding-bottom: $padding;
   color: $white;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .choose-messenger__label {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: $primary;
+  }
+
   &__title {
     font-family: "Unbounded";
     font-style: normal;
@@ -92,16 +108,20 @@
     }
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-
   textarea {
     width: 100%;
     max-height: 100px;
     margin-top: 16px;
     resize: none;
+
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: $secondary;
+
     @include laptop {
       background: $white;
       border: 1px solid $secondary;
@@ -132,6 +152,16 @@
   color: $secondary;
 }
 
+.form-wrap-label {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1;
+
+  color: $primary;
+}
+
 .form-wrap-select {
   &__label {
     font-family: "Unbounded";
@@ -139,7 +169,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 1;
-    color: #e8e8e8;
+    color: $background;
   }
 }
 
@@ -159,7 +189,7 @@
   width: 100%;
   height: 48px;
   font-family: "Roboto";
-  color: #777;
+  color: $background;
   font-weight: 300;
   background: $white;
   box-shadow: 1px 2px 10px -2px rgba(0, 0, 0, 0.3);
@@ -231,7 +261,13 @@
   display: block;
   margin: 0px;
   cursor: pointer;
-  color: #a7a7a7;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+
+  color: $secondary;
 }
 
 // radio

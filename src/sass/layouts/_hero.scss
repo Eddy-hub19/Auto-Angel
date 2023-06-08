@@ -222,10 +222,10 @@
     display: none;
   }
   @include laptop {
-    color: $primary;
+    fill: $white;
     &:hover,
     &:focus {
-      color: $accent;
+      fill: $accent;
     }
   }
 }

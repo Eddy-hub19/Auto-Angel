@@ -12,10 +12,10 @@
     "url": "git+https://github.com/Eddy-hub19/Auto-Angel.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Eduard Sekan <sekaneduard.@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/Eddy-hub19/Auto-Angel/issues"
   },
   "dependencies": {
     "@babel/core": "^7.21.8",

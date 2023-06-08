@@ -1,0 +1,72 @@
+<section id="write-us" class="write-us container">
+  <h2 class="write-us__title">Напишіть нам</h2>
+  <form action="form" class="form">
+    <div class="form-wrap">
+      <div class="form-wrap-name">
+        <label class="form-wrap-name__label-name" for="name">Ім’я*</label>
+        <input class="form-wrap-name__field-name" id="name" type="text" name="name" placeholder="Як до вас звертатись"
+          required>
+      </div>
+      <div class="form-wrap-number">
+        <label class="form-wrap-number__label-number" for="GET-name">Номер телефону*</label>
+        <input class="form-wrap-number__field-number" id="GET-name" type="text" name="name" placeholder="+380" required>
+      </div>
+    </div>
+    <div class="form-wrap-select">
+      <label class="form-wrap-select__label" for="GET-name">Тема*</label>
+      <div class="cont_select_center">
+        <div class="select_mate" data-mate-select="active">
+          <select name="" onchange="" onclick="return false;" id="" placeholder="Бажаєте долучитись як волонтер">
+            <option value="">Бажаєте долучитись як волонтер</option>
+            <option value="1">w52345123412</option>
+            <option value="2">Dropdown item</option>
+            <option value="3">Dropdown item</option>
+          </select>
+          <p class="selecionado_opcion" onclick="open_select(this)"></p><span onclick="open_select(this)"
+            class="icon_select_mate"><svg fill="#000000" height="24" viewBox="0 0 24 24" width="24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z" />
+              <path d="M0-.75h24v24H0z" fill="none" />
+            </svg></span>
+          <div class="cont_list_select_mate">
+            <ul class="cont_select_int"> </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-wrap-textarea">
+      <label class="form-wrap-label" for="msg">Ваше повідомлення*</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Тут напишіть ваше звернення"></textarea>
+    </div>
+    <div class="choose-messenger">
+      <legend>Оберіть бажаний месенджер*</legend>
+      <label>
+        <input type="radio" id="1" name="drone" value="1">
+        <div class="choose-messenger__label">
+          <label for="1">Telegram</label>
+        </div>
+      </label>
+      <label>
+        <input type="radio" id="2" name="drone" value="2">
+        <div class="choose-messenger__label">
+          <label for="2">Viber</label>
+        </div>
+      </label>
+      <label>
+        <input type="radio" id="3" name="drone" value="3">
+        <div class="choose-messenger__label">
+          <label for="3">Name</label>
+        </div>
+      </label>
+      <label>
+        <input type="radio" id="4" name="drone" value="4">
+        <div class="choose-messenger__label">
+          <label for="4">Name</label>
+        </div>
+      </label>
+    </div>
+
+    <button type="submit" class="btn other submit">Відправити повідомлення</button>
+  </form>
+
+</section>

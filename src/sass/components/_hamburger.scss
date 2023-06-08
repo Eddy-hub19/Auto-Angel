@@ -93,7 +93,7 @@
   width: 100%;
   position: fixed;
   height: 100%;
-  z-index: 10000;
+  z-index: 99999999;
   display: flex;
   transition: height 1s 1s linear;
   transform: translateX(0%);

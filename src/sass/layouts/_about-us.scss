@@ -83,7 +83,7 @@
 
   &__nav-btn {
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     right: 40px;
     display: flex;
     z-index: 99999;
@@ -112,7 +112,7 @@
       .swiper-button-next1 {
         &:hover,
         &:focus {
-          color: $accent;
+          fill: $accent;
         }
       }
     }
