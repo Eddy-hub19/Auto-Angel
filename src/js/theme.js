@@ -17,7 +17,7 @@ function addDarkClassToHTML() {
       toggleTheme.classList.toggle('day');
       moon.classList.toggle('sun');
       body.classList.toggle('light');
-      document.querySelector('.hero').classList.add('dark');
+      document.querySelector('body').classList.add('dark');
       document.querySelector('.themetoggle').classList.add('dark');
       document.querySelector('header').classList.add('dark');
     } else {
