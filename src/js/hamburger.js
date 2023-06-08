@@ -19,8 +19,8 @@ closeButton.addEventListener('click', () => {
 
 menu.addEventListener('click', () => {
   if (menu.classList.contains('active')) {
+    hamburger.classList.remove('active');
     hamburger.classList.remove('white');
     menu.classList.remove('active');
-    hamburger.classList.remove('active');
   }
 });

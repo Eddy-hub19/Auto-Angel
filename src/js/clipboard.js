@@ -21,6 +21,8 @@ section.onclick = event => {
   }
 };
 
+// refactor this code to use same function and just proviede different selectors
+// for example function copyToClipboard(selector) { ... }
 const contacts = document.querySelector('.contacts-item');
 
 let timeoutId2;

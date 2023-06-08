@@ -1,3 +1,6 @@
+// this file is the main entry point of our app
+// logic below relateted to swipers so move it to separate swiiper.js file
+// and here we will have just imports all our scripts
 const swiper = new Swiper('.swiper1', {
   direction: 'horizontal',
   loop: true,

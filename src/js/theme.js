@@ -25,7 +25,9 @@ function addDarkClassToHTML() {
       document.querySelector('.themetoggle').classList.remove('dark');
       document.querySelector('header').classList.remove('dark');
     }
-  } catch (err) {}
+  } catch (err) {
+    console.error(err);
+  }
 }
 
 addDarkClassToHTML();
