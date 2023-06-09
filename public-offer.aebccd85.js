@@ -1,2 +1,0 @@
-const button=document.querySelector(".up"),displayButton=()=>{window.addEventListener("scroll",(()=>{window.scrollY>100?button.style.display="flex":button.style.display="none"}))},scrollToTop=()=>{button.addEventListener("click",(()=>{window.scroll({top:0,left:0,behavior:"smooth"})}))};window.addEventListener("scroll",(()=>{window.scrollY>100?button.style.display="flex":button.style.display="none"})),button.addEventListener("click",(()=>{window.scroll({top:0,left:0,behavior:"smooth"})}));
-//# sourceMappingURL=public-offer.aebccd85.js.map
