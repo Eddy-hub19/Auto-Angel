@@ -1,16 +1,16 @@
 document.querySelector('.toggleTheme').addEventListener('click', event => {
   event.preventDefault();
-  if (localStorage.getItem('theme') === 'light') {
+  if (localStorage.getItem('theme') === 'dark') {
     localStorage.removeItem('theme');
   } else {
-    localStorage.setItem('theme', 'dark');
+    localStorage.setItem('theme', 'light');
   }
   addDarkClassToHTML();
 });
 
 function addDarkClassToHTML() {
   try {
-    if (localStorage.getItem('theme') === 'dark') {
+    if (localStorage.getItem('theme') === 'light') {
       const body = document.body;
       const moon = document.querySelector('.moon');
       const toggleTheme = document.querySelector('.toggleTheme');
@@ -27,7 +27,7 @@ function addDarkClassToHTML() {
     }
   } catch (err) {
     console.log(err);
-    console.log('message Получається не зловило темну тему')
+    console.log('message Получається не зловило темну тему');
   }
 }
 

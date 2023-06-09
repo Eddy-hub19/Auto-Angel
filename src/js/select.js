@@ -8,17 +8,17 @@ function isMobileDevice() {
     navigator.userAgent.indexOf('IEMobile') !== -1
   );
 }
-
-var li = new Array();
+// debugger
+let li = new Array();
 function crear_select() {
-  var div_cont_select = document.querySelectorAll(
+  let div_cont_select = document.querySelectorAll(
     "[data-mate-select='active']"
   );
-  var select_ = '';
-  for (var e = 0; e < div_cont_select.length; e++) {
+  let select_ = '';
+  for (let e = 0; e < div_cont_select.length; e++) {
     div_cont_select[e].setAttribute('data-indx-select', e);
     div_cont_select[e].setAttribute('data-selec-open', 'false');
-    var ul_cont = document.querySelectorAll(
+    let ul_cont = document.querySelectorAll(
       "[data-indx-select='" + e + "'] > .cont_list_select_mate > ul"
     );
     select_ = document.querySelectorAll(
@@ -29,7 +29,7 @@ function crear_select() {
         _select_option(select_.selectedIndex, e);
       });
     }
-    var select_optiones = select_.options;
+    let select_optiones = select_.options;
     document
       .querySelectorAll(
         "[data-indx-select='" + e + "']  > .selecionado_opcion "
@@ -40,7 +40,7 @@ function crear_select() {
         "[data-indx-select='" + e + "']  > .icon_select_mate "
       )[0]
       .setAttribute('data-n-select', e);
-    for (var i = 0; i < select_optiones.length; i++) {
+    for (let i = 0; i < select_optiones.length; i++) {
       li[i] = document.createElement('li');
       if (
         select_optiones[i].selected == true ||
@@ -67,23 +67,23 @@ function crear_select() {
   } // fin for divs_cont_select
 } // Fin Function
 
-var cont_slc = 0;
+let cont_slc = 0;
 function open_select(idx) {
-  var idx1 = idx.getAttribute('data-n-select');
-  var ul_cont_li = document.querySelectorAll(
+  let idx1 = idx.getAttribute('data-n-select');
+  let ul_cont_li = document.querySelectorAll(
     "[data-indx-select='" + idx1 + "'] .cont_select_int > li"
   );
-  var hg = 0;
-  var slect_open = document
+  let hg = 0;
+  let slect_open = document
     .querySelectorAll("[data-indx-select='" + idx1 + "']")[0]
     .getAttribute('data-selec-open');
-  var slect_element_open = document.querySelectorAll(
+  let slect_element_open = document.querySelectorAll(
     "[data-indx-select='" + idx1 + "'] select"
   )[0];
   if (isMobileDevice()) {
     if (window.document.createEvent) {
       // All
-      var evt = window.document.createEvent('MouseEvents');
+      let evt = window.document.createEvent('MouseEvents');
       evt.initMouseEvent(
         'mousedown',
         false,
@@ -109,7 +109,7 @@ function open_select(idx) {
       slect_element_open.click();
     }
   } else {
-    for (var i = 0; i < ul_cont_li.length; i++) {
+    for (let i = 0; i < ul_cont_li.length; i++) {
       hg += ul_cont_li[i].offsetHeight;
     }
     if (slect_open == 'false') {
@@ -137,7 +137,7 @@ function open_select(idx) {
 } // fin function open_select
 
 function salir_select(indx) {
-  var select_ = document.querySelectorAll(
+  let select_ = document.querySelectorAll(
     "[data-indx-select='" + indx + "'] > select"
   )[0];
   document.querySelectorAll(
@@ -155,20 +155,20 @@ function _select_option(indx, selc) {
   if (isMobileDevice()) {
     selc = selc - 1;
   }
-  var select_ = document.querySelectorAll(
+  let select_ = document.querySelectorAll(
     "[data-indx-select='" + selc + "'] > select"
   )[0];
 
-  var li_s = document.querySelectorAll(
+  let li_s = document.querySelectorAll(
     "[data-indx-select='" + selc + "'] .cont_select_int > li"
   );
-  var p_act = (document.querySelectorAll(
+  let p_act = (document.querySelectorAll(
     "[data-indx-select='" + selc + "'] > .selecionado_opcion"
   )[0].innerHTML = li_s[indx].innerHTML);
-  var select_optiones = document.querySelectorAll(
+  let select_optiones = document.querySelectorAll(
     "[data-indx-select='" + selc + "'] > select > option"
   );
-  for (var i = 0; i < li_s.length; i++) {
+  for (let i = 0; i < li_s.length; i++) {
     if (li_s[i].className == 'active') {
       li_s[i].className = '';
     }
