@@ -13,3 +13,18 @@
 .no-scroll {
   overflow-y: hidden;
 }
+
+.swiper-button-prev1,
+.swiper-button-next1,
+.swiper-button-prev2,
+.swiper-button-next2,
+.swiper-button-prev3,
+.swiper-button-next3,
+.swiper-button-prev4,
+.swiper-button-next4 {
+  fill: $white;
+  &:hover,
+  &:focus {
+    fill: $accent;
+  }
+}

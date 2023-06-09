@@ -21,8 +21,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 1.6;
-
-    color: $primary;
+    color: $background;
   }
 
   &__title {
@@ -33,6 +32,9 @@
     line-height: 1.1;
     color: $background;
     margin-bottom: 24px;
+    @include laptop {
+      margin-bottom: 40px;
+    }
   }
 
   .form-wrap {

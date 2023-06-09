@@ -130,6 +130,7 @@
     bottom: 30px;
     right: 30px;
     fill: $white;
+    color: $background;
     width: auto;
     z-index: 999;
     border: none;
@@ -154,11 +155,6 @@
 }
 
 .wrap-up .up:hover {
-  fill: $accent;
-  color: $accent !important;
-}
-
-.wrap-up .up .up-text:hover {
   fill: $accent;
   color: $accent !important;
 }
@@ -206,9 +202,6 @@
 .logo-footer {
   width: 108px;
   height: 139px;
-  @include mobile {
-    // margin-top: 56px;
-  }
   @include laptop {
     width: 108px;
     height: 139px;

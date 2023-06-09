@@ -17,10 +17,12 @@ closeButton.addEventListener('click', () => {
   }
 });
 
-menu.addEventListener('click', () => {
-  if (menu.classList.contains('active')) {
+const menuItem = document.querySelectorAll('.menu-item');
+
+menuItem.forEach(item => {
+  item.addEventListener('click', () => {
     hamburger.classList.remove('active');
     hamburger.classList.remove('white');
     menu.classList.remove('active');
-  }
+  });
 });

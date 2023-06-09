@@ -90,10 +90,14 @@
 
     .swiper-button-prev1 {
       margin: 0 25px;
+    }
 
+    .swiper-button-prev1,
+    .swiper-button-next1 {
+      fill: $white;
       &:hover,
       &:focus {
-        color: $accent;
+        fill: $accent;
       }
     }
 
@@ -104,10 +108,6 @@
 
       .swiper-button-prev1 {
         margin: 0 25px;
-        &:hover,
-        &:focus {
-          fill: $accent;
-        }
       }
       .swiper-button-next1 {
         &:hover,

@@ -12,8 +12,8 @@ body {
   color: $whiteclr;
 }
 
-// theme
-.toggleTheme {
+.toggleTheme,
+.toggleTheme-mobile {
   @include mobile {
     top: -30px;
     margin-left: auto;
@@ -28,6 +28,10 @@ body {
   @include laptop {
     margin-left: 46px;
   }
+}
+
+.hidden {
+  display: none;
 }
 
 .light {
@@ -46,6 +50,14 @@ body {
     display: block;
   }
 
+  .choose-messenger__label {
+    color: $primary;
+  }
+
+  .selecionado_opcion {
+    color: $secondary;
+  }
+
   h1,
   h2,
   h3,
@@ -56,8 +68,19 @@ body {
     color: $primary;
   }
 
-  span {
-    color: $primary;
+  .swiper-button-prev1,
+  .swiper-button-next1,
+  .swiper-button-prev2,
+  .swiper-button-next2,
+  .swiper-button-prev3,
+  .swiper-button-next3,
+  .swiper-button-prev4,
+  .swiper-button-next4 {
+    fill: $primary;
+    &:hover,
+    &:focus {
+      fill: $accent;
+    }
   }
 
   .wrap-right:after {
@@ -142,7 +165,7 @@ body {
   }
 
   .other-mobile {
-    background: $white;
+    background: transparent;
     &:hover {
       background: $accent;
       color: $white;
@@ -216,7 +239,7 @@ body {
 
 .day {
   background: $primary;
-  // color: $lightt;
+  color: $lightt;
 }
 
 .moon {
