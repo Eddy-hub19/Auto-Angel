@@ -38,6 +38,12 @@ body {
   background: $background;
   color: $lightt;
 
+  .toggleTheme-mobile {
+    @include mobile {
+      background: red;
+    }
+  }
+
   .header {
     background: $background;
   }
@@ -226,6 +232,7 @@ body {
 
   .up {
     fill: $primary;
+    color: $primary;
   }
 
   .wrap-up .up .up-text {
@@ -234,6 +241,14 @@ body {
 
   .copied {
     color: $white;
+  }
+}
+
+.toggleTheme-mobile.day {
+  background: $primary;
+  .moon {
+    background: $white;
+    left: calc(0% + 3.56px);
   }
 }
 

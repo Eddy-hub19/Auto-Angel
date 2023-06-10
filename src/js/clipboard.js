@@ -35,6 +35,7 @@ contactsItems.forEach(item => {
         const copiedMsg = document.createElement('span');
         copiedMsg.classList.add('copied');
         copiedMsg.textContent = 'Скопійовано';
+        elem.parentNode.appendChild(copiedMsg);
 
         const timeoutId = setTimeout(() => {
           copiedMsg.style.display = 'none';

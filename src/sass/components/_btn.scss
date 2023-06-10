@@ -20,15 +20,15 @@
 }
 
 .secondary {
-  padding: 14px 56px;
   gap: 8px;
-  width: auto;
+  width: 291px;
   height: 47px;
   background: $background;
   border: 1px solid $background;
   border-radius: 7px;
   color: $primary;
   transition: all 0.6ms ease-in;
+  padding: 14px 72px;
 
   &:hover,
   &:focus {

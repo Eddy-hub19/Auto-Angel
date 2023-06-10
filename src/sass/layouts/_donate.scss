@@ -9,6 +9,8 @@
   }
   position: relative;
   @include tablet {
+    padding-top: $padding;
+    padding-bottom: $padding;
     width: 100%;
     display: flex;
     justify-content: center;

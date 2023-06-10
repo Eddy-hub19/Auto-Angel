@@ -135,17 +135,18 @@
     bottom: 30px;
     right: 30px;
     fill: $white;
-    color: $background;
     width: auto;
     z-index: 999;
     border: none;
     background: transparent;
+    color: $white;
     @include laptop {
       display: none;
       position: absolute;
       bottom: 23%;
       right: 0;
       cursor: pointer;
+      color: $white;
     }
     .up-text {
       font-family: "Unbounded";
