@@ -1,6 +1,9 @@
 // result
 
 .result {
+  @include mobile {
+    margin-top: 56px;
+  }
   padding-top: $padding-mobile;
   padding-bottom: $padding-mobile;
   overflow-x: auto;
@@ -20,7 +23,6 @@
     line-height: 1.2;
     color: $primary;
     margin-bottom: 38px;
-    // max-width: 350px;
     @include laptop {
       font-size: 40px;
       margin-bottom: 40px;
@@ -45,7 +47,7 @@
 
 .result-list {
   display: flex;
-  // flex-wrap: wrap;
+  flex-direction: column;
   gap: 40px;
 
   &__item {

@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper1', {
   direction: 'horizontal',
   loop: true,
-  speed: 800,
+  speed: 1000,
 
   navigation: {
     nextEl: '.swiper-button-next1',
@@ -85,7 +85,7 @@ const swiper4 = new Swiper('.swiper4', {
     },
     1440: {
       slidesPerView: 3,
-      spaceBetween: 30,
+      // spaceBetween: 30,
     },
   },
 });

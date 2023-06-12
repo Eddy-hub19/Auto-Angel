@@ -11,8 +11,10 @@
   }
 
   &__container {
-    margin-right: 70px;
-    overflow: hidden;
+    @include laptop {
+      margin-right: 70px;
+      overflow: hidden;
+    }
   }
 
   @include laptop {
@@ -49,12 +51,18 @@
   &__sub-title {
     font-family: "Unbounded";
     font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 1.2;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.5;
     color: $background;
     margin-bottom: 16px;
     @include laptop {
+      font-family: "Unbounded";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 1.2;
+
       margin-bottom: 24px;
       font-size: 24px;
     }
@@ -69,7 +77,7 @@
     color: $background;
     margin-bottom: 32px;
     @include laptop {
-      width: 529px;
+      max-width: 529px;
     }
   }
 
@@ -98,9 +106,17 @@
 
     @include laptop {
       right: 60%;
-      bottom: 110px;
+      bottom: 140px;
       z-index: 99999;
       display: flex;
+    }
+  }
+
+  img {
+    height: 300px;
+    @include laptop {
+      width: 500px !important;
+      height: auto !important;
     }
   }
 }

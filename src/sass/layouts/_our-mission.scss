@@ -3,7 +3,7 @@
 .our-mission {
   position: relative;
   padding-top: $padding-mobile;
-  padding-bottom: $padding-mobile;
+  padding-bottom: 112px;
   border-bottom: 2px solid $background;
 
   > .content-wrap {
@@ -14,7 +14,15 @@
     }
   }
 
+  @include laptop {
+    margin-top: $padding;
+    padding-bottom: $padding;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   &__title {
+    margin-top: -80px;
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;
@@ -51,7 +59,7 @@
   &__wrap {
     @include laptop {
       display: flex;
-      justify-content: center;
+      // justify-content: center;
       flex-direction: column;
       position: relative;
       padding-left: 106px;
@@ -78,7 +86,7 @@
 
     @include mobile {
       display: flex;
-      bottom: 10px;
+      bottom: 60px;
       right: 40px;
     }
 
@@ -89,10 +97,5 @@
     }
   }
 
-  @include laptop {
-    padding-top: $padding;
-    padding-bottom: $padding;
-    display: flex;
-    flex-direction: row-reverse;
-  }
+ 
 }

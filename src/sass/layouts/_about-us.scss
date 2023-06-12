@@ -12,10 +12,10 @@
     padding-bottom: $padding;
     border-bottom: 2px solid $background;
     &__wrap {
-      position: relative;
       padding-right: 106px;
     }
   }
+
   &__desc {
     @include mobile {
       margin-bottom: 16px;
@@ -42,9 +42,13 @@
     @include mobile {
       margin-bottom: 36px;
     }
+    @include laptop {
+      position: relative;
+    }
   }
 
   &__title {
+    margin-top: -70px;
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 400;
@@ -75,10 +79,6 @@
     line-height: 1.2;
     color: $background;
     margin-top: 36px;
-  }
-
-  &__container {
-    position: relative;
   }
 
   &__nav-btn {

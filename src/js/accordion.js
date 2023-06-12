@@ -13,11 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   }
-});
-
-// for 2 accordion
-
-document.addEventListener('DOMContentLoaded', function () {
   let accordionToggles = document.querySelectorAll('.accordion-header');
 
   accordionToggles.forEach(function (toggle) {

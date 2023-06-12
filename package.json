@@ -20,6 +20,7 @@
   "dependencies": {
     "@babel/core": "^7.21.8",
     "clipboard": "^2.0.11",
+    "custom-select": "^1.1.15",
     "jquery": "^3.7.0",
     "modern-normalize": "^1.1.0",
     "swiper": "^9.3.2"

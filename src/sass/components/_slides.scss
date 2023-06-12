@@ -2,6 +2,7 @@
   width: 100%;
   height: auto;
 }
+
 .swiper3 {
   overflow: hidden;
 }
@@ -10,21 +11,14 @@
   overflow: hidden;
 }
 
-// .swiper-slide {
-//   text-align: center;
-//   font-size: 18px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-.swiper-slide img {
-  width: 605px;
-  height: 537px;
-  display: block;
-  object-fit: contain;
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
 }
 
-// swiper-slide {
-//   width: 50%;
-// }
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -156,6 +156,7 @@
 
 .content-item {
   position: relative;
+  cursor: pointer;
   &__desc {
     font-family: "Unbounded";
     font-style: normal;
@@ -180,12 +181,6 @@
     line-height: 1.5;
     color: $primary;
     margin-top: 10px;
-
-    &:hover,
-    &:focus {
-      color: $accent;
-      cursor: pointer;
-    }
 
     > .content-item__icon {
       width: 17px;
