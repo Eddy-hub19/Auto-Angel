@@ -46,9 +46,15 @@
 }
 
 .result-list {
+  @include mobile {
+    flex-direction: column;
+    gap: 30px;
+  }
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+
+  @include laptop {
+    gap: 70px;
+  }
 
   &__item {
     display: flex;

@@ -38,12 +38,6 @@ body {
   background: $background;
   color: $lightt;
 
-  .toggleTheme-mobile {
-    @include mobile {
-      background: red;
-    }
-  }
-
   .header {
     background: $background;
   }
