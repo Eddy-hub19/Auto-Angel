@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 14px 22px;
-  background: $primary;
+  // background: $primary;
   @include tablet {
     padding: 14px 82px;
   }
@@ -91,7 +91,7 @@
       }
     }
     &__link {
-      color: $white;
+      text-transform: uppercase;
       font-family: "Unbounded";
       font-style: normal;
       font-weight: 400;

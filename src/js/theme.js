@@ -31,6 +31,8 @@ function addDarkClassToHTML() {
       toggleThemeMobile.classList.toggle('day');
       moon.classList.toggle('sun');
       body.classList.toggle('light');
+      document.querySelector('.secondary').classList.add('light')
+      document.querySelector('.other').classList.add('light')
       // document.querySelector('body').classList.add('dark');
       // document.querySelector('.toggleTheme').classList.add('dark');
       // document.querySelector('.toggleTheme-mobile').classList.add('dark');

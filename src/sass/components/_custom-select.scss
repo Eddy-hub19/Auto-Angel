@@ -34,7 +34,6 @@
   cursor: pointer;
   &::after {
     content: url("../images/down-write-us.svg");
-    display: inline-block;
     width: 24px;
     height: 24px;
     float: right;
@@ -88,8 +87,4 @@
 .custom-select-optgroup::before {
   content: "";
   display: block;
-}
-
-.is-open{
-  background: red !important;
 }
