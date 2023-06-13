@@ -9,6 +9,7 @@
       </svg>
     </a>
     <nav class="nav">
+      <!-- <div class="my-class">Текст, который будет менять цвет</div> -->
       <a class="nav__link" href="./index.html">Головна</a>
       <a class="nav__link" href="./public-offer.html">Публічна оферта</a>
     </nav>
@@ -43,7 +44,7 @@
           </svg>
         </li>
       </ul>
-      <button class="btn toggleTheme" onclick=addDarkClassToHTML()>
+      <button id="themeToggle" class="btn toggleTheme" onclick=switchTheme()>
         <div class="moon"></div>
       </button>
     </ul>
@@ -57,8 +58,8 @@
       </div>
       <ul class="menu">
         <div class="menu-container">
-          <a href="./index.html" class="mobile-title">Головна</h2>
-          <button class="btn toggleTheme-mobile" onclick=addDarkClassToHTML()>
+          <a href="./index.html" class="mobile-title">Головна</a>
+          <button id="themeToggleMobile" class="btn toggleTheme-mobile" onclick=switchTheme()>
             <div class="moon"></div>
           </button>
 

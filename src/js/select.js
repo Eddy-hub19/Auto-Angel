@@ -5,5 +5,3 @@ if (typeof require !== 'undefined') {
 
 
 const mySelects = customSelect("select");
-
-console.log(mySelects);

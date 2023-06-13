@@ -69,6 +69,7 @@
   margin-right: 40px;
   @include mobile {
     display: flex;
+    margin-right: 14px;
     &__item {
       display: flex;
       align-items: center;

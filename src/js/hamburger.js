@@ -3,6 +3,7 @@ const hamburger = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('active');
+  hamburger.classList.toggle('top');
   menu.classList.toggle('active');
 });
 

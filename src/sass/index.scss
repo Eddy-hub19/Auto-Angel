@@ -26,3 +26,26 @@
 @import "./components/accordion";
 @import "./components/public-offer";
 @import "./components/custom-select";
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.light {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.my-class {
+  color: white;
+}
+
+.light .my-class {
+  color: red;
+}
+
+
+.top{
+  top: 10px !important;
+}
