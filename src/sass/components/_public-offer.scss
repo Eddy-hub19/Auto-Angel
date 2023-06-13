@@ -7,13 +7,13 @@
   font-size: 20px;
   line-height: 1.5;
   color: $background;
-  // ul li {
-  //   list-style-type: auto;
+  ul li {
+    list-style-type: disc;
 
-  //   &::marker {
-  //     font-size: 1.3em;
-  //     color: $background;
-  //   }
+    &::marker {
+      font-size: 1.3em;
+    }
+  }
 
   &__title {
     margin-bottom: 32px;

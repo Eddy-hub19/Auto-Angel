@@ -8,6 +8,7 @@ hamburger.addEventListener('click', () => {
   document.body.classList.add('no-scroll');
 });
 
+// Close Hamburger menu on click btn
 const closeButton = document.querySelector('.close-btn');
 closeButton.addEventListener('click', () => {
   if (closeButton.classList.contains('white')) {
@@ -20,8 +21,8 @@ closeButton.addEventListener('click', () => {
   }
 });
 
+// Go to anchor by link
 const menuItem = document.querySelectorAll('.menu-item');
-
 menuItem.forEach(item => {
   item.addEventListener('click', () => {
     hamburger.classList.remove('active');
