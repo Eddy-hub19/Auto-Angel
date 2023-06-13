@@ -38,6 +38,22 @@ body {
   background: $background;
   color: $lightt;
 
+  .secondary {
+    background: $primary;
+    color: $white;
+    &:hover {
+      background: $accent;
+    }
+  }
+
+  .other {
+    border-color: $primary;
+  }
+
+  .dontate-list {
+    border-color: $primary;
+  }
+
   .icon-logo {
     display: none;
   }
@@ -54,7 +70,7 @@ body {
     color: $secondary;
   }
 
-  .form-wrap-label{
+  .form-wrap-label {
     color: $primary;
   }
 
