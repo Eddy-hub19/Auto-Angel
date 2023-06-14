@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper1', {
   direction: 'horizontal',
   loop: true,
-  speed: 1000,
+  speed: 3000,
 
   navigation: {
     nextEl: '.swiper-button-next1',
@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper1', {
 const swiper2 = new Swiper('.swiper2', {
   direction: 'horizontal',
   loop: true,
-  speed: 1000,
+  speed: 3000,
 
   navigation: {
     nextEl: '.swiper-button-next2',
@@ -32,7 +32,7 @@ const swiper3 = new Swiper('.swiper3', {
   centeredSlides: true,
   direction: 'horizontal',
   loop: true,
-  speed: 1000,
+  speed: 3000,
   autoHeight: true,
   slidesPerView: 1,
 
@@ -63,7 +63,7 @@ const swiper4 = new Swiper('.swiper4', {
   centeredSlides: true,
   direction: 'horizontal',
   loop: true,
-  speed: 1000,
+  speed: 3000,
   autoHeight: true,
   slidesPerView: 1,
 
@@ -85,7 +85,6 @@ const swiper4 = new Swiper('.swiper4', {
     },
     1440: {
       slidesPerView: 3,
-      // spaceBetween: 30,
     },
   },
 });

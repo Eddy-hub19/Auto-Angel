@@ -53,7 +53,7 @@
   &:after {
     @include mobile {
       transform: translate(-23%, -50%);
-      font-size: 28px;
+      font-size: 18px;
     }
     content: "\002B";
     color: $background;
