@@ -1,6 +1,6 @@
 let url = window.location.href;
 
-let links = document.getElementsByTagName('a');
+let links = document.querySelectorAll('.nav__link');
 
 for (let i = 0; i < links.length; i++) {
   let link = links[i];
