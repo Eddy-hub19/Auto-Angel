@@ -4,5 +4,6 @@ import './js/swiper.js';
 import './js/accordion.js';
 import './js/scrollToTop.js';
 import './js/clipboard.js';
+import './js/validate.js';
 import './js/select.js';
 import './js/location.js';
