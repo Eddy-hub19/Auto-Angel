@@ -14,9 +14,9 @@ const messengerInputs = form.querySelectorAll('input[name="Name"]');
 phoneNumberInput.addEventListener('input', function () {
   const phoneNumber = phoneNumberInput.value;
   if (validatePhoneNumber(phoneNumber)) {
-    phoneNumberInput.style.border = '4px solid green';
+    phoneNumberInput.style.border = '3px solid green';
   } else {
-    phoneNumberInput.style.border = '4px solid red';
+    phoneNumberInput.style.border = '3px solid red';
   }
 });
 
@@ -46,11 +46,9 @@ form.addEventListener('submit', function (event) {
     console.log('Вибраний месенджер:', selectedMessenger);
 
     alert("Дякуємо, ми зв'яжемося з вами найближчим часом.");
-
-    phoneNumberInput.style.border = '4px solid green';
+    form.reset();
   } else {
     console.log('Номер телефону недійсний.');
-
-    phoneNumberInput.style.border = '4px solid red';
+    phoneNumberInput.classList.add('error')
   }
 });

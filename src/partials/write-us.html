@@ -1,6 +1,6 @@
 <section id="write-us" class="write-us container">
   <h2 class="write-us__title">Напишіть нам</h2>
-  <form action="form" class="form">
+  <form action="form" class="form cmxform" id="commentForm" method="get" action="">
     <div class="form-wrap">
       <div class="form-wrap-name">
         <label class="form-wrap-name__label-name" for="name">Ім’я*</label>
@@ -24,10 +24,11 @@
     </div>
     <div class="form-wrap-textarea">
       <label class="form-wrap-label" for="msg">Ваше повідомлення*</label>
-      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Тут напишіть ваше звернення" required></textarea>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Тут напишіть ваше звернення"
+        required></textarea>
     </div>
     <div class="choose-messenger">
-      <legend>Оберіть бажаний месенджер*</legend>
+      <legend class="choose-messenger__title">Оберіть бажаний месенджер*</legend>
       <label>
         <input type="radio" id="1" name="Name" value="Telegram" required>
         <div class="choose-messenger__label">
@@ -58,3 +59,7 @@
   </form>
 
 </section>
+
+<script>
+  $("#commentForm").validate();
+</script>

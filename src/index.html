@@ -24,7 +24,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="./sass/index.scss" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+    integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="module" src="index.js"></script>
 </head>
 
@@ -34,6 +40,33 @@
   <include src="./partials/main.html"></include>
   <include src="./partials/footer.html"></include>
 
+  <!-- <form class="cmxform" id="commentForm" method="get" action="">
+    <fieldset>
+      <legend>Please provide your name, email address (won't be published) and a comment</legend>
+      <p>
+        <label for="name">Name (required, at least 2 characters)</label>
+        <input id="cname" name="name" minlength="2" type="text" required>
+      </p>
+      <p>
+        <label for="cemail">E-Mail (required)</label>
+        <input id="cemail" type="email" name="email" required>
+      </p>
+      <p>
+        <label for="curl">URL (optional)</label>
+        <input id="curl" type="url" name="url">
+      </p>
+      <p>
+        <label for="ccomment">Your comment (required)</label>
+        <textarea id="ccomment" name="comment" required></textarea>
+      </p>
+      <p>
+        <input class="submit" type="submit" value="Submit">
+      </p>
+    </fieldset>
+  </form>
+  <script>
+    $("#commentForm").validate();
+  </script> -->
 </body>
 
 </html>

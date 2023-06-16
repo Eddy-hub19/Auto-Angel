@@ -68,6 +68,12 @@ body {
     display: block;
   }
 
+  .choose-messenger{
+    &__title{
+      color: $primary;
+    }
+  }
+
   .choose-messenger__label {
     color: $primary;
   }
