@@ -111,20 +111,15 @@
       display: flex;
     }
   }
-
-  img {
-    width: auto !important;
-    height: 457px !important;
-  }
 }
 
-.wrap-slider {
-  &__subtitle {
-    font-family: Inter;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-top: 10px;
-  }
-}
+// .wrap-slider {
+//   &__subtitle {
+//     font-family: Inter;
+//     font-size: 14px;
+//     font-style: normal;
+//     font-weight: 600;
+//     line-height: 1.2;
+//     margin-top: 10px;
+//   }
+// }

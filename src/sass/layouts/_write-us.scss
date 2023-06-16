@@ -38,11 +38,17 @@
 
   .form-wrap {
     display: block;
+    @include tablet {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 16px;
+    }
     @include laptop {
       display: flex;
       align-items: baseline;
       margin-bottom: 16px;
     }
+
     .form-wrap-name {
       display: flex;
       flex-direction: column;
@@ -88,6 +94,10 @@
       flex-direction: column;
       @include mobile {
         margin-bottom: 16px;
+      }
+      @include tablet {
+        margin-bottom: 16px;
+        margin-left: 20px;
       }
 
       &__label-number {

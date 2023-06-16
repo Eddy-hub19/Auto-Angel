@@ -1,7 +1,8 @@
 const swiper = new Swiper('.swiper1', {
   direction: 'horizontal',
   loop: true,
-  speed: 1000,
+  autoplay: true,
+  speed: 1300,
 
   navigation: {
     nextEl: '.swiper-button-next1',
@@ -15,8 +16,9 @@ const swiper = new Swiper('.swiper1', {
 
 const swiper2 = new Swiper('.swiper2', {
   direction: 'horizontal',
+  autoplay: true,
   loop: true,
-  speed: 1000,
+  speed: 1300,
 
   navigation: {
     nextEl: '.swiper-button-next2',
@@ -31,9 +33,9 @@ const swiper2 = new Swiper('.swiper2', {
 const swiper3 = new Swiper('.swiper3', {
   centeredSlides: true,
   direction: 'horizontal',
+  autoplay: true,
   loop: true,
-  speed: 1000,
-  autoHeight: true,
+  speed: 1300,
   slidesPerView: 1,
 
   navigation: {
@@ -54,17 +56,16 @@ const swiper3 = new Swiper('.swiper3', {
     },
     1440: {
       slidesPerView: 1,
-      spaceBetween: 30,
     },
   },
 });
 
 const swiper4 = new Swiper('.swiper4', {
-  centeredSlides: true,
+  // centeredSlides: true,
   direction: 'horizontal',
+  autoplay: true,
   loop: true,
-  speed: 300,
-  autoHeight: true,
+  speed: 1300,
   slidesPerView: 1,
 
   navigation: {
@@ -81,10 +82,16 @@ const swiper4 = new Swiper('.swiper4', {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 1,
+      slidesPerView: 2,
     },
     1440: {
       slidesPerView: 3,
     },
   },
 });
+
+let isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+if (isMobile) {
+  swiper4.removeSlide(0);
+}

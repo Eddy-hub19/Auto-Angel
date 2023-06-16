@@ -2,13 +2,20 @@
   display: block;
   position: relative;
   padding-top: 56px;
-  padding-bottom: 56px;
+  padding-bottom: 32px;
   border-top: 2px solid $background;
   @include tablet {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
+    > .content-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   @include laptop {
     padding-top: 70px;
@@ -16,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    >.content-wrap {
+    > .content-wrap {
       display: flex;
       align-items: center;
     }
@@ -50,6 +57,10 @@
       flex-direction: column;
       text-align: center;
     }
+    @include tablet {
+      flex-direction: column;
+      text-align: center;
+    }
 
     @include laptop {
       display: flex;
@@ -79,6 +90,7 @@
   @include mobile {
     margin-top: 56px;
     margin-bottom: 112px;
+    position: relative;
   }
 
   @include laptop {
@@ -102,6 +114,7 @@
 .wrap-right-list {
   @include mobile {
     margin: 0 auto;
+    width: 100%;
   }
   display: flex;
   flex-direction: column;
@@ -188,8 +201,9 @@
   fill: $white;
   @include mobile {
     position: absolute;
-    top: 77%;
+    bottom: 12px;
     left: 66%;
+
     fill: $white;
   }
 

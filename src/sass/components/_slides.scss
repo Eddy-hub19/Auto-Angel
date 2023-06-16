@@ -8,9 +8,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  // @include laptop {
-  //   height: 500px;
-  // }
 }
 
 .wrap-slider {
@@ -20,11 +17,16 @@
 .swiper-wrapper {
   display: flex;
   align-items: center;
+  @include tablet {
+    width: 100% !important;
+  }
 }
 
-.swiper-slide img {
-  width: 100%;
-  height: auto;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+// .swiper-slide img {
+//   // display: block;
+//   // width: 100%;
+//   height: auto;
+//   background-size: contain;
+//   // background-size: contain;
+//   // background-repeat: no-repeat;
+// }

@@ -11,27 +11,21 @@
     padding-top: $padding;
     padding-bottom: $padding;
     border-bottom: 2px solid $background;
-    &__wrap {
-      padding-right: 106px;
-    }
   }
 
   &__desc {
-    @include mobile {
-      margin-bottom: 16px;
-    }
     font-family: "Unbounded";
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 160%;
     color: $background;
+    @include mobile {
+      margin-bottom: 16px;
+    }
+
     @include laptop {
       width: 529px;
-      font-family: "Unbounded";
-      font-style: normal;
-      font-weight: 300;
-      font-size: 14px;
       line-height: 1.57;
       color: $background;
       margin-bottom: 32px;
@@ -42,8 +36,12 @@
     @include mobile {
       margin-bottom: 36px;
     }
+    @include tablet {
+      margin-bottom: 50px;
+    }
     @include laptop {
       position: relative;
+      padding-right: 106px;
     }
   }
 
@@ -115,12 +113,23 @@
         }
       }
     }
+
+    @include tablet {
+      display: flex;
+      bottom: 50px;
+      right: 150px;
+    }
   }
 
   > .content-wrap {
     display: block;
     @include laptop {
       display: flex;
+    }
+    @include tablet {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
     }
   }
 }

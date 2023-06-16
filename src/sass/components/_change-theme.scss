@@ -25,6 +25,12 @@ body {
   height: 28px;
   position: relative;
 
+  @include tablet {
+    margin-left: auto;
+    top: 78%;
+    left: 0%;
+  }
+
   @include laptop {
     margin-left: 46px;
   }

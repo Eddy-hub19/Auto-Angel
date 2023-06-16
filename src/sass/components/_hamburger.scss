@@ -16,18 +16,21 @@
   @include mobile {
     position: fixed;
     right: 20px;
-    top: 30px;
+    top: 40px;
   }
   @include tablet {
     position: fixed;
-    right: 20px;
-    top: 30px;
+    top: 40px;
     cursor: pointer;
   }
 }
 
 .menu-btn {
   @include mobile {
+    width: 30px;
+    height: 30px;
+  }
+  @include tablet {
     width: 30px;
     height: 30px;
   }
@@ -66,6 +69,10 @@
 .menu-container {
   padding: 32px 32px;
   width: 100%;
+
+  @include tablet {
+    width: auto;
+  }
 }
 .menu {
   position: absolute;
@@ -101,7 +108,7 @@
 
   @include tablet {
     margin-top: 0px;
-    left: 760px;
+    left: 50%;
   }
 }
 

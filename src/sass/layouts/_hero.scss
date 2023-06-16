@@ -40,7 +40,12 @@
   > .content-wrap {
     @include mobile {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    @include tablet {
+      display: flex;
+      align-items: flex-start;
       flex-direction: column;
     }
     @include laptop {
@@ -114,8 +119,8 @@
 
   @include tablet {
     position: absolute;
-    top: 55%;
-    left: 33%;
+    top: 46px;
+    right: -80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
