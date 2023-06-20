@@ -133,7 +133,8 @@
         box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.08);
         border-radius: 3px;
         padding: 13px 12px;
-        width: 288px;
+        width: 100%;
+        min-width: 288px;
         height: 48px;
       }
     }

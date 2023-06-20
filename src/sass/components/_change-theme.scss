@@ -68,8 +68,8 @@ body {
     display: block;
   }
 
-  .choose-messenger{
-    &__title{
+  .choose-messenger {
+    &__title {
       color: $primary;
     }
   }
@@ -127,8 +127,10 @@ body {
     }
   }
 
-  .form-wrap .label-number {
-    color: $primary;
+  .form-wrap-number {
+    .label-number {
+      color: $primary;
+    }
   }
 
   .our-friends-list {

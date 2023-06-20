@@ -1,73 +1,78 @@
-const form = document.getElementById('commentForm');
-const mySelect = document.querySelector('.custom-select');
-const chooseMessenger = document.querySelector('.choose-messenger');
-form.addEventListener('submit', validateForm);
+const form = document.getElementById('form');
+const inputs = form.querySelectorAll(
+  'input[required], textarea[required], select[required]'
+);
 
-function validateForm(event) {
+form.addEventListener('submit', function (event) {
   event.preventDefault();
 
-  const formData = new FormData(form);
-  const name = formData.get('name');
-  const number = formData.get('number');
-  const topic = formData.get('topic');
-  const textarea = formData.get('textarea');
-  const messenger = formData.get('Name');
+  inputs.forEach(function (input) {
+    const errorMessage = input.parentNode.querySelector('.error-message');
 
-  // Удаление предыдущих классов с тенями
-  const inputs = form.querySelectorAll('input, select, textarea');
-  inputs.forEach(input => {
-    input.classList.remove('error');
+    if (!input.checkValidity()) {
+      errorMessage.style.display = 'block';
+      input.classList.add('error');
+    } else {
+      errorMessage.style.display = 'none';
+      input.classList.remove('error');
+    }
   });
 
-  let hasError = false;
+  form.submit()
+});
 
-  // Проверка полей и добавление класса с тенью при невалидных значениях
-  if (!name) {
-    form.querySelector('#name').classList.add('error');
-    // const errorMsg = document.createElement('span');
-    // errorMsg.classList.add('error');
-    hasError = true;
+inputs.forEach(function (input) {
+  const errorMessage = input.parentNode.querySelector('.error-message');
+
+  input.addEventListener('input', function () {
+    if (!input.checkValidity()) {
+      errorMessage.style.display = 'block';
+    } else {
+      errorMessage.style.display = 'none';
+    }
+  });
+});
+
+const selectElement = document.getElementById('mySelect');
+const selectErrorMessage =
+  selectElement.parentNode.querySelector('.error-message');
+
+selectElement.addEventListener('change', function () {
+  if (!selectElement.checkValidity()) {
+    selectErrorMessage.style.display = 'block';
+  } else {
+    selectErrorMessage.style.display = 'none';
   }
+});
 
-  if (!number) {
-    form.querySelector('#number').classList.add('error');
-    hasError = true;
+const textareaElement = document.getElementById('textarea');
+const textareaErrorMessage =
+  textareaElement.parentNode.querySelector('.error-message');
+
+textareaElement.addEventListener('input', function () {
+  if (!textareaElement.checkValidity()) {
+    textareaErrorMessage.style.display = 'block';
+  } else {
+    textareaErrorMessage.style.display = 'none';
   }
+});
 
-  if (!topic) {
-    mySelect.classList.add('error');
-    hasError = true;
-  }
+const messengerRadios = form.querySelectorAll(
+  'input[type="radio"][name="messenger"]'
+);
+const messengerErrorMessage = document.querySelector(
+  '.choose-messenger .error-message'
+);
 
-  if (!textarea) {
-    form.querySelector('#textarea').classList.add('error');
-    hasError = true;
-  }
-
-  if (!messenger) {
-    const messengerInputs = form.querySelectorAll('input[name="Name"]');
-    messengerInputs.forEach(input => {
-      input.classList.add('error');
-      chooseMessenger.classList.add('error');
-    });
-    hasError = true;
-  }
-
-  if (hasError) {
-    alert('будь-ласка, заповніть усі обовʼязкові поля.');
-    return;
-  }
-
-  // Дополнительная проверка формата номера телефона
-  if (!/^\d{10}$/.test(number)) {
-    alert(
-      'будь-ласка введіть коректно номер телефону в такому форматі 097XXXXXXX“'
+messengerRadios.forEach(function (radio) {
+  radio.addEventListener('change', function () {
+    const selectedMessenger = form.querySelector(
+      'input[type="radio"][name="messenger"]:checked'
     );
-    return;
-  }
-
-  // Все поля заполнены и прошли проверку
-  // Теперь можно отправить форму или выполнить другие действия
-  form.submit();
-  form.reset();
-}
+    if (!selectedMessenger) {
+      messengerErrorMessage.style.display = 'block';
+    } else {
+      messengerErrorMessage.style.display = 'none';
+    }
+  });
+});
