@@ -38,8 +38,12 @@
     width: 24px;
     height: 24px;
     float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
+
 .custom-select-container select {
   visibility: hidden;
   position: absolute;
@@ -88,4 +92,13 @@
 .custom-select-optgroup::before {
   content: "";
   display: block;
+}
+
+.is-open {
+  .custom-select-opener::after {
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

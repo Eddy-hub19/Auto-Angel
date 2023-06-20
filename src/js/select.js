@@ -5,3 +5,7 @@ if (typeof require !== 'undefined') {
 
 
 const mySelects = customSelect("select");
+
+document.querySelector(".custom-select-opener").addEventListener("click", function() {
+  this.parentNode.classList.toggle("is-open");
+});

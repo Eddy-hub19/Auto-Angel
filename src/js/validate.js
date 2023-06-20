@@ -1,54 +1,73 @@
-function validatePhoneNumber(phoneNumber) {
-  const phoneNumberPattern = /^\d{10}$/;
-  return phoneNumberPattern.test(phoneNumber);
-}
+const form = document.getElementById('commentForm');
+const mySelect = document.querySelector('.custom-select');
+const chooseMessenger = document.querySelector('.choose-messenger');
+form.addEventListener('submit', validateForm);
 
-const form = document.querySelector('.form');
-const phoneNumberInput = form.querySelector('.form-wrap-number__field-number');
-const nameInput = form.querySelector('.form-wrap-name__field-name');
-const selectInput = form.querySelector('#mySelect');
-const textareaInput = form.querySelector('#textarea');
-const messengerInputs = form.querySelectorAll('input[name="Name"]');
-
-// Обработчик события при изменении значения в поле номера телефона
-phoneNumberInput.addEventListener('input', function () {
-  const phoneNumber = phoneNumberInput.value;
-  if (validatePhoneNumber(phoneNumber)) {
-    phoneNumberInput.style.border = '3px solid green';
-  } else {
-    phoneNumberInput.style.border = '3px solid red';
-  }
-});
-
-form.addEventListener('submit', function (event) {
+function validateForm(event) {
   event.preventDefault();
 
-  const phoneNumber = phoneNumberInput.value;
-  const name = nameInput.value;
-  const selectedOption = selectInput.value;
-  const message = textareaInput.value;
-  let selectedMessenger = '';
+  const formData = new FormData(form);
+  const name = formData.get('name');
+  const number = formData.get('number');
+  const topic = formData.get('topic');
+  const textarea = formData.get('textarea');
+  const messenger = formData.get('Name');
 
-  // Отримання вибраного месенджера
-  for (const messengerInput of messengerInputs) {
-    if (messengerInput.checked) {
-      selectedMessenger = messengerInput.value;
-      break;
-    }
+  // Удаление предыдущих классов с тенями
+  const inputs = form.querySelectorAll('input, select, textarea');
+  inputs.forEach(input => {
+    input.classList.remove('error');
+  });
+
+  let hasError = false;
+
+  // Проверка полей и добавление класса с тенью при невалидных значениях
+  if (!name) {
+    form.querySelector('#name').classList.add('error');
+    // const errorMsg = document.createElement('span');
+    // errorMsg.classList.add('error');
+    hasError = true;
   }
 
-  if (validatePhoneNumber(phoneNumber)) {
-    console.log('Номер телефону є дійсним.');
-    console.log("Ім'я:", name);
-    console.log('Номер телефону:', phoneNumber);
-    console.log('Вибрана тема:', selectedOption);
-    console.log('Повідомлення:', message);
-    console.log('Вибраний месенджер:', selectedMessenger);
-
-    alert("Дякуємо, ми зв'яжемося з вами найближчим часом.");
-    form.reset();
-  } else {
-    console.log('Номер телефону недійсний.');
-    phoneNumberInput.classList.add('error')
+  if (!number) {
+    form.querySelector('#number').classList.add('error');
+    hasError = true;
   }
-});
+
+  if (!topic) {
+    mySelect.classList.add('error');
+    hasError = true;
+  }
+
+  if (!textarea) {
+    form.querySelector('#textarea').classList.add('error');
+    hasError = true;
+  }
+
+  if (!messenger) {
+    const messengerInputs = form.querySelectorAll('input[name="Name"]');
+    messengerInputs.forEach(input => {
+      input.classList.add('error');
+      chooseMessenger.classList.add('error');
+    });
+    hasError = true;
+  }
+
+  if (hasError) {
+    alert('будь-ласка, заповніть усі обовʼязкові поля.');
+    return;
+  }
+
+  // Дополнительная проверка формата номера телефона
+  if (!/^\d{10}$/.test(number)) {
+    alert(
+      'будь-ласка введіть коректно номер телефону в такому форматі 097XXXXXXX“'
+    );
+    return;
+  }
+
+  // Все поля заполнены и прошли проверку
+  // Теперь можно отправить форму или выполнить другие действия
+  form.submit();
+  form.reset();
+}

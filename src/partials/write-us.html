@@ -1,21 +1,19 @@
 <section id="write-us" class="write-us container">
   <h2 class="write-us__title">Напишіть нам</h2>
-  <form action="form" class="form cmxform" id="commentForm" method="get" action="">
+  <form action="form" class="form" id="commentForm" method="get" novalidate>
     <div class="form-wrap">
       <div class="form-wrap-name">
-        <label class="form-wrap-name__label-name" for="name">Ім’я*</label>
-        <input class="form-wrap-name__field-name" id="name" type="text" name="name" placeholder="Як до вас звертатись"
-          required>
+        <label class="label-name" for="name">Ім’я*</label>
+        <input class="field-name _req" id="name" type="text" name="name" placeholder="Як до вас звертатись" required>
       </div>
       <div class="form-wrap-number">
-        <label class="form-wrap-number__label-number" for="GET-name">Номер телефону*</label>
-        <input class="form-wrap-number__field-number" id="GET-name" type="number" name="name" placeholder="+380"
-          required>
+        <label class="label-number" for="number">Номер телефону*</label>
+        <input class="field-number _req" id="number" type="number" name="number" placeholder="+380" required>
       </div>
     </div>
     <div class="form-wrap-select">
       <label class="form-wrap-select__label" for="GET-name">Тема*</label>
-      <select id="mySelect" placeholder="Бажаєте долучитись як волонтер" required>
+      <select id="mySelect" name="topic" placeholder="Бажаєте долучитись як волонтер" required>
         <option value="1">Бажаєте долучитись як волонтер</option>
         <option value="2">Dropdown item</option>
         <option value="3">Dropdown item</option>
@@ -30,27 +28,21 @@
     <div class="choose-messenger">
       <legend class="choose-messenger__title">Оберіть бажаний месенджер*</legend>
       <label>
-        <input type="radio" id="1" name="Name" value="Telegram" required>
+        <input type="radio" id="Telegram" name="Name" value="Telegram" required>
         <div class="choose-messenger__label">
-          <label for="1">Telegram</label>
+          <label for="Telegram">Telegram</label>
         </div>
       </label>
       <label>
-        <input type="radio" id="2" name="Name" value="Viber" required>
+        <input type="radio" id="Viber" name="Name" value="Viber" required>
         <div class="choose-messenger__label">
-          <label for="2">Viber</label>
+          <label for="Viber">Viber</label>
         </div>
       </label>
       <label>
-        <input type="radio" id="3" name="Name" value="Facebook" required>
+        <input type="radio" id="Signal" name="Name" value="Signal" required>
         <div class="choose-messenger__label">
-          <label for="3">Facebook</label>
-        </div>
-      </label>
-      <label>
-        <input type="radio" id="4" name="Name" value="Name" required>
-        <div class="choose-messenger__label">
-          <label for="4">Name</label>
+          <label for="Signal">Signal</label>
         </div>
       </label>
     </div>
@@ -59,7 +51,3 @@
   </form>
 
 </section>
-
-<script>
-  $("#commentForm").validate();
-</script>
