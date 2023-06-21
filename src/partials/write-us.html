@@ -6,35 +6,27 @@
         <label class="label-name" for="name">Ім’я*</label>
         <input class="field-name" id="name" type="text" name="name" placeholder="Як до вас звертатись" required
           autocomplete="name">
-        <!-- <div class="error-message">Введіть імʼя!</div>
-        <div class="valid-message">Дякуємо, імʼя введено вірно.</div> -->
       </div>
       <div class="form-wrap-number">
         <label class="label-number" for="number">Номер телефону*</label>
-        <input class="field-number" id="number" type="number" name="number" placeholder="+380" required
+        <input class="field-number" id="number" type="number" name="number" placeholder="+380XXXXXXX" required
           autocomplete="tel">
-        <!-- <div class="error-message">Введіть номер телефону такого формату 097ХХХХ</div>
-        <div class="valid-message">Дякуємо, номер телефону введено вірно.</div> -->
       </div>
     </div>
     <div class="form-wrap-select">
       <label class="form-wrap-select__label" for="GET-name">Тема*</label>
       <select id="mySelect" name="myTheme" placeholder="Бажаєте долучитись як волонтер" required>
-        <option value="">Оберіть тему</option>
+        <option>Оберіть тему</option>
         <option value="1">Бажаєте долучитись як волонтер</option>
         <option value="2">Dropdown item</option>
         <option value="3">Dropdown item</option>
         <option value="4">Dropdown item</option>
       </select>
-      <!-- <div class="error-message">Оберіть тему!</div>
-      <div class="valid-message">Дякуємо, тема обрана.</div> -->
     </div>
     <div class="form-wrap-textarea">
       <label class="form-wrap-label" for="msg">Ваше повідомлення*</label>
       <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Тут напишіть ваше звернення"
         required></textarea>
-      <!-- <div class="error-message">Напишіть ваше повідомлення!</div>
-      <div class="valid-message">Дякуємо! повідомлення написано</div> -->
     </div>
     <div class="choose-messenger">
       <legend class="choose-messenger__title">Оберіть бажаний месенджер*</legend>
@@ -56,8 +48,6 @@
           <label for="Signal">Signal</label>
         </div>
       </label>
-      <!-- <div class="error-message">Оберіть бажаний месенджер</div>
-      <div class="valid-message">Дякуємо, бажанний месенджер обрано.</div> -->
     </div>
 
     <button type="submit" class="btn other submit">Відправити повідомлення</button>

@@ -3,7 +3,7 @@ function isEmpty(value) {
 }
 
 function isValidPhoneNumber(value) {
-  let phoneRegex = /^\d{10}$/;
+  let phoneRegex = /^\+[1-9]{1}[0-9]{3,14}$/;
   return phoneRegex.test(value);
 }
 
@@ -25,16 +25,15 @@ function validateForm() {
   if (isEmpty(nameInput.value)) {
     showError(nameInput, 'Введіть імʼя!');
     return false;
-  } else if (nameInput.value.trim().length < 2) {
-    showError(nameInput, 'Імʼя має містити рівно два символи!');
+  } else if (nameInput.value.trim().length < 3) {
+    showError(nameInput, 'Імʼя має містити не менше двох символів!');
     return false;
   } else {
     showValid(nameInput);
-    // showError(nameInput, '')
   }
 
   if (isEmpty(numberInput.value) || !isValidPhoneNumber(numberInput.value)) {
-    showError(numberInput, 'Введіть номер телефону такого формату 097ХХХХ');
+    showError(numberInput, 'Введіть номер телефону такого формату +380XXXXXXX');
     return false;
   } else {
     showValid(numberInput);
@@ -55,12 +54,12 @@ function validateForm() {
   }
 
   if (!isRadioSelected(radioButtons)) {
-    showError(radioButtons, 'Оберіть бажанний месенджер!');
+    showError(radioButtons[2], 'Оберіть бажанний месенджер!');
     return false;
   } else {
-    showValid(radioButtons);
+    showValid(radioButtons[2]);
   }
-  // 
+  //
   console.log('Імʼя:', nameInput.value);
   console.log('Номер телефона:', numberInput.value);
   console.log('Обрана тема:', selectInput.value);
