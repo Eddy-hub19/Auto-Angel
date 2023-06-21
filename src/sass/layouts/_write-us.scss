@@ -225,6 +225,8 @@
 .choose-messenger [type="radio"]:not(:checked) {
   position: absolute;
   left: -9999px;
+  opacity: 0;
+  display: none;
 }
 
 .choose-messenger [type="radio"]:checked + .choose-messenger__label,
