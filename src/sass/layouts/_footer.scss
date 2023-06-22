@@ -26,7 +26,7 @@
     > .content-wrap {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      // align-items: center;
     }
   }
   @include laptop {
@@ -70,8 +70,9 @@
       text-align: center;
     }
     @include tablet {
-      flex-direction: column;
       text-align: center;
+      justify-content: space-around;
+      margin-bottom: 112px;
     }
 
     @include laptop {
