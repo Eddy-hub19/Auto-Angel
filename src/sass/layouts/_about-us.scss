@@ -85,12 +85,9 @@
     display: flex;
     z-index: 99999;
 
-    .swiper-button-prev1 {
-      margin: 0 25px;
-    }
-
     .swiper-button-prev1,
     .swiper-button-next1 {
+      margin: 0 12.5px;
       fill: $white;
       &:hover,
       &:focus {
@@ -103,10 +100,9 @@
       bottom: 50px;
       left: 64%;
 
-      .swiper-button-prev1 {
-        margin: 0 25px;
-      }
+      .swiper-button-prev1,
       .swiper-button-next1 {
+        margin: 0 12.5px;
         &:hover,
         &:focus {
           fill: $accent;

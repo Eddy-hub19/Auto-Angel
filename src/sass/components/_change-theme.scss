@@ -27,8 +27,8 @@ body {
 
   @include tablet {
     margin-left: auto;
-    top: 78%;
-    left: 0%;
+    top: 40px;
+    left: 20%;
   }
 
   @include laptop {
@@ -127,9 +127,11 @@ body {
     }
   }
 
-  .form-wrap-number {
-    .label-number {
-      color: $primary;
+  .form-wrap {
+    .form-wrap-number {
+      .label-number {
+        color: $primary;
+      }
     }
   }
 

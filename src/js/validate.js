@@ -26,7 +26,7 @@ function validateForm() {
     showError(nameInput, 'Введіть імʼя!');
     return false;
   } else if (nameInput.value.trim().length < 3) {
-    showError(nameInput, 'Імʼя має містити не менше двох символів!');
+    showError(nameInput, 'Імʼя має містити не менше трьох символів!');
     return false;
   } else {
     showValid(nameInput);
@@ -59,7 +59,7 @@ function validateForm() {
   } else {
     showValid(radioButtons[2]);
   }
-  //
+
   console.log('Імʼя:', nameInput.value);
   console.log('Номер телефона:', numberInput.value);
   console.log('Обрана тема:', selectInput.value);
@@ -72,6 +72,7 @@ function validateForm() {
   });
 
   alert('Форма успішно валідована!');
+  form.reset();
   return true;
 }
 

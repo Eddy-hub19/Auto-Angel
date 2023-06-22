@@ -7,7 +7,7 @@
   > .content-wrap {
     @include laptop {
       display: flex;
-      padding: 0;
+      padding: 0 100px;
     }
   }
   @include laptop {
@@ -87,18 +87,18 @@
     z-index: 99999;
     @include mobile {
       display: flex;
-      bottom: 20px;
+      bottom: 13%;
       right: 20px;
     }
-
-    .swiper-button-prev3 {
-      margin: 0 25px;
-      &:hover,
-      &:focus {
-        fill: $accent;
-      }
+    @include tablet {
+      display: flex;
+      bottom: 10%;
+      right: 11%;
     }
+
+    .swiper-button-prev3,
     .swiper-button-next3 {
+      margin: 0 12.5px;
       &:hover,
       &:focus {
         fill: $accent;
@@ -106,7 +106,7 @@
     }
 
     @include laptop {
-      bottom: 0;
+      bottom: 40px;
       right: 0;
       z-index: 99999;
       display: flex;
@@ -114,13 +114,9 @@
   }
 }
 
-// .wrap-slider {
-//   &__subtitle {
-//     font-family: Inter;
-//     font-size: 14px;
-//     font-style: normal;
-//     font-weight: 600;
-//     line-height: 1.2;
-//     margin-top: 10px;
-//   }
-// }
+.wrap-slider__subtitle {
+  margin-top: 20px;
+  @include tablet {
+    margin-left: 7%;
+  }
+}

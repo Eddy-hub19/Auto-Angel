@@ -65,11 +65,11 @@
 }
 
 .header-langs {
-  margin-left: auto;
-  margin-right: 40px;
+  // margin-left: auto;
+  // margin-right: 40px;
+  margin: 0 20% 0 auto;
   @include mobile {
     display: flex;
-    // margin-right: 14px;
     &__item {
       display: flex;
       align-items: center;
@@ -116,10 +116,27 @@
   @include tablet {
     display: flex;
     margin-right: 114px;
-    
+
     &__item {
       display: flex;
       align-items: center;
+      position: relative;
+      &:nth-child(2n) {
+        &::after {
+          content: "";
+          position: absolute;
+          width: 2px;
+          height: 20px;
+          border: 1px solid $white;
+          position: absolute;
+          left: -10px;
+          display: block;
+        }
+
+        &:last-child {
+          margin-left: 10px;
+        }
+      }
     }
     &__link {
       color: $white;

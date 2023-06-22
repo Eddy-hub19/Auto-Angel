@@ -86,7 +86,7 @@
           width: 100%;
         }
         background: $white;
-        color: $secondary;
+        color: $primary;
         border: 1px solid $secondary;
         box-shadow: 0px 0px 4px 1px rgba(39, 34, 34, 0.08);
         border-radius: 3px;
@@ -128,7 +128,7 @@
           margin-top: 6px;
         }
         background: $white;
-        color: $secondary;
+        color: $primary;
         border: 1px solid $secondary;
         box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.08);
         border-radius: 3px;
@@ -152,7 +152,7 @@
     font-size: 14px;
     line-height: 1.6;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.08);
-    color: $secondary;
+    color: $primary;
 
     @include laptop {
       background: $white;

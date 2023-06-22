@@ -54,7 +54,6 @@
   &__wrap {
     @include laptop {
       display: flex;
-      // justify-content: center;
       flex-direction: column;
       position: relative;
       padding-left: 106px;
@@ -65,14 +64,9 @@
     position: absolute;
     z-index: 99999;
 
-    .swiper-button-prev2 {
-      margin: 0 25px;
-      &:hover,
-      &:focus {
-        fill: $accent;
-      }
-    }
+    .swiper-button-prev2,
     .swiper-button-next2 {
+      margin: 0 12.5px;
       &:hover,
       &:focus {
         fill: $accent;
@@ -81,18 +75,18 @@
 
     @include mobile {
       display: flex;
-      bottom: 60px;
+      bottom: 13.5%;
       right: 40px;
     }
     @include tablet {
       display: flex;
-      bottom: 100px;
-      right: 150px;
+      bottom: 10%;
+      right: 11%;
     }
 
     @include laptop {
       display: flex;
-      bottom: 0;
+      bottom: 42px;
       left: 80;
     }
   }

@@ -7,12 +7,10 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
     padding-top: $padding-mobile;
     padding-bottom: $padding-mobile;
   }
   @include tablet {
-    padding: 0 20px;
     padding-top: $padding-mobile;
     padding-bottom: $padding-mobile;
   }
@@ -68,7 +66,7 @@
   font-size: 30px;
   line-height: 1.2;
   color: $background;
-  width: 359px;
+  width: 100%;
   margin-bottom: 16px;
   @include tablet {
     font-family: "Unbounded";
@@ -76,7 +74,7 @@
     font-weight: 400;
     font-size: 34px;
     line-height: 1.1;
-    width: 420px;
+    min-width: 420px;
     display: flex;
     align-items: center;
     color: $background;
@@ -103,30 +101,42 @@
     padding: 4px 9px;
     position: absolute;
     width: 128px;
-    height: 20px;
+    height: auto;
     left: 222px;
     top: 45px;
     background: linear-gradient(271.04deg, #00c3ff 14.48%, #ffff1c 81.49%);
     border-radius: 32px;
-    // fz
     font-family: "Inter";
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
     line-height: 1.5;
     color: $primary;
+
+    @media screen and (max-width: 405px) {
+      position: static;
+      width: auto;
+      justify-content: center;
+      font-size: 10px;
+    }
+
+    @media screen and (min-width: 517px) and (max-width: 1200px) {
+      width: 100%;
+      position: static;
+      font-size: 1rem;
+      justify-content: center;
+    }
   }
 
   @include tablet {
-    position: absolute;
-    top: 46px;
-    right: -80px;
+    min-width: none;
+    width: 100%;
+    position: static;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 6px 14px;
-    height: 30px;
+    height: auto;
     background: linear-gradient(271.04deg, #00c3ff 14.48%, #ffff1c 81.49%);
     border-radius: 32px;
     font-family: "Inter";
@@ -136,17 +146,18 @@
     line-height: 1.5;
     color: $primary;
   }
+
   @include laptop {
     position: absolute;
-    top: 45%;
+    top: 43%;
     left: 63%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 6px 24px;
-    width: 268px;
-    height: 36px;
+    // width: 268px;
+    // height: 36px;
     background: linear-gradient(271.04deg, #00c3ff 14.48%, #ffff1c 81.49%);
     border-radius: 32px;
     font-family: "Inter";

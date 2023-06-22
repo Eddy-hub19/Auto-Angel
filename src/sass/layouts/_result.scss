@@ -46,11 +46,16 @@
 }
 
 .result-list {
+  display: flex;
   @include mobile {
     flex-direction: column;
     gap: 30px;
   }
-  display: flex;
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
   @include laptop {
     gap: 70px;
