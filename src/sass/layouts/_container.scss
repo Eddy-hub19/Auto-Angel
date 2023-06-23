@@ -5,8 +5,9 @@
 
 @include mobile {
   .container {
-    width: 375px;
+    min-width: 375px;
     padding: 0 20px;
+    overflow-x: hidden;
   }
 }
 @include tablet {

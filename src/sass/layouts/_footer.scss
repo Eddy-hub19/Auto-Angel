@@ -227,6 +227,9 @@
 
     fill: $white;
   }
+  @include tablet {
+    width: auto;
+  }
 
   &__footer-item {
     margin-left: 24px;
