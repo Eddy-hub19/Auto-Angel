@@ -67,7 +67,7 @@
   line-height: 1.2;
   color: $background;
   width: 100%;
-  max-width: 390px;
+  width: 390px;
   margin-bottom: 16px;
   @include tablet {
     font-family: "Unbounded";
@@ -87,7 +87,7 @@
     font-weight: 400;
     font-size: 64px;
     line-height: 110%;
-    width: 749px;
+    width: 749px !important;
     display: flex;
     align-items: center;
     color: $background;
@@ -158,8 +158,8 @@
     justify-content: center;
     align-items: center;
     padding: 6px 24px;
-    // width: 268px;
-    // height: 36px;
+    width: 268px;
+    height: 36px;
     background: linear-gradient(271.04deg, #00c3ff 14.48%, #ffff1c 81.49%);
     border-radius: 32px;
     font-family: "Inter";
